@@ -1,4 +1,5 @@
 /* Custom CSS Document */
-.side-nav.fixed{
+.side-nav.fixed.hide-on-med-and-down{
 	top:63px;
+	z-index:-1;
 }
