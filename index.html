@@ -16,6 +16,7 @@
 <meta name="theme-color" content="#ffa726">
 <!--Import materialize.css-->
 <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
@@ -33,18 +34,26 @@
     </div>
   </nav>
   <!-- Fixed Navbar ends-->
+  <div class="container">
+  <div class="row">
+  <div class="col s12 m4 l3">
   <!--Fixed Slide-out and SideNav -->
  <ul id="slide-out" class="side-nav fixed">
     <li><a href="#!">First Sidebar Link</a></li>
     <li><a href="#!">Second Sidebar Link</a></li>
-  </ul> 
-  <!-- Fixed Slide-out and SideNav--> 
+  </ul>  <!-- Fixed Slide-out and SideNav end--> 
+  </div>
+ <div class="col s12 m8 l9">
+  
+  </div>
+  </div>
+  </div>
 <!--Import jQuery before materialize.js--> 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript">
 // Initialize collapse button
-  $(".button-collapse").sideNav();
+$(".button-collapse").sideNav();
 </script>
 </body>
 </html>
