@@ -1,4 +1,5 @@
 /* CSS Document */
+/*******************Main scroll style**************************/
 ::-webkit-scrollbar {
       width: 8px;
 } /* this targets the default scrollbar (compulsory) */
@@ -17,4 +18,4 @@
 ::-webkit-scrollbar-corner {
       background-color: transparent;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
-
+/*********************************************************************/

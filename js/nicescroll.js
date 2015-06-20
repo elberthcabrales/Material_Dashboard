@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function() {  
         $(".side-nav").niceScroll({
-			cursorcolor:"#666",
-			cursorborder: "1px solid #666"
+			cursorcolor:"#757575",
+			cursorborder: "1px solid #757575"
 			});
 }); 
