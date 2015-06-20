@@ -30,7 +30,15 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="waves-effect waves-light" href="#">Search</a></li>
           <li><a class="waves-effect waves-light" href="#">Messages</a></li>
-          <li><a class="waves-effect waves-light" href="#">Sandeep</a></li>
+          <li><a class="dropdown-button waves-effect waves-light" href="#" data-activates="User_menu">
+            <i class="mdi-navigation-arrow-drop-down right"></i>Sandeep</a></li>
+            <!-- Dropdown Structure -->
+            <ul id="User_menu" class="dropdown-content">
+              <li><a href="#!">Profile</a></li>
+              <li><a href="#!">Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Logout</a></li>
+            </ul>
         </ul>
       </div>
     </nav>
@@ -40,8 +48,9 @@
   <div class="wrapper">
     <aside id="left-side-nav">
       <ul id="slide-out" class="side-nav fixed">
-        <li class="active lime lighten-3"><a class="waves-effect waves-light" href="#!">Dashboard</a></li>
-        <li><a href="#!">Settings</a></li>
+        <li class="active lime lighten-3"><a class="waves-effect waves-light" href="#!">
+          <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+        <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
       </ul>
     </aside>
     <section id="content">
