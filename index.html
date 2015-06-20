@@ -27,18 +27,9 @@
   <div class="navbar-fixed">
     <nav class="lime"> <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <div class="nav-wrapper"> <a href="#" class="brand-logo">CodeLarva</a> 
-        <!-- Dropdown Structure -->
-        <ul id="profile-dropdown" class="dropdown-content">
-          <li><a class="black-text" href="#!"><i class="mdi-action-account-box"></i> Profile</a></li>
-          <li><a class="black-text" href="#!"><i class="mdi-action-settings"></i>Settings</a></li>
-          <li class="divider"></li>
-          <li><a class="black-text" href="#!"><i class="mdi-action-settings-power"></i>Logout</a></li>
-        </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="waves-effect waves-light" href="#">Search</a></li>
           <li><a class="waves-effect waves-light" href="#">Messages</a></li>
-          <li><a class="dropdown-button waves-effect waves-light" href="#" data-activates="profile-dropdown"> 
-          <i class="mdi-navigation-more-vert right"></i>Sandeep</a></li>
         </ul>
       </div>
     </nav>
@@ -48,7 +39,27 @@
   <div class="wrapper">
     <aside id="left-side-nav">
       <ul id="slide-out" class="side-nav fixed">
-        <li class="active lime lighten-3"><a class="waves-effect waves-light" href="#!"> <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+        <li class="user-details cyan darken-2">
+          <div class="row">
+            <div class="col col s4 m4 l4"> 
+            <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
+            <div class="col col s8 m8 l8" style="top:57">
+              <ul id="profile-dropdown" class="dropdown-content">
+                <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
+                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
+                <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a> </li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
+                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+              </ul>
+              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep<i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <p class="user-roal">Administrator</p>
+            </div>
+          </div>
+        </li>
+        <li class="active lime lighten-2"> 
+        <a class="waves-effect waves-light" href="#!"> 
+        <i class="mdi-action-dashboard"></i> Dashboard</a></li>
         <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
       </ul>
     </aside>
@@ -69,18 +80,12 @@
         </div>
         
         <!-- Floating Action Button -->
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
-        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
-        <i class="large mdi-editor-mode-edit"></i> </a>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a class="btn-floating btn-large blue-grey waves-effect waves-light"> <i class="large mdi-editor-mode-edit"></i> </a>
           <ul>
-            <li><a href="css-helpers.html" class="btn-floating red">
-            <i class="large mdi-communication-live-help"></i></a></li>
-            <li><a href="app-widget.html" class="btn-floating yellow darken-1">
-            <i class="large mdi-device-now-widgets"></i></a></li>
-            <li><a href="app-calendar.html" class="btn-floating green">
-            <i class="large mdi-editor-insert-invitation"></i></a></li>
-            <li><a href="app-email.html" class="btn-floating blue">
-            <i class="large mdi-communication-email"></i></a></li>
+            <li><a href="css-helpers.html" class="btn-floating red"> <i class="large mdi-communication-live-help"></i></a></li>
+            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> <i class="large mdi-device-now-widgets"></i></a></li>
+            <li><a href="app-calendar.html" class="btn-floating green"> <i class="large mdi-editor-insert-invitation"></i></a></li>
+            <li><a href="app-email.html" class="btn-floating blue"> <i class="large mdi-communication-email"></i></a></li>
           </ul>
         </div>
         <!-- Floating Action Button ends--> 
@@ -96,16 +101,14 @@
     <!-- ////////////////////////// --> 
   </div>
   <div class="footer-copyright">
-    <div class="container"> Copyright © 2015 
-    <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved. 
-    <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">CodeLarva Technologies</a>
-    </span> </div>
+    <div class="container"> Copyright © 2015 <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved. <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">CodeLarva Technologies</a> </span> </div>
   </div>
 </footer>
 <!-- END FOOTER --> 
 <!--Import jQuery before materialize.js--> 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <script type="text/javascript" src="js/materialize.js"></script> 
+<script type="text/javascript" src="js/init.js"></script> 
 <script type="text/javascript">
 // Initialize collapse button
 $(".button-collapse").sideNav();
