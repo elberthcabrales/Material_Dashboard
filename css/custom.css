@@ -1,8 +1,4 @@
 /* Custom CSS Document */
-.side-nav.fixed.hide-on-med-and-down{
-	top:63px;
-	z-index:-1;
-}
 nav .brand-logo{
 	padding-left:10px;
 }
