@@ -90,7 +90,7 @@ $(function() {
   });
 
   // Perfect Scrollbar
-  $('select').not('.disabled').material_select();
+  /*$('select').not('.disabled').material_select();
     var leftnav = $(".page-topbar").height();  
     var leftnavHeight = window.innerHeight - leftnav;
   $('.leftside-navigation').height(leftnavHeight).perfectScrollbar({
@@ -100,7 +100,7 @@ $(function() {
   $('.rightside-navigation').height(righttnav).perfectScrollbar({
     suppressScrollX: true
   });
-
+*/
   // Fullscreen
   function toggleFullScreen() {
     if ((document.fullScreenElement && document.fullScreenElement !== null) ||
@@ -157,8 +157,7 @@ $(function() {
       $(this).toggleClass('flow-text');
     })
   });
-  
-  
+   
   //Toggle Containers on page
   var toggleContainersButton = $('#container-toggle-button');
   toggleContainersButton.click(function() {
