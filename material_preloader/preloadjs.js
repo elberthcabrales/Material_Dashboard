@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     preloader = new $.materialPreloader({
-        position: '',
+        position: 'top',
         height: '5px',
         col_1: '#159756',
         col_2: '#da4733',

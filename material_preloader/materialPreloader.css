@@ -1,4 +1,5 @@
 .load-bar {
+	z-index:999;
     position:fixed;
     bottom:0;
     height:5px;
