@@ -18,7 +18,7 @@
 	bottom: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 15px;
+	width: 8px;
 	background-color: transparent;
 	opacity: 0;
 	-webkit-transition: width 200ms, opacity 200ms;
@@ -30,14 +30,14 @@
 .scrollator_lane {
 	position: absolute;
 	top: 3px;
-	right: 3px;
+	right: 0px;
 	bottom: 3px;
 	left: 3px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;
+	border-radius: 8px;
 	background-color: rgba(64, 64, 64, 0);
 	-webkit-transition: background 200ms;
 	-moz-transition:    background 200ms;
@@ -52,7 +52,7 @@
 
 .scrollator_lane_holder.hover, 
 .scrollator_lane_holder:hover {
-	width: 15px;
+	width: 8px;
 }
 .scrollator_lane_holder.hover > .scrollator_lane, 
 .scrollator_lane_holder:hover > .scrollator_lane {
@@ -64,7 +64,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0 -3px;
-	width: 15px;
+	width: 8px;
 	background-color: transparent;
 	-webkit-transition: width 200ms;
 	-moz-transition:    width 200ms;
@@ -75,7 +75,7 @@
 .scrollator_handle {
 	position: absolute;
 	top: 0;
-	right: 3px;
+	right: 0px;
 	bottom: 0;
 	left: 3px;
 	-moz-box-sizing: border-box;
@@ -88,5 +88,5 @@
 
 .scrollator_lane_holder.hover .scrollator_handle_holder, 
 .scrollator_lane_holder:hover .scrollator_handle_holder {
-	width: 15px;
+	width: 8px;
 }
