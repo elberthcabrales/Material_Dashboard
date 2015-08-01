@@ -17,7 +17,8 @@
             settings.height + ";display:none;" + settings.position +
             ":0px'><div class='load-bar-container'><div class='load-bar-base base1' style='background:" +
             settings.col_1 +
-            "'><div class='color red' style='background:" + settings.col_2 +
+            "'><div class='color red' style='background:" + 
+			settings.col_2 +
             "'></div><div class='color blue' style='background:" +
             settings.col_3 +
             "'></div><div class='color yellow' style='background:" +
@@ -26,7 +27,8 @@
             settings.col_1 +
             "'></div></div></div> <div class='load-bar-container'><div class='load-bar-base base2' style='background:" +
             settings.col_1 +
-            "'><div class='color red' style='background:" + settings.col_2 +
+            "'><div class='color red' style='background:" + 
+			settings.col_2 +
             "'></div><div class='color blue' style='background:" +
             settings.col_3 +
             "'></div><div class='color yellow' style='background:" +

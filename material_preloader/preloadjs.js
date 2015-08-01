@@ -2,10 +2,10 @@ jQuery(document).ready(function($) {
     preloader = new $.materialPreloader({
         position: 'top',
         height: '5px',
-        col_1: '#159756',
-        col_2: '#da4733',
-        col_3: '#3b78e7',
-        col_4: '#fdba2c',
+        col_1: '#159756',//#159756
+        col_2: '#da4733',//#da4733
+        col_3: '#3b78e7',//#3b78e7
+        col_4: '#fdba2c',//#fdba2c
         fadeIn: 500,
         fadeOut: 500
     });
