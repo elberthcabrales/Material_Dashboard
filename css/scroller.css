@@ -1,9 +1,4 @@
-/**
- * Scrollator jQuery Plugin
- * Scrollator is a jQuery-based replacement for the browsers scroll bar, which doesn't use any space.
- * version 1.1, July 3rd, 2014
- * by Ingi P. Jacobsen
- */
+/**********Scrollbar plugin****************************/
 #scrollator_holder {
 	position: absolute;
 	top: 0;
@@ -57,7 +52,7 @@
 
 .scrollator_lane_holder.hover, 
 .scrollator_lane_holder:hover {
-	width: 21px;
+	width: 15px;
 }
 .scrollator_lane_holder.hover > .scrollator_lane, 
 .scrollator_lane_holder:hover > .scrollator_lane {
@@ -93,5 +88,5 @@
 
 .scrollator_lane_holder.hover .scrollator_handle_holder, 
 .scrollator_lane_holder:hover .scrollator_handle_holder {
-	width: 21px;
+	width: 15px;
 }
