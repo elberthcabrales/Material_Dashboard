@@ -5109,8 +5109,11 @@ nav {
     height: 64px;
     line-height: 64px; }
   .navbar-fixed {
-    height: 64px; } }
-
+    height: 64px; 
+	z-index:1000;/*new add*/
+	} 
+	}
+	
 @font-face {
   font-family: "Roboto";
   src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
