@@ -1478,4 +1478,10 @@ footer.page-footer {
      color: #cddc39;
    }
      
-/*************************************/
+/*****************hero********************/
+.hero{
+	background-repeat:no-repeat;
+	background-size: 100%;
+	background-image:url(../img/main_doodle.png);
+}
+/*********************************************/
