@@ -24,6 +24,8 @@
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/scroller.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/nprogress.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 </head>
 
@@ -76,12 +78,24 @@
   </div>
 </div>
 
-<!-- jQuery Library -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!--materialize js-->
-<script type="text/javascript" src="js/materialize.js"></script>
-<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<!-- jQuery Library --> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<!--materialize js--> 
+<script type="text/javascript" src="js/materialize.js"></script> 
+<!--plugins.js - Some Specific JS codes for Plugin Settings--> 
 <script type="text/javascript" src="js/plugins.js"></script>
+<!-- Preloader-->
+<script type="text/javascript" src="js/nprogress.js"></script> 
+<script type="text/javascript" src="js/preloader.js"></script> 
+<!-- CustomSscroll-->
+<script type="text/javascript" src="js/scroller.js"></script> 
 
+<script type="text/javascript">
+// Initialize Scroller plugin
+$(function () {
+var $document_body = $('body');
+$document_body.scrollator();
+});
+</script>
 </body>
 </html>
