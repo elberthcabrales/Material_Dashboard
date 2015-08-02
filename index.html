@@ -18,9 +18,7 @@
 <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
 <!-- For Windows Phone -->
 
-
 <!-- CORE CSS-->
-
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -43,14 +41,14 @@
       <div class="row margin">
         <div class="input-field col s12">
           <i class="mdi-social-person-outline prefix"></i>
-          <input id="username" type="text">
+          <input type="text" required id="username">
           <label for="username" class="center-align">Username</label>
         </div>
       </div>
       <div class="row margin">
         <div class="input-field col s12">
           <i class="mdi-action-lock-outline prefix"></i>
-          <input id="password" type="password">
+          <input type="password" required id="password">
           <label for="password">Password</label>
         </div>
       </div>
@@ -62,7 +60,7 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <a href="welcome.html" class="btn blue-grey waves-effect waves-light col s12">Login</a>
+          <button id="login_submit" name="login_submit" class="btn blue-grey waves-effect waves-light col s12" type="submit" value="Login"></button>
         </div>
       </div>
       <div class="row">
@@ -70,7 +68,8 @@
           <p class="margin medium-small"><a class="grey-text" href="register.html">Register Now!</a></p>
         </div>
         <div class="input-field col s6 m6 l6">
-            <p class="margin right-align medium-small"><a class="grey-text" href="page-forgot-password.html">Forgot password ?</a></p>
+            <p class="margin right-align medium-small">
+            <a class="grey-text" href="page-forgot-password.html">Forgot password ?</a></p>
         </div>          
       </div>
 
