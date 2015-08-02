@@ -1484,8 +1484,16 @@ footer.page-footer {
 	background-size: 100%;
 	background-image:url(../img/main_doodle.png);
 }
+.app_hero{
+	background-repeat:no-repeat;
+	background-size: 100%;
+	background-image:url(../img/app_doodle.png);
+}
 #hero_card{
 	margin-top:175px;
+}
+#app_hero_card{
+	margin-top:375px;
 }
 /********************SideNav height Init***********************/
 .side-nav{
