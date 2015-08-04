@@ -1604,3 +1604,12 @@ footer.page-footer {
   margin: 1em 0;
   padding: 0;
    }
+/******************tabs indicator*******************/
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background-color: #cddc39;
+    will-change: left, right;
+}
+/********************************************/
