@@ -162,7 +162,7 @@
         </div>
       </div>
       <!--breadcrumbs end-->
-      <div id="breadcrumbs-wrapper" style="z-index:1000;" class="sticker blue-grey shadow_bottom">
+      <div id="breadcrumbs-wrapper" style="z-index:998;" class="sticker blue-grey shadow_bottom">
         <div class="container">
           <div class="row">
             <div class="col s12 m9 l10">
@@ -435,7 +435,15 @@ $(document).ready(function(){
 });
 //Sticky tabs
 $(document).ready(function(){
-  $(".sticker").sticky({topSpacing:64});
+	if($('nav').css("height",64))
+	{
+		$(".sticker").sticky({topSpacing:64});
+		}
+	else
+	{
+		$(".sticker").sticky({topSpacing:56});
+		//$(".sticker").css("z-index",998);
+	}
 });
 </script>
 </body></html>
