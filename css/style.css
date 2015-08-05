@@ -1605,7 +1605,7 @@ footer.page-footer {
   padding: 0;
    }
 /******************tabs indicator*******************/
-.tabs .indicator {
+*.tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 5px;
