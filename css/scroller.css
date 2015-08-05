@@ -33,6 +33,7 @@
 	right: 0px;
 	bottom: 3px;
 	left: 3px;
+	z-index:999;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-border-radius: 10px;
