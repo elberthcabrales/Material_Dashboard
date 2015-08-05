@@ -151,14 +151,10 @@
       <ul class="tabs blue-grey">
         <li class="tab col s3 waves-effect waves-light">
         <a class="active lime-text" href="#test1">Recent Installs</a></li>
-        <li class="tab col s3 waves-effect waves-light"><a class="lime-text" href="#test2">Test 2</a></li>
-        <li class="tab col s3 waves-effect waves-light"><a class="lime-text" href="#test3">Disabled Tab</a></li>
-        <li class="tab col s3 waves-effect waves-light"><a class="lime-text" href="#test4">Test 4</a></li>
+        <li class="tab col s3 waves-effect waves-light">
+        <a class="lime-text" href="#test2">Trending</a></li>
       </ul>
     </div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
   </div>
       </div>
       
@@ -175,19 +171,27 @@
             </div>
             <div class="col s12 m3 l3 ">
               <div class="card">
-                <div class="card-image waves-effect waves-block waves-light"> <img class="activator img-responsive" src="img/app1.jpg"> </div>
-                <div class="card-content"> <span class="card-title activator grey-text text-darken-4">SEObuzz <i class="material-icons right">more_vert</i></span>
+                <div class="card-image waves-effect waves-block waves-light"> 
+                <img class="activator img-responsive" src="img/app1.jpg"> </div>
+                <div class="card-content"> 
+                <span class="card-title activator grey-text text-darken-4">SEObuzz 
+                <i class="material-icons right">more_vert</i></span>
                   <p><a href="#">This is a link</a></p>
                 </div>
-                <div class="card-reveal"> <span class="card-title grey-text text-darken-4">SEObuzz <i class="material-icons right">close</i></span>
+                <div class="card-reveal"> 
+                <span class="card-title grey-text text-darken-4">SEObuzz 
+                <i class="material-icons right">close</i></span>
                   <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
               </div>
             </div>
             <div class="col s12 m3 l3 ">
               <div class="card">
-                <div class="card-image waves-effect waves-block waves-light"> <img class="activator img-responsive" src="img/app2.png"> </div>
-                <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title <i class="material-icons right">more_vert</i></span>
+                <div class="card-image waves-effect waves-block waves-light"> 
+                <img class="activator img-responsive" src="img/app2.png"> </div>
+                <div class="card-content"> 
+                <span class="card-title activator grey-text text-darken-4">Card Title 
+                <i class="material-icons right">more_vert</i></span>
                   <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title <i class="material-icons right">close</i></span>
@@ -207,7 +211,21 @@
               </div>
             </div>
           </div>
-          <hr class="divider">
+        </div>
+        
+        <!-- Floating Action Button -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a class="btn-floating btn-large blue-grey waves-effect waves-light"> <i class="large mdi-editor-mode-edit"></i> </a>
+          <ul>
+            <li><a href="css-helpers.html" class="btn-floating red"> <i class="large mdi-communication-live-help"></i></a></li>
+            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> <i class="large mdi-device-now-widgets"></i></a></li>
+            <li><a href="app-calendar.html" class="btn-floating green"> <i class="large mdi-editor-insert-invitation"></i></a></li>
+            <li><a href="app-email.html" class="btn-floating blue"> <i class="large mdi-communication-email"></i></a></li>
+          </ul>
+        </div>
+        <!-- Floating Action Button ends--> 
+      </div>
+      <div id="test2" class="container">
+         <div id="dashboard">
           <div class="row">
             <div class="col s12 m3 l3">
               <div class="card grey lighten-2">
@@ -300,6 +318,6 @@ var $document_body = $('body');
 $document_body.scrollator();
 });
 // Notification
- 
+
 </script>
 </body></html>
