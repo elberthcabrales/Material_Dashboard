@@ -12,9 +12,9 @@
    data: [65, 59, 80, 81, 56, 55, 40]
   }, {
    label: "My Second dataset",
-   fillColor: "rgba(151,187,205,0.2)",
-   strokeColor: "rgba(151,187,205,1)",
-   pointColor: "rgba(151,187,205,1)",
+   fillColor: "rgba(179, 205, 152, 0.39)",
+   strokeColor: "rgba(168, 230, 10, 0.86)",
+   pointColor: "rgba(168, 230, 10, 0.86)",
    pointStrokeColor: "#fff",
    pointHighlightFill: "#fff",
    pointHighlightStroke: "rgba(151,187,205,1)",
