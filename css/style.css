@@ -1631,7 +1631,7 @@ footer.page-footer {
     height: 80px;
     display: block;
     float: left;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     padding-left: 15px;
     margin-bottom: 15px;
     font-size: 35px;
@@ -1644,3 +1644,4 @@ footer.page-footer {
     font-size: 110px;
     line-height: 110px;
 }
+/***********************************/
