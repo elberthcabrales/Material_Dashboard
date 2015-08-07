@@ -1625,4 +1625,22 @@ footer.page-footer {
 	padding-left:5px;
 	padding-right:5px;
 }
-/********************************/
+/**************fade_icon******************/
+#fade_icon{
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 35px;
+	
+	color: #FFFFFF;
+    opacity: 0.1;
+	
+	margin-left: -35px;
+    font-size: 110px;
+    line-height: 110px;
+}
