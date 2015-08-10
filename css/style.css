@@ -1661,4 +1661,7 @@ footer.page-footer {
 .top_margin{
 	margin-top:10px;
 }
-/*******************************************
+/*******************************************/
+#left_padding_img{
+	padding-left:30%;
+}
