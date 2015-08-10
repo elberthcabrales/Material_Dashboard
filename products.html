@@ -287,8 +287,9 @@
             </div>
             <div id="card_size" class="col s12 m3 l3 ">
               <div class="card">
-                <div id="card_img" class="card-image waves-effect waves-block waves-light"> 
-                <img class="activator img-responsive" src="img/app2.png"> </div>
+                <div class="card-image waves-effect waves-block waves-light"> 
+                <img id="card_img" class="activator img-responsive" src="img/app2.png"> 
+                </div>
                 <div class="card-content"> 
                 <span class="card-title activator grey-text text-darken-4">Product_Name 
                 <i class="material-icons right">more_vert</i></span>
@@ -498,12 +499,20 @@ $(document).ready(function(){
 });
 //List-Thumbnail toggle
 $(document).ready(function(){
+	$('#thumbnailer').hide();
 	$('#lister').click(function(){
 		$('#card_size').removeAttr('class');
 		$('#card_size').attr('class','col s12 m12 l8 offset-l2');
 		
-		$('#card_img').remove();
+		$('#card_img').unwrap();
+		$('#card_img').attr('width', '25%');
+		$('#card_img').attr('height', '200px');
+		$('#card_img').removeAttr('class');
+		$('#card_img').attr('class', 'img-responsive left');
 		$('.card-content').attr('id','left_padding_img');
+		
+		$('#lister').hide();
+		$('#thumbnailer').show();
 	});
 });
 </script>
