@@ -1651,3 +1651,11 @@ footer.page-footer {
   overflow: hidden;
   text-overflow: ellipsis; 
 }
+/***********button padding*********************/
+.right_padding{
+	margin-right:10px;
+}
+.left_padding{
+	margin-left:10px;
+}
+/*******************************************
