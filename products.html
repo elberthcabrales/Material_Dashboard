@@ -500,7 +500,7 @@ $(document).ready(function(){
 //List-Thumbnail toggle
 $(document).ready(function(){
 	$('#thumbnailer').hide();
-	$('#lister').click(function(){
+	$('#lister').toggle(function(){
 		$('#card_size').removeAttr('class');
 		$('#card_size').attr('class','col s12 m12 l8 offset-l2');
 		
