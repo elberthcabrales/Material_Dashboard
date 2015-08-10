@@ -1644,4 +1644,7 @@ footer.page-footer {
     font-size: 110px;
     line-height: 110px;
 }
-/***********************************/
+/****************Text Overflow class*******************/
+.dotted{
+	text-overflow:ellipsis;
+}
