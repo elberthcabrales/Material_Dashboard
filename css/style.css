@@ -1646,5 +1646,8 @@ footer.page-footer {
 }
 /****************Text Overflow class*******************/
 .dotted{
-	text-overflow:ellipsis;
+	list-style-position:inside;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
