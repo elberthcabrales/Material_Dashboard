@@ -185,7 +185,7 @@
        <div class="card">
        <div class="card-content">
               <span class="card-title lime-text">Products Table</span>
-              <a class="btn lime tooltipped btn-flat waves-effect waves-light right" data-position="bottom" data-delay="50" data-tooltip="Add New Products">
+              <a class="btn lime tooltipped btn-flat waves-effect waves-light modal-trigger right" data-position="bottom" data-delay="50" data-tooltip="Add New Products" href="#add_modal">
         <i class="mdi mdi-cart"></i> Add</a>
                 <table id="product_table" class="responsive-table striped hoverable">
                 <thead>
@@ -379,6 +379,18 @@
   </div>
 </div>
 <!-- //////////////////////////////////////////////////////////////////////////// --> 
+
+<!-- Modal Structure -->
+  <div id="add_modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Products Wizard</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+<!--modal end -->  
 <!-- START FOOTER -->
 <footer class="page-footer lime">
   <div class="container"> 
@@ -407,6 +419,8 @@
 <script type="text/javascript" src="js/scroller.js"></script>
 <!-- Sticky Scroll plugin -->
 <script type="text/javascript" src="js/jquery.sticky.js"></script>
+<!-- Steps plugin -->
+<script type="text/javascript" src="js/jquery.steps.js"></script>
 
 <script type="text/javascript" src="js/plugins.js"></script>
 
