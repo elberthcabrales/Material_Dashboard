@@ -20,7 +20,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="css/scroller.css"/>
 <link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
-
+<link type="text/css" rel="stylesheet" href="js/data-tables/css/jquery.dataTables.min.css"/>
 <!-- mdi icons cdn-->
 <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
 
@@ -378,260 +378,7 @@
           </div>
         </div>
         <!-- -->
-        <div id="row-grouping" class="section">
-              <h4 class="header">DataTables Row grouping</h4>
-              <div class="row">
-                <div class="col s12 m4 l3">
-                  <p>Although DataTables doesn't have row grouping built-in (picking one of the many methods available would overly limit the DataTables core), it is most certainly possible to give the look and feel of row grouping.</p>
-                </div>
-                <div class="col s12 m8 l9">
-                  <div id="data-table-row-grouping_wrapper" class="dataTables_wrapper"><div class="dataTables_length" id="data-table-row-grouping_length"><label>Show <div class="select-wrapper"><i class="mdi-navigation-arrow-drop-down active"></i><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-81b839ac-f398-4b2d-de5a-3b5a59d8bb24" value="25"><ul id="select-options-81b839ac-f398-4b2d-de5a-3b5a59d8bb24" class="dropdown-content select-dropdown" style="width: 160px; position: absolute; top: 0px; left: 0px; opacity: 1; display: none;"><li class=""><span>10</span></li><li class="active"><span>25</span></li><li class=""><span>50</span></li><li class=""><span>100</span></li></ul><select name="data-table-row-grouping_length" aria-controls="data-table-row-grouping" class="initialized"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></div> entries</label></div><div id="data-table-row-grouping_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="data-table-row-grouping"></label></div><table id="data-table-row-grouping" class="display dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="data-table-row-grouping_info" style="width: 100%;">
-                      <thead>
-                          <tr role="row"><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 155px;">Name</th><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 235px;">Position</th><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 45px;">Age</th><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 97px;">Start date</th><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 86px;">Salary</th></tr>
-                      </thead>
-                   
-                      <tfoot>
-                          <tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Position</th><th rowspan="1" colspan="1">Age</th><th rowspan="1" colspan="1">Start date</th><th rowspan="1" colspan="1">Salary</th></tr>
-                      </tfoot>
-                   
-                      <tbody>
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                          
-                      <tr class="group"><td colspan="5">New York</td></tr><tr role="row" class="odd">
-                              <td>Yuri Berry</td>
-                              <td>Chief Marketing Officer (CMO)</td>
-                              
-                              <td>40</td>
-                              <td>2009/06/25</td>
-                              <td>$675,000</td>
-                          </tr><tr role="row" class="even">
-                              <td>Caesar Vance</td>
-                              <td>Pre-Sales Support</td>
-                              
-                              <td>21</td>
-                              <td>2011/12/12</td>
-                              <td>$106,450</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Jackson Bradshaw</td>
-                              <td>Director</td>
-                              
-                              <td>65</td>
-                              <td>2008/09/26</td>
-                              <td>$645,750</td>
-                          </tr><tr role="row" class="even">
-                              <td>Thor Walton</td>
-                              <td>Developer</td>
-                              
-                              <td>61</td>
-                              <td>2013/08/11</td>
-                              <td>$98,540</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Zenaida Frank</td>
-                              <td>Software Engineer</td>
-                              
-                              <td>63</td>
-                              <td>2010/01/04</td>
-                              <td>$125,250</td>
-                          </tr><tr role="row" class="even">
-                              <td>Cara Stevens</td>
-                              <td>Sales Assistant</td>
-                              
-                              <td>46</td>
-                              <td>2011/12/06</td>
-                              <td>$145,600</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Donna Snider</td>
-                              <td>Customer Support</td>
-                              
-                              <td>27</td>
-                              <td>2011/01/25</td>
-                              <td>$112,000</td>
-                          </tr><tr class="group"><td colspan="5">San Francisco</td></tr><tr role="row" class="even">
-                              <td>Ashton Cox</td>
-                              <td>Junior Technical Author</td>
-                              
-                              <td>66</td>
-                              <td>2009/01/12</td>
-                              <td>$86,000</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Herrod Chandler</td>
-                              <td>Sales Assistant</td>
-                              
-                              <td>59</td>
-                              <td>2012/08/06</td>
-                              <td>$137,500</td>
-                          </tr><tr role="row" class="even">
-                              <td>Colleen Hurst</td>
-                              <td>Javascript Developer</td>
-                              
-                              <td>39</td>
-                              <td>2009/09/15</td>
-                              <td>$205,500</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Charde Marshall</td>
-                              <td>Regional Director</td>
-                              
-                              <td>36</td>
-                              <td>2008/10/16</td>
-                              <td>$470,600</td>
-                          </tr><tr role="row" class="even">
-                              <td>Brenden Wagner</td>
-                              <td>Software Engineer</td>
-                              
-                              <td>28</td>
-                              <td>2011/06/07</td>
-                              <td>$206,850</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Fiona Green</td>
-                              <td>Chief Operating Officer (COO)</td>
-                              
-                              <td>48</td>
-                              <td>2010/03/11</td>
-                              <td>$850,000</td>
-                          </tr><tr role="row" class="even">
-                              <td>Gavin Cortez</td>
-                              <td>Team Leader</td>
-                              
-                              <td>22</td>
-                              <td>2008/10/26</td>
-                              <td>$235,500</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Unity Butler</td>
-                              <td>Marketing Designer</td>
-                              
-                              <td>47</td>
-                              <td>2009/12/09</td>
-                              <td>$85,675</td>
-                          </tr><tr role="row" class="even">
-                              <td>Howard Hatfield</td>
-                              <td>Office Manager</td>
-                              
-                              <td>51</td>
-                              <td>2008/12/16</td>
-                              <td>$164,500</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Hope Fuentes</td>
-                              <td>Secretary</td>
-                              
-                              <td>41</td>
-                              <td>2010/02/12</td>
-                              <td>$109,850</td>
-                          </tr><tr role="row" class="even">
-                              <td>Vivian Harrell</td>
-                              <td>Financial Controller</td>
-                              
-                              <td>62</td>
-                              <td>2009/02/14</td>
-                              <td>$452,500</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Finn Camacho</td>
-                              <td>Support Engineer</td>
-                              
-                              <td>47</td>
-                              <td>2009/07/07</td>
-                              <td>$87,500</td>
-                          </tr><tr role="row" class="even">
-                              <td>Zorita Serrano</td>
-                              <td>Software Engineer</td>
-                              
-                              <td>56</td>
-                              <td>2012/06/01</td>
-                              <td>$115,000</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Jonas Alexander</td>
-                              <td>Developer</td>
-                              
-                              <td>30</td>
-                              <td>2010/07/14</td>
-                              <td>$86,500</td>
-                          </tr><tr class="group"><td colspan="5">Sidney</td></tr><tr role="row" class="even">
-                              <td>Doris Wilder</td>
-                              <td>Sales Assistant</td>
-                              
-                              <td>23</td>
-                              <td>2010/09/20</td>
-                              <td>$85,600</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Michelle House</td>
-                              <td>Integration Specialist</td>
-                              
-                              <td>37</td>
-                              <td>2011/06/02</td>
-                              <td>$95,400</td>
-                          </tr><tr class="group"><td colspan="5">Singapore</td></tr><tr role="row" class="even">
-                              <td>Jennifer Chang</td>
-                              <td>Regional Director</td>
-                              
-                              <td>28</td>
-                              <td>2010/11/14</td>
-                              <td>$357,650</td>
-                          </tr><tr role="row" class="odd">
-                              <td>Olivia Liang</td>
-                              <td>Support Engineer</td>
-                              
-                              <td>64</td>
-                              <td>2011/02/03</td>
-                              <td>$234,500</td>
-                          </tr></tbody>
-                  </table><div class="dataTables_info" id="data-table-row-grouping_info" role="status" aria-live="polite">Showing 26 to 50 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="data-table-row-grouping_paginate"><a class="paginate_button previous" aria-controls="data-table-row-grouping" data-dt-idx="0" tabindex="0" id="data-table-row-grouping_previous">Previous</a><span><a class="paginate_button " aria-controls="data-table-row-grouping" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button current" aria-controls="data-table-row-grouping" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="data-table-row-grouping" data-dt-idx="3" tabindex="0">3</a></span><a class="paginate_button next" aria-controls="data-table-row-grouping" data-dt-idx="4" tabindex="0" id="data-table-row-grouping_next">Next</a></div></div>
-                </div>
-              </div>
-            </div>
+       
         <!-- -->
         <!-- Floating Action Button -->
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
@@ -769,6 +516,11 @@
 <script type="text/javascript" src="js/scroller.js"></script>
 <!-- Sticky Scroll plugin -->
 <script type="text/javascript" src="js/jquery.sticky.js"></script> 
+<!-- Data-table  plugin -->
+<script type="text/javascript" src="js/data-tables/js/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="js/data-tables/data-tables-script.js"></script> 
+
+<script type="text/javascript" src="js/plugins.js"></script>
 
 <script type="text/javascript">
 // Initialize collapse button
@@ -800,5 +552,6 @@ var $document_body = $('.card-reveal');
 $document_body.scrollator();
 });
 /**************************/
+
 </script>
 </body></html>
