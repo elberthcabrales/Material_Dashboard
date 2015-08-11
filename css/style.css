@@ -1661,7 +1661,12 @@ footer.page-footer {
 .top_margin{
 	margin-top:10px;
 }
-/*******************************************/
 #left_padding_img{
 	padding-left:30%;
 }
+/*************deleted******************************/
+.deleted{
+	background-color:#F99;
+	background-image:;
+}
+/******************************/
