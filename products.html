@@ -179,7 +179,6 @@
       </div>
       <div id="test1" class="container">
         <div id="dashboard">
-        
           <div id="toggle_view">
        <div class="row">
        <div class="col s12 m12 l12">
@@ -279,67 +278,86 @@
       </div>
       <div id="test2" class="container">
         <div id="dashboard">
-        <div class="row">
-        <div class="col s12 m3 l3">
-              <div class="card grey">
-                <div class="card-image waves-effect waves-block waves-light"> 
-                <img class="activator img-responsive" src="img/app5.png"> 
-               </div>
-                <div class="card-content"><span class="card-title activator grey-text text-darken-4">Product_Name 
-                <i class="material-icons right">more_vert</i></span>
-                  <p><a class="lime-text" href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Product_Name  
-                <i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  <a class="btn-flat lime waves-effect waves-light btn-small top_margin">
-                  <i class="mdi mdi-recycle"></i></a>
-                  <a class="btn-flat red waves-effect waves-light btn-small top_margin">
-                  <i class="material-icons">delete</i></a>
-                </div>
+          <div id="toggle_view">
+       <div class="row">
+       <div class="col s12 m12 l12">
+       <div class="card">
+       <div class="card-content">
+              <span class="card-title lime-text">Trash Table</span>
+              <a class="btn lime tooltipped btn-flat waves-effect waves-light right" data-position="bottom" data-delay="50" data-tooltip="Clear Trash">
+        <i class="mdi mdi-window-close"></i> Clear All</a>
+                <table id="product_table" class="responsive-table striped hoverable">
+                <thead>
+                  <tr>
+                      <th data-field="id">No</th>
+                      <th data-field="img">Picture</th>
+                      <th data-field="name">Name</th>
+                      <th data-field="item_name">Item Name</th>
+                      <th data-field="price">Item Price</th>
+                      <th data-field="total">Item Qty</th>
+                      <th data-field="status">Options</th>
+                  </tr>
+                </thead>
+                  <tbody><tr>
+                    <td>1</td>
+                    <td><img src="img/app1.jpg" width="120" height="80" class="responsive-img"></td>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td>$1.87</td>
+                    <td>
+                    <a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
+        <i class="mdi mdi-recycle"></i></a>
+        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
+        <i class="mdi mdi-delete"></i></a>
+        </td>
+                  </tr>
+                  <tr>
+                  <td>2</td>
+                    <td><img src="img/app2.png" width="120" height="80" class="responsive-img"></td>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                    <td>$10.87</td>
+                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
+        <i class="mdi mdi-recycle"></i></a>
+        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
+        <i class="mdi mdi-delete"></i></a></td>
+                  </tr>
+                  <tr>
+                  <td>3</td>
+                    <td><img src="img/app3.png" width="120" height="80" class="responsive-img"></td>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                    <td>$12.87</td>
+                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
+        <i class="mdi mdi-recycle"></i></a>
+        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
+        <i class="mdi mdi-delete"></i></a></td>
+                  </tr>
+                  <tr>
+                  <td>4</td>
+                    <td><img src="img/app4.jpg" width="120" height="80" class="responsive-img"></td>
+                    <td>Shannon</td>
+                    <td>KitKat</td>
+                    <td>$9.99</td>
+                    <td>$14.87</td>
+                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
+        <i class="mdi mdi-recycle"></i></a>
+        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
+        <i class="mdi mdi-delete"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
               </div>
             </div>
-            <div class="col s12 m3 l3">
-              <div id="deleted" class="card grey">
-                <div class="card-image waves-effect waves-block waves-light"> 
-                <img class="activator img-responsive" src="img/app1.jpg"> 
-               </div>
-                <div class="card-content"><span class="card-title activator grey-text text-darken-4">Product_Name 
-                <i class="material-icons right">more_vert</i></span>
-                  <p><a class="lime-text" href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Product_Name  
-                <i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  <a class="btn-flat lime waves-effect waves-light btn-small top_margin">
-                  <i class="mdi mdi-recycle"></i></a>
-                  <a class="btn-flat red waves-effect waves-light btn-small top_margin">
-                  <i class="material-icons">delete</i></a>
-                </div>
-              </div>
             </div>
-            <div class="col s12 m3 l3">
-              <div id="deleted" class="card grey">
-                <div class="card-image waves-effect waves-block waves-light"> 
-                <img class="activator img-responsive" src="img/app3.png"> 
-               </div>
-                <div class="card-content"><span class="card-title activator grey-text text-darken-4">Product_Name 
-                <i class="material-icons right">more_vert</i></span>
-                  <p><a class="lime-text" href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Product_Name  
-                <i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  <a class="btn-flat lime waves-effect waves-light btn-small top_margin">
-                  <i class="mdi mdi-recycle"></i></a>
-                  <a class="btn-flat red waves-effect waves-light btn-small top_margin">
-                  <i class="material-icons">delete</i></a>
-                </div>
-              </div>
-            </div>
-        </div>          
+          </div>
+          </div>
         </div>
-        
+        <!-- -->
+        <!-- -->
         <!-- Floating Action Button -->
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
         <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
