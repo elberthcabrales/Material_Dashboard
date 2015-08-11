@@ -123,7 +123,7 @@ $(window).load(function () {
 				$thisScrollatorLaneHolder.css('opacity', 1);
 				timerVisibility = setTimeout(function () {
 					$thisScrollatorLaneHolder.css('opacity', 0);
-				}, 1500);
+				}, 300);
 			} else {
 				$thisScrollatorLaneHolder.css('opacity', 0);
 			}
