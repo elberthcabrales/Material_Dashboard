@@ -382,7 +382,18 @@
        <div class="col s12 m12 l12">
        <div class="card">
        <div class="card-content">
-              <span class="card-title lime-text">Products Table<i class="material-icons right">search</i></span>
+              <span class="card-title lime-text">Products Table
+              <a class="btn lime tooltipped btn-flat waves-effect waves-light right" data-position="bottom" data-delay="50" data-tooltip="Search">
+        <i class="material-icons">search</i></a>
+              <div class="col s3 m3 l3 right">
+                <select>
+                  <option value="" disabled selected>Choose no. of rows</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+            </div>
+              </span>
                 <table class="responsive-table striped hoverable">
                 <thead>
                   <tr>
@@ -624,6 +635,9 @@ var $document_body = $('.card-reveal');
 $document_body.scrollator();
 });
 /**************************/
-
+$(document).ready(function() {
+    $('select').material_select();
+  });
+/*********************/
 </script>
 </body></html>
