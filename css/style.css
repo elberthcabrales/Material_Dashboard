@@ -1664,4 +1664,8 @@ footer.page-footer {
 #left_padding_img{
 	padding-left:30%;
 }
-/******************************/
+/**********Table hover color********************/
+table.hoverable tbody tr:hover {
+    background-color: #DAE66C;
+}
+/*******************************************/
