@@ -20,6 +20,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="css/scroller.css"/>
 <link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
+<!-- Editor-->
 <!-- mdi icons cdn-->
 <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
 
@@ -178,8 +179,8 @@
           <label for="product_name">Product Name</label>
         </div>
         <div class="input-field col s12">
-          <input id="product_name" type="text" class="validate">
-          <label for="product_name">Product Name</label>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Description</label>
         </div>
             </div>
           </div>
@@ -224,49 +225,6 @@
   </div>
 </div>
 <!-- //////////////////////////////////////////////////////////////////////////// --> 
-
-<!-- Modal Structure -->
-  <div id="add_modal" class="modal">
-    <div class="modal-content">
-      <div id="add_modal" class="row">
-      <span class="card-title" style="font-size:24px;">Add Products Wizard</span>
-    <form class="col s12" action="#" method="POST">
-      <div class="row">
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="product_name">
-          <label for="product_name">Product Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="item_name">
-          <label for="item_name">Item Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="price">
-          <label for="price">Item Price</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="quantity">
-          <label for="quantity">Quantity</label>
-        </div>
-        <div class="file-field input-field col s12">
-      <input type="text" required class="file-path validate"/>
-      <div class="btn grey">
-        <span>File</span>
-        <input type="file" />
-      </div>
-    </div>
-      </div>
-      <div class="modal-footer">
-    <div id="modal_btn">
-      <button type="submit" class="modal-action waves-effect waves-light btn-flat lime left">Add</button>
-      <button class="modal-action  modal-close waves-effect waves-light btn-flat red right">Close</button>
-       <button type="reset" class="modal-action waves-effect waves-light btn-flat orange">Clear</button>
-    </form>
-    </div></div>
-  </div>
-    </div>
-  </div>
-<!--modal end -->  
 <!-- START FOOTER -->
 <footer class="page-footer lime">
   <div class="container"> 
@@ -299,6 +257,7 @@
 <script type="text/javascript" src="js/jquery.steps.js"></script>
 <!-- Dropzone-->
 <script src="js/dropzone.js"></script>
+<!-- Editor-->
 
 <script type="text/javascript" src="js/plugins.js"></script>
 
