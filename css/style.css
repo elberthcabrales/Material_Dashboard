@@ -1669,3 +1669,7 @@ table.hoverable tbody tr:hover {
     background-color: #E6EE9D;
 }
 /*****************Modal**************************/
+#modal_btn > button.modal-action {
+	margin-right:10px;
+}
+/*******************************************
