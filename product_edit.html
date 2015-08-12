@@ -153,7 +153,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Products</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Products / {{Product.Name}}</h5>
               <ol class="breadcrumb">
                 <li><a class="active" href="#">Products Store</a></li>
                 <li><a class="lime-text" href="products.html"> Products</a></li>
@@ -163,209 +163,43 @@
         </div>
       </div>
       <!--breadcrumbs end-->
-      <div id="breadcrumbs-wrapper" style="z-index:998;" class="sticker blue-grey shadow_bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m9 l10">
-              <ul class="tabs blue-grey">
-                <li class="tab col s6 waves-effect waves-light"> 
-                <a class="active lime-text dotted" href="#test1"><i class="mdi-maps-local-mall"></i> All Products</a></li>
-                 <li class="tab col s6 waves-effect waves-light"> 
-                <a class="lime-text dotted" href="#test2"><i class="mdi mdi-recycle"></i> Product Trash</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div id="test1" class="container">
         <div id="dashboard">
+       <div class="row">
+       
+       <div class="col s12 m6 l8">
+       <div class="col s12">
+          <div class="card grey lighten-1">
+            <div class="card-content white-text">
+              <span class="card-title">Basic Info</span>
+              <div class="input-field col s12">
+          <input id="product_name" type="text" class="validate">
+          <label for="product_name">Product Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="product_name" type="text" class="validate">
+          <label for="product_name">Product Name</label>
+        </div>
+            </div>
+          </div>
+        </div>
+       </div>
         
-        <div class="row">
-       <div class="col s12 m12 l12">
+        <div class="col s12 m6 l4">
         <div class="card grey lighten-1">
-            <div class="card-content">
-              <span class="card-title lime-text">
-               <i class="mdi mdi-cart"></i>Add Products</span>
-              <a class="btn lime tooltipped btn-flat waves-effect waves-light modal-trigger right" data-position="bottom" data-delay="50" data-tooltip="Add New Products" href="#add_modal">
-        <i class="mdi mdi-cart"></i> Add</a>
-        <p>Add your products, attach photos and update product info from here.</p>
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
             </div>
           </div>
-        </div>
         </div>
         
-       <div class="row">
-       <div class="col s12 m12 l12">
-       <div class="card">
-       <div class="card-content">
-              <span class="card-title lime-text">Products Table</span>
-                <table id="product_table" class="responsive-table striped hoverable">
-                <thead>
-                  <tr>
-                      <th data-field="id">No</th>
-                      <th data-field="img">Picture</th>
-                      <th data-field="name">Name</th>
-                      <th data-field="item_name">Item Name</th>
-                      <th data-field="price">Item Price</th>
-                      <th data-field="total">Item Qty</th>
-                      <th data-field="status">Options</th>
-                  </tr>
-                </thead>
-                  <tbody><tr>
-                    <td>1</td>
-                    <td><img src="img/app1.jpg" width="120" height="80" class="responsive-img"></td>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                    <td>$1.87</td>
-                    <td>
-                    <a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a>
-        </td>
-                  </tr>
-                  <tr>
-                  <td>2</td>
-                    <td><img src="img/app2.png" width="120" height="80" class="responsive-img"></td>
-                    <td>Alan</td>
-                    <td>Jellybean</td>
-                    <td>$3.76</td>
-                    <td>$10.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>3</td>
-                    <td><img src="img/app3.png" width="120" height="80" class="responsive-img"></td>
-                    <td>Jonathan</td>
-                    <td>Lollipop</td>
-                    <td>$7.00</td>
-                    <td>$12.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>4</td>
-                    <td><img src="img/app4.jpg" width="120" height="80" class="responsive-img"></td>
-                    <td>Shannon</td>
-                    <td>KitKat</td>
-                    <td>$9.99</td>
-                    <td>$14.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- -->
-        <!-- -->
-        <!-- Floating Action Button -->
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
-        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
-        <i class="large mdi-editor-mode-edit"></i> </a>
-          <ul>
-            <li><a href="css-helpers.html" class="btn-floating red"> 
-            <i class="large mdi-communication-live-help"></i></a></li>
-            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> 
-            <i class="large mdi-device-now-widgets"></i></a></li>
-            <li><a href="app-calendar.html" class="btn-floating green"> 
-            <i class="large mdi-editor-insert-invitation"></i></a></li>
-            <li><a href="app-email.html" class="btn-floating blue"> 
-            <i class="large mdi-communication-email"></i></a></li>
-          </ul>
-        </div>
-        <!-- Floating Action Button ends--> 
-      </div>
-      <div id="test2" class="container">
-        <div id="dashboard">
-          <div id="toggle_view">
-       <div class="row">
-       <div class="col s12 m12 l12">
-       <div class="card">
-       <div class="card-content">
-              <span class="card-title lime-text">Trash Table</span>
-              <a class="btn lime tooltipped btn-flat waves-effect waves-light right" data-position="bottom" data-delay="50" data-tooltip="Clear Trash">
-        <i class="mdi mdi-window-close"></i> Clear All</a>
-                <table id="product_table" class="responsive-table striped hoverable">
-                <thead>
-                  <tr>
-                      <th data-field="id">No</th>
-                      <th data-field="img">Picture</th>
-                      <th data-field="name">Name</th>
-                      <th data-field="item_name">Item Name</th>
-                      <th data-field="price">Item Price</th>
-                      <th data-field="total">Item Qty</th>
-                      <th data-field="status">Options</th>
-                  </tr>
-                </thead>
-                  <tbody><tr>
-                    <td>1</td>
-                    <td><img src="img/app1.jpg" width="120" height="80" class="responsive-img"></td>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                    <td>$1.87</td>
-                    <td>
-                    <a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
-        <i class="mdi mdi-recycle"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
-        <i class="mdi mdi-delete"></i></a>
-        </td>
-                  </tr>
-                  <tr>
-                  <td>2</td>
-                    <td><img src="img/app2.png" width="120" height="80" class="responsive-img"></td>
-                    <td>Alan</td>
-                    <td>Jellybean</td>
-                    <td>$3.76</td>
-                    <td>$10.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
-        <i class="mdi mdi-recycle"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>3</td>
-                    <td><img src="img/app3.png" width="120" height="80" class="responsive-img"></td>
-                    <td>Jonathan</td>
-                    <td>Lollipop</td>
-                    <td>$7.00</td>
-                    <td>$12.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
-        <i class="mdi mdi-recycle"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>4</td>
-                    <td><img src="img/app4.jpg" width="120" height="80" class="responsive-img"></td>
-                    <td>Shannon</td>
-                    <td>KitKat</td>
-                    <td>$9.99</td>
-                    <td>$14.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Undo">
-        <i class="mdi mdi-recycle"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete permanently">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-            </div>
-            </div>
-          </div>
-          </div>
         </div>
         <!-- -->
         <!-- -->
