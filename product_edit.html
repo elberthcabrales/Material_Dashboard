@@ -22,7 +22,9 @@
 <link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
 <!-- WYSIWYG Editor-->
 <link type="text/css" rel="stylesheet" href="css/trumbowyg.css"/>
-
+<!-- Filer Editor-->
+<link type="text/css" rel="stylesheet" href="css/jquery.filer.css"/>
+<link type="text/css" rel="stylesheet" href="css/jquery.filer-theme.css"/>
 <!-- mdi icons cdn-->
 <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
 
@@ -223,10 +225,13 @@
 <div id="image_upload" class="modal">
     <div class="modal-content">
       <h4>Upoad images here</h4>
-      <p>A bunch of text</p>
+              <form action="" method="POST" enctype="multipart/form-data">
+            <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
+            <input type="submit" class="btn-flat lime">
+        </form>
     </div>
     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a>
     </div>
   </div>
 <!--///////////////////////////////////////////////////////////////////////////// --> 
@@ -263,7 +268,9 @@
 <script src="js/trumbowyg.js"></script> 
 <!-- Packery-->
 <script src="js/packery.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/draggabilly/1.2.0/draggabilly.pkgd.js"></script>
+<!-- Filer-->
+<script src="js/jquery.filer.js"></script>
+<script src="js/filer.js"></script>
 <!-- Plugin init-->
 <script type="text/javascript" src="js/plugins.js"></script> 
 
