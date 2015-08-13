@@ -20,6 +20,8 @@
 <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="css/scroller.css"/>
 <link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
+<link type="text/css" rel="stylesheet" href="css/trumbowyg.css"/>
+
 <!-- mdi icons cdn-->
 <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
 
@@ -31,193 +33,164 @@
 
 <header>
   <div class="navbar-fixed">
-    <nav id="navbar" class="lime"> 
-    <a href="#" data-activates="slide-out" class="button-collapse"> 
-    <i class="material-icons">menu</i>
-    </a>
-      <div class="nav-wrapper"> 
-      <a href="#" class="brand-logo">CodeLarva</a>
+    <nav id="navbar" class="lime"> <a href="#" data-activates="slide-out" class="button-collapse"> <i class="material-icons">menu</i> </a>
+      <div class="nav-wrapper"> <a href="#" class="brand-logo">CodeLarva</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="search-out">
             <input type="text" class="search-out-text">
           </li>
-          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> 
-          <i class="mdi-action-search"></i>
-          </a> </li>
-          <li> <a href="#" class="waves-effect waves-light"> 
-          <i class="mdi-action-store"></i>
-          </a> </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> <i class="mdi-action-search"></i> </a> </li>
+          <li> <a href="#" class="waves-effect waves-light"> <i class="mdi-action-store"></i> </a> </li>
         </ul>
       </div>
     </nav>
   </div>
 </header>
 <div id="main">
-  <div class="wrapper">
-    <aside id="left-sidebar-nav">
-      <ul id="slide-out" class="side-nav fixed">
-        <li class="user-details lime darken-2">
-          <div class="row">
-            <div class="col col s4 m4 l4"> 
-            <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> 
-            </div>
-            <div class="col s8 m8 l8" style="top:57">
-              <ul id="profile-dropdown" class="dropdown-content">
-                <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
-                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
-                <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a> </li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
-                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+<div class="wrapper">
+  <aside id="left-sidebar-nav">
+    <ul id="slide-out" class="side-nav fixed">
+      <li class="user-details lime darken-2">
+        <div class="row">
+          <div class="col col s4 m4 l4"> <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
+          <div class="col s8 m8 l8" style="top:57">
+            <ul id="profile-dropdown" class="dropdown-content">
+              <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
+              <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
+              <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a> </li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
+              <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+            </ul>
+            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep <i class="mdi-navigation-arrow-drop-down right"></i></a>
+            <p class="user-roal">Administrator</p>
+          </div>
+        </div>
+      </li>
+      <li class="active lime lighten-2"> <a class="waves-effect waves-light" href="dashboard.html"> <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="waves-effect waves-cyan" href="#!"> <i class="mdi-action-store"></i> StoreFront</a></li>
+          <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"> <i class="mdi-action-bookmark"></i> Orders <span class="new badge"></span></a> </li>
+          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"> <i class="mdi-maps-local-mall"></i> Products Store</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="products.html">Products</a> </li>
+                <li><a href="#">Inventory</a> </li>
+                <li><a href="#">Shelving</a> </li>
+                <li><a href="#">Gift Cards & Coupons</a> </li>
               </ul>
-              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep
-              <i class="mdi-navigation-arrow-drop-down right"></i></a>
-              <p class="user-roal">Administrator</p>
             </div>
-          </div>
-        </li>
-        <li class="active lime lighten-2"> 
-        <a class="waves-effect waves-light" href="dashboard.html"> 
-        <i class="mdi-action-dashboard"></i> Dashboard</a></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li><a class="waves-effect waves-cyan" href="#!">
-            <i class="mdi-action-store"></i> StoreFront</a></li>
-            <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"> 
-            <i class="mdi-action-bookmark"></i> Orders <span class="new badge"></span></a> </li>
-            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan">
-            <i class="mdi-maps-local-mall"></i> Products Store</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="products.html">Products</a> </li>
-                  <li><a href="#">Inventory</a> </li>
-                  <li><a href="#">Shelving</a> </li>
-                  <li><a href="#">Gift Cards & Coupons</a> </li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"> 
-            <i class="mdi-social-people-outline"></i> Customers</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="form-elements.html">Form Elements</a> </li>
-                  <li><a href="form-layouts.html">Form Layouts</a> </li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
-            <i class="mdi-notification-mms"></i> Reports</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="index.html">Login</a> </li>
-                  <li><a href="register.html">Register</a> </li>
-                  <li><a href="lock.html">Lock Screen</a> </li>
-                  <li><a href="page-invoice.html">Invoice</a> </li>
-                  <li><a href="page-404.html">404</a> </li>
-                  <li><a href="page-500.html">500</a> </li>
-                  <li><a href="page-blank.html">Blank</a> </li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
-            <i class="mdi mdi-chart-areaspline"></i> Analytics</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="charts-chartjs.html">Chart JS</a> </li>
-                  <li><a href="charts-chartist.html">Chartist</a> </li>
-                  <li><a href="charts-morris.html">Morris Charts</a> </li>
-                  <li><a href="charts-xcharts.html">xCharts</a> </li>
-                  <li><a href="charts-flotcharts.html">Flot Charts</a> </li>
-                  <li><a href="charts-sparklines.html">Sparkline Charts</a> </li>
-                </ul>
-              </div>
-            </li>
-            <hr>
-            <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
-            <i class="mdi-action-shop"></i>Apps & Extentions</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="app_store.html">App Store</a> </li>
-                  <li><a href="installed_apps.html">Installed Apps</a> </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </aside>
-    <section id="content"> 
-      <!--breadcrumbs start-->
-      <div id="breadcrumbs-wrapper" class="grey lighten-3">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Products / {{Product.Name}}</h5>
-              <ol class="breadcrumb">
-                <li><a class="active" href="#">Products Store</a></li>
-                <li><a class="lime-text" href="products.html"> Products</a></li>
-              </ol>
+          </li>
+          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"> <i class="mdi-social-people-outline"></i> Customers</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="form-elements.html">Form Elements</a> </li>
+                <li><a href="form-layouts.html">Form Layouts</a> </li>
+              </ul>
             </div>
-          </div>
+          </li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> <i class="mdi-notification-mms"></i> Reports</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="index.html">Login</a> </li>
+                <li><a href="register.html">Register</a> </li>
+                <li><a href="lock.html">Lock Screen</a> </li>
+                <li><a href="page-invoice.html">Invoice</a> </li>
+                <li><a href="page-404.html">404</a> </li>
+                <li><a href="page-500.html">500</a> </li>
+                <li><a href="page-blank.html">Blank</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> <i class="mdi mdi-chart-areaspline"></i> Analytics</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="charts-chartjs.html">Chart JS</a> </li>
+                <li><a href="charts-chartist.html">Chartist</a> </li>
+                <li><a href="charts-morris.html">Morris Charts</a> </li>
+                <li><a href="charts-xcharts.html">xCharts</a> </li>
+                <li><a href="charts-flotcharts.html">Flot Charts</a> </li>
+                <li><a href="charts-sparklines.html">Sparkline Charts</a> </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> <i class="mdi-action-shop"></i>Apps & Extentions</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="app_store.html">App Store</a> </li>
+                <li><a href="installed_apps.html">Installed Apps</a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <section id="content">
+  <!--breadcrumbs start-->
+  <div id="breadcrumbs-wrapper" class="grey lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Products / {{Product.Name}}</h5>
+          <ol class="breadcrumb">
+            <li><a class="active" href="#">Products Store</a></li>
+            <li><a class="lime-text" href="products.html"> Products</a></li>
+          </ol>
         </div>
       </div>
-      <!--breadcrumbs end-->
-      
-      <div id="test1" class="container">
-        <div id="dashboard">
-       <div class="row">
-       
-       <div class="col s12 m6 l8">
-       <div class="col s12">
-          <div class="card grey lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">Basic Info</span>
-              <div class="input-field col s12">
-          <input id="product_name" type="text" class="validate">
-          <label for="product_name">Product Name</label>
-        </div>
-        <div id="summernote">
-        </div>
-            </div>
+    </div>
+  </div>
+  <!--breadcrumbs end-->
+  
+  <div id="test1" class="container">
+    <div id="dashboard">
+      <div class="row">
+        <div class="col s12 m6 l8">
+          <div class="col s12">
+            <div class="card grey lighten-1">
+              <div class="card-content white-text"> <span class="card-title">Basic Info</span>
+                <div class="input-field col s12">
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="col s12">
+            <div class="card grey lighten-1">
+              <div class="card-content white-text">
+                <div id="trumbowyg" class="input-field col s12"> </div>
+              </div>
+             </div>
           </div>
         </div>
-       </div>
-        
         <div class="col s12 m6 l4">
-        <div class="card grey lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
+          <div class="card grey lighten-1">
+            <div class="card-content white-text"> <span class="card-title">Card Title</span>
               <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+                I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
+            <div class="card-action"> <a href="#">This is a link</a> <a href="#">This is a link</a> </div>
           </div>
         </div>
-        
-        </div>
-        <!-- -->
-        <!-- -->
-        <!-- Floating Action Button -->
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
-        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
-        <i class="large mdi-editor-mode-edit"></i> </a>
-          <ul>
-            <li><a href="css-helpers.html" class="btn-floating red"> 
-            <i class="large mdi-communication-live-help"></i></a></li>
-            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> 
-            <i class="large mdi-device-now-widgets"></i></a></li>
-            <li><a href="app-calendar.html" class="btn-floating green"> 
-            <i class="large mdi-editor-insert-invitation"></i></a></li>
-            <li><a href="app-email.html" class="btn-floating blue"> 
-            <i class="large mdi-communication-email"></i></a></li>
-          </ul>
-        </div>
-        <!-- Floating Action Button ends--> 
       </div>
+      <!-- --> 
+      <!-- --> 
+      <!-- Floating Action Button -->
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a class="btn-floating btn-large blue-grey waves-effect waves-light"> <i class="large mdi-editor-mode-edit"></i> </a>
+        <ul>
+          <li><a href="css-helpers.html" class="btn-floating red"> <i class="large mdi-communication-live-help"></i></a></li>
+          <li><a href="app-widget.html" class="btn-floating yellow darken-1"> <i class="large mdi-device-now-widgets"></i></a></li>
+          <li><a href="app-calendar.html" class="btn-floating green"> <i class="large mdi-editor-insert-invitation"></i></a></li>
+          <li><a href="app-email.html" class="btn-floating blue"> <i class="large mdi-communication-email"></i></a></li>
+        </ul>
+      </div>
+      <!-- Floating Action Button ends--> 
+    </div>
     </section>
   </div>
 </div>
@@ -228,10 +201,7 @@
     <!-- ////////////////////////// --> 
   </div>
   <div class="footer-copyright">
-    <div class="container"> 
-    <a class="grey-text text-lighten-4" href="#" target="_blank">StoreFront</a> 
-    <span class="right">Copyright © 2015 
-    <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved.</span> </div>
+    <div class="container"> <a class="grey-text text-lighten-4" href="#" target="_blank">StoreFront</a> <span class="right">Copyright © 2015 <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved.</span> </div>
   </div>
 </footer>
 <!-- END FOOTER --> 
@@ -247,16 +217,15 @@
 <script type="text/javascript" src="js/jquery.nicescroll.js"></script> 
 <script type="text/javascript" src="js/nicescroll.js"></script> 
 <!-- CustomSscroll--> 
-<script type="text/javascript" src="js/scroller.js"></script>
-<!-- Sticky Scroll plugin -->
-<script type="text/javascript" src="js/jquery.sticky.js"></script>
-<!-- Steps plugin -->
-<script type="text/javascript" src="js/jquery.steps.js"></script>
-<!-- Dropzone-->
-<script src="js/dropzone.js"></script>
-
-<script type="text/javascript" src="js/plugins.js"></script>
-
+<script type="text/javascript" src="js/scroller.js"></script> 
+<!-- Sticky Scroll plugin --> 
+<script type="text/javascript" src="js/jquery.sticky.js"></script> 
+<!-- Steps plugin --> 
+<script type="text/javascript" src="js/jquery.steps.js"></script> 
+<!-- Dropzone--> 
+<script src="js/dropzone.js"></script> 
+<script src="js/trumbowyg.js"></script> 
+<script type="text/javascript" src="js/plugins.js"></script> 
 <script type="text/javascript">
 // Initialize collapse button
 $(".button-collapse").sideNav();
@@ -290,5 +259,24 @@ $document_body.scrollator();
 $(document).ready(function() {
     $('select').material_select();
   });
+/************WYSIWYG**************/
+$('#trumbowyg').trumbowyg({
+    fullscreenable: true,
+	mobile: true,
+	semantic: true,
+	autogrow: true,
+    tablet: true,
+    closable: false,
+    btns: ['viewHTML',
+      '|', 'formatting',
+      '|', 'btnGrp-design',
+      '|', 'link',
+       'insertImage',
+       'btnGrp-justify',
+      'btnGrp-lists',
+       'horizontalRule']
+});  
+/*****************************/
 </script>
-</body></html>
+</body>
+</html>
