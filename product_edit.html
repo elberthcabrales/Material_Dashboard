@@ -248,26 +248,25 @@
 <script type="text/javascript" src="js/scroller.js"></script> 
 <!-- Sticky Scroll plugin --> 
 <script type="text/javascript" src="js/jquery.sticky.js"></script> 
-<!-- Dropzone--> 
-<script src="js/dropzone.js"></script> 
 <!-- WYSIWYG Editor-->
 <script src="js/trumbowyg.js"></script> 
 <!-- Packery-->
 <script src="js/packery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/draggabilly/1.2.0/draggabilly.pkgd.js"></script>
 <!-- Plugin init-->
 <script type="text/javascript" src="js/plugins.js"></script> 
 
 <script type="text/javascript">
-// Initialize collapse button
-$(".button-collapse").sideNav();
+$(document).ready(function() {
+	$(".button-collapse").sideNav();
+    $('select').material_select();
+	$('.materialboxed').materialbox();
+	$('ul.tabs').tabs();
+  });
 // Initialize Scroller plugin
 $(function () {
 var $document_body = $('body');
 $document_body.scrollator();
-});
-// Tab init
-$(document).ready(function(){
-    $('ul.tabs').tabs();
 });
 //Sticky tabs
 $(document).ready(function(){
@@ -281,10 +280,6 @@ $(document).ready(function(){
 		$(".sticker").css("z-index",997);
 	}
 });
-/**************************/
-$(document).ready(function() {
-    $('select').material_select();
-  });
 /************WYSIWYG**************/
 $('#trumbowyg').trumbowyg({
     fullscreenable: true,
@@ -303,15 +298,12 @@ $('#trumbowyg').trumbowyg({
        'horizontalRule']
 });  
 /**************************************/
-$(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
-/************************************/
 var $container = $('div#grid');
 $container.packery({
   itemSelector: '#grid-item',
   gutter: 10
 });
+/************************************/
 </script>
 </body>
 </html>
