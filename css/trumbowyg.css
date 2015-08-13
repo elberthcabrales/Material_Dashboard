@@ -78,7 +78,7 @@
 .trumbowyg-button-pane {
   position: relative;
   width: 100%;
-  background: #ecf0f1;
+  background: #BDBDBD; /*#ecf0f1*/
   border-bottom: 1px solid #d7e0e2;
   margin: 0;
   padding: 0;
