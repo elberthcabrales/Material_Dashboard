@@ -234,7 +234,7 @@
               <hr class="divider">
               <div class="card-content"> 
                 <span class="card-title lime-text"> 
-                <i class="mdi mdi-package"></i> Shipping</span>
+                <i class="mdi mdi-truck"></i> Shipping</span>
                 <br>
 				<div class="row">
                 <div class="input-field col s6">
@@ -274,16 +274,16 @@
               <div class="card">
                 <div class="card-content"> 
                 <span class="card-title lime-text"> 
-                <i class="mdi mdi-information"></i> SEO Preview</span>
-                <a class="white-text waves-effect waves-light btn-flat grey right" id="add_seo">
-                <i class="mdi mdi-plus"></i>Edit SEO</a>
+                <i class="mdi mdi-earth"></i> SEO Preview</span>
+                <a class="white-text waves-effect waves-light btn-flat green right" id="add_seo">
+                <i class="mdi mdi-pencil-box"></i> Edit SEO</a>
                 <h5 class="blue-text">{{product.name}}</h5>
                 <h6 class="green-text">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}}?q=xxxxx</h6>
                 <h6 class="grey-text">{{product.description}}</h6>
-                  <div class="input-field col s12">
-                  
-                  </div>
                 </div>
+                <div id="seo_div" class="card-action grey lighten-3"> 
+                
+              </div>
               </div>
             </div>
           </div>
@@ -449,6 +449,17 @@ $(document).ready(function() {
     })
 	
 });
+/*************************************************/
+$(document).ready(function() {
+	$('input#page_title, input#url, textarea#meta').characterCounter();
+    var wrapper         = $("#seo_div"); 
+    var add_button      = $("#add_seo"); 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+            $(wrapper).append('<div class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" type="text" class="validate" length="40"><label for="url">URL Handle</label></div></div>'); 
+    });
+});
+/***********************************************************/
 </script>
 </body>
 </html>
