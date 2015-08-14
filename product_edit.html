@@ -203,7 +203,7 @@
                     <input type="text" required class="validate" id="compare_price">
                     <label for="compare_price">Compare Price</label>
                   </div>
-                  <div class="switch">
+                  <div class="switch col s6">
                   <label> Do not add Taxes
                     <input type="checkbox">
                     <span class="lever"></span> Add Taxes</label>
@@ -223,7 +223,7 @@
                     <input type="text" required class="validate" id="barcode">
                     <label for="barcode">Barcode</label>
                   </div>
-                  <div class="switch">
+                  <div class="switch col s6">
                   <label>Do not Track  
                     <input type="checkbox">
                     <span class="lever"></span> Track</label>
@@ -248,7 +248,7 @@
                   </select>
                 <label>Unit</label>
               </div>
-                  <div class="switch">
+                  <div class="switch col s6">
                   <label>No Shipping   
                     <input type="checkbox">
                     <span class="lever"></span> Requires Shipping</label>
@@ -420,12 +420,14 @@ $(document).ready(function() {
             x++; //text box increment
             $(wrapper).append('<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>'); //add input box
         }
+		
     });
-    
+	
     $(wrapper).on("click","#delete", function(e){ //user click on remove text
         e.preventDefault(); 
 		$(this).parent('div').remove(); x--;
     })
+	
 });
 </script>
 </body>
