@@ -160,7 +160,7 @@
                 <span class="card-title lime-text"> 
                 <i class="mdi mdi-information"></i> Basic Info</span>
                   <div class="input-field col s12">
-                    <input type="text" required class="validate" id="first_name">
+                    <input type="text" required class="validate" id="product_name">
                     <label for="product_name">Product Name</label>
                   </div>
                 </div>
@@ -289,7 +289,8 @@
           </div>
           <!-- Side Grid-->
           <div class="col s12 m6 l4">
-            <div class="card grey lighten-1">
+          <div class="col s12">
+          <div class="card grey lighten-1">
               <div class="card-content white-text"> <span class="card-title"> 
               <i class="mdi mdi-eye"></i> Visibility</span>
                 <p>Set the visibility of Item as online or offline.</p>
@@ -302,6 +303,21 @@
                     <span class="lever"></span> Online </label>
                 </div>
               </div>
+            </div>
+            <div class="card grey lighten-1">
+              <div class="card-content white-text"> <span class="card-title"> 
+              <i class="mdi mdi-arrange-bring-forward"></i> Organize</span>
+              <div class="input-field col s12">
+                <select class="lime-text">
+                  <option value="1" selected>Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+                <label class="grey-text">Product Type</label>
+              </div>
+              </div>
+            </div>
             </div>
           </div>
         </form>
@@ -456,7 +472,8 @@ $(document).ready(function() {
     var add_button      = $("#add_seo"); 
     $(add_button).click(function(e){ 
         e.preventDefault();
-            $(wrapper).append('<div class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" type="text" class="active validate" length="40"><label for="url">URL Handle</label></div></div>'); 
+            $(wrapper).append('<div class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div></div>'); 
+			add_button.hide();
     });
 });
 /***********************************************************/
