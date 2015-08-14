@@ -1708,9 +1708,6 @@ table.hoverable tbody tr:hover {
      color: #cddc39;
    }
 /****************Custom Switch**********************/
-/***************
-     Switch
-***************/
 .switch, .switch * {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1773,4 +1770,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 .switch label input[type=checkbox][disabled] + .lever:after, .switch label input[type=checkbox][disabled]:checked + .lever:after {
   background-color: #BDBDBD; }
-/**************************************************************/
+/****************************dropdown**********************************/
+.dropdown-content li > span {
+    font-size: 1.2rem;
+   color: #cddc39; 
+}
+/**************************/
