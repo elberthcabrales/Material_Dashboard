@@ -258,19 +258,10 @@
               <div class="card-content"> 
                 <span class="card-title lime-text"> 
                 <i class="mdi mdi-library-plus"></i> Variants</span>
-                <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#image_upload">
+                <a class="white-text waves-effect waves-light btn-flat lime right" id="add_variants">
                 <i class="mdi mdi-plus"></i>Add Variants</a>
-				<div class="card-action grey lighten-3"> 
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input id="option" type="text" class="validate">
-                      <label for="option">Option</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="value" type="text" class="validate">
-                      <label for="value">Value</label>
-                    </div>
-                </div>
+				<div id="variant_div" class="card-action"> 
+                
               </div>
               </div>
               </div>
@@ -324,7 +315,7 @@
   <div class="modal-content">
     <h4>Upoad images here</h4>
     <form action="" method="POST" enctype="multipart/form-data">
-      <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
+    <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
       <input type="submit" class="btn-flat lime">
     </form>
   </div>
@@ -417,6 +408,25 @@ $container.packery({
   gutter: 10
 });
 /************************************/
+$(document).ready(function() {
+    var max_fields      = 4; //maximum input boxes allowed
+    var wrapper         = $("#variant_div"); //Fields wrapper
+    var add_button      = $("#add_variants"); //Add button ID
+    
+    var x = 0; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click","#delete", function(e){ //user click on remove text
+        e.preventDefault(); 
+		$(this).parent('div').remove(); x--;
+    })
+});
 </script>
 </body>
 </html>
