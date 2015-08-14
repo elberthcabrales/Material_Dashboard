@@ -196,17 +196,38 @@
                 <br>
 				<div class="row">
                 <div class="input-field col s6">
-                    <input type="text" required class="validate" id="first_name">
+                    <input type="text" required class="validate" id="product_price">
                     <label for="product_price">Price</label>
                   </div>
                   <div class="input-field col s6">
-                    <input type="text" required class="validate" id="first_name">
+                    <input type="text" required class="validate" id="compare_price">
                     <label for="compare_price">Compare Price</label>
                   </div>
+                  <div class="switch">
+                  <label> Do not add Taxes
+                    <input type="checkbox">
+                    <span class="lever"></span> Add Taxes</label>
+                </div> 
+                </div>
+              </div>
+              <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-cash-usd"></i> Inventory</span>
+                <br>
+				<div class="row">
+                <div class="input-field col s6">
+                    <input type="text" required class="validate" id="stock_keeping_unit">
+                    <label for="stock_keeping_unit">Stock Keeping Unit</label>
+                  </div>
                   <div class="input-field col s6">
-                    <input type="checkbox" id="charge_tax" />
-      				<label for="charge_tax">Add Taxes for this product</label>
-                  </div> 
+                    <input type="text" required class="validate" id="barcode">
+                    <label for="barcode">Barcode</label>
+                  </div>
+                  <div class="switch">
+                  <label>Do not Track  
+                    <input type="checkbox">
+                    <span class="lever"></span> Track</label>
+                </div> 
                 </div>
               </div>
               </div>
