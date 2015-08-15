@@ -1778,8 +1778,4 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     font-size: 1.2rem;
    color: #cddc39; 
 }
-/***********************Image overlay**************************/
-.contenthover {
-
-}
 /*******************************************/
