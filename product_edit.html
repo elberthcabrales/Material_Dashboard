@@ -292,7 +292,7 @@
               </div>
             </div>
             <div class="col s12">
-              <div class="card">
+              <div id="scroll_seo" class="card">
                 <div class="card-content"> 
                 <span class="card-title lime-text"> 
                 <i class="mdi mdi-earth"></i> SEO Preview</span>
@@ -519,7 +519,8 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-           $(wrapper).append('<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>'); //add input box
+			var field_data = '<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>';
+			$(wrapper).append(field_data).slideDown('slow');
         }
 		
     });
@@ -537,7 +538,10 @@ $(document).ready(function() {
     var add_button      = $("#add_seo"); 
     $(add_button).click(function(e){ 
         e.preventDefault();
-            $(wrapper).append('<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>');
+		var data='<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>';
+		$(wrapper).append(data).hide().slideDown('slow');
+		
+	    //$(wrapper).append(data);
 			add_button.hide();
 		$('#close_seo').click(function(){
 		$('#rem').remove();
