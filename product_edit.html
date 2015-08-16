@@ -193,20 +193,16 @@
                 <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#image_upload">
                 <i class="mdi mdi-file-image"></i></a>
                   <div id="grid" class="row"> 
-                  <a class="modal-trigger" href="#image_edit">
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
-                  <a class="modal-trigger" href="#image_edit">
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"> </a>
-                  <a class="modal-trigger" href="#image_edit">
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app3.png"> </a>
-                  <a class="modal-trigger" href="#image_edit">
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
-                  <a class="modal-trigger" href="#image_edit">
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"></a>
-                  <a class="modal-trigger" href="#image_edit"> 
-                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"></a>
+                  <a id="img_option"><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app3.png"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"></a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"></a>
                   </div>
                 </div>
+                <div id="img_option_div" class="card-action grey lighten-3"> 
+              </div>
               </div>
             </div>
             <div class="col s12">
@@ -292,7 +288,7 @@
               </div>
             </div>
             <div class="col s12">
-              <div id="scroll_seo" class="card">
+              <div class="card">
                 <div class="card-content"> 
                 <span class="card-title lime-text"> 
                 <i class="mdi mdi-earth"></i> SEO Preview</span>
@@ -404,18 +400,6 @@
     <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
       <input type="submit" class="btn-flat lime">
     </form>
-  </div>
-  <div class="modal-footer"> 
-  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
-</div>
-<!-- Image Modal-->
-<div id="image_edit" class="modal">
-  <div class="modal-content">
-    <h5><i class="mdi mdi-image-area"></i> Edit images here</h5>
-    <hr class="divider"/>
-    <div class="row">
-    
-    </div>
   </div>
   <div class="modal-footer"> 
   <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
@@ -540,7 +524,7 @@ $(document).ready(function() {
         e.preventDefault();
 		var data='<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>';
 		$(wrapper).append(data).hide().slideDown('slow');
-		
+    	
 	    //$(wrapper).append(data);
 			add_button.hide();
 		$('#close_seo').click(function(){
@@ -551,6 +535,24 @@ $(document).ready(function() {
 	
 });
 /***********************************************************/
+$(document).ready(function() {
+    var wrapper         = $("#img_option_div"); 
+    var add_button      = $("#img_option"); 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+		var data='<div id="rem_img" class="row"><div class="col s12"><div class="col s12 m6 l6"><img id="preview" class="responsive-img" src="img/app1.jpg"></div><div class="col s12 m6 l6"><div class="row"><div class="input-field col s12"><input placeholder="img.title" id="title" type="text" class="validate"><label for="title" class="active">Image Title</label></div><div class="input-field col s12"><input placeholder="img.alt" id="img_alt" type="text" class="validate"><label for="img_alt" class="active">Image Alt</label></div></div></div><a id="del_img" class="btn-flat red left white-text">Delete</a><a id="close_img" class="btn-flat lime right white-text">Update</a></div>';
+		$(wrapper).append(data).hide().slideDown('slow');
+    	
+	    //$(wrapper).append(data);
+		//add_button.hide();
+		$('#close_img').click(function(){
+		$('#rem_img').remove();
+		add_button.show();
+		});
+    });
+	
+});
+/*********************************************************************/
 </script>
 </body>
 </html>
