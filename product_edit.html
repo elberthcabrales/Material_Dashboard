@@ -537,7 +537,7 @@ $(document).ready(function() {
     var add_button      = $("#add_seo"); 
     $(add_button).click(function(e){ 
         e.preventDefault();
-            $(wrapper).append('<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>').animate({ opacity: 1  }); 
+            $(wrapper).append('<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>');
 			add_button.hide();
 		$('#close_seo').click(function(){
 		$('#rem').remove();
