@@ -542,11 +542,14 @@ $(document).ready(function() {
         e.preventDefault();
 		var data='<div id="rem_img" class="row"><div class="col s12"><div class="col s12 m6 l6"><img id="preview" class="responsive-img" src="img/app1.jpg"></div><div class="col s12 m6 l6"><div class="row"><div class="input-field col s12"><input placeholder="img.title" id="title" type="text" class="validate"><label for="title" class="active">Image Title</label></div><div class="input-field col s12"><input placeholder="img.alt" id="img_alt" type="text" class="validate"><label for="img_alt" class="active">Image Alt</label></div></div></div><a id="del_img" class="btn-flat red left white-text">Delete</a><a id="close_img" class="btn-flat lime right white-text">Update</a></div>';
 		$(wrapper).append(data).hide().slideDown('slow');
-    	
+    	$('#img_option img').css({"border-bottom":"7px solid #cddc39","border-bottom-left-radius": "5px","border-bottom-right-radius": "5px"});
+		
 	    //$(wrapper).append(data);
 		//add_button.hide();
 		$('#close_img').click(function(){
 		$('#rem_img').remove();
+		$('#img_option img').css({"border-bottom":"","border-bottom-left-radius": "","border-bottom-right-radius": ""});
+		
 		add_button.show();
 		});
     });

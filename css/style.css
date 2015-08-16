@@ -1802,4 +1802,10 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .modal{
 	max-height:80%;
 }
-/**************************************/
+/********************Img select class******************/
+.selected{
+	border-bottom:7px solid #cddc39;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*******************************************************/
