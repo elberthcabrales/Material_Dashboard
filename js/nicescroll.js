@@ -7,7 +7,7 @@ $(document).ready(function() {
 }); 
 /****************Modal********************/
 $(document).ready(function() {  
-        $("#add_modal").niceScroll({
+        $("#image_edit").niceScroll({
 			cursorcolor:"#757575",
 			cursorborder: "1px solid #757575"
 			});
