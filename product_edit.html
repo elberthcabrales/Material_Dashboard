@@ -193,12 +193,12 @@
                 <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#image_upload">
                 <i class="mdi mdi-file-image"></i></a>
                   <div id="grid" class="row"> 
-                  <img id="grid-item" class="" width="200" src="img/app1.jpg"> 
-                  <img id="grid-item" class="" width="100" src="img/app2.png"> 
-                  <img id="grid-item" class="" width="100" src="img/app3.png"> 
-                  <img id="grid-item" class="" width="200" src="img/app1.jpg"> 
-                  <img id="grid-item" class="" width="200" src="img/app1.jpg"> 
-                  <img id="grid-item" class="" width="100" src="img/app2.png">
+                  <a class="modal-trigger" href="#image_edit"><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
+                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"> 
+                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app3.png"> 
+                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> 
+                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> 
+                  <img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png">
                   </div>
                 </div>
               </div>
@@ -398,6 +398,15 @@
     <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
       <input type="submit" class="btn-flat lime">
     </form>
+  </div>
+  <div class="modal-footer"> 
+  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
+</div>
+<!-- Image Modal-->
+<div id="image_edit" class="modal">
+  <div class="modal-content">
+    <h4>Upoad images here</h4>
+    
   </div>
   <div class="modal-footer"> 
   <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
