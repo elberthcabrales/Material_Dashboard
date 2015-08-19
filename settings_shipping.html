@@ -188,7 +188,20 @@
             <div class="col s12 m9 l9">
               <div class="card ">
                 <div class="card-content grey-text">
-                 <span class="card-title lime-text"> India</span>
+                 <span class="card-title lime-text"> India</span>&nbsp;- <a>remove</a>
+                 <a class="waves-effect waves-light btn-flat lime white-text right">Add Rates</a>
+                   <table class="responsive-table bordered striped hoverable">
+                  <tr>
+                    <td>Heavy Goods Shipping</td>
+                    <td>5.0 kg - 20.0 kg</td> 
+                    <td>Rs. 50.00</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Shipping</td>
+                    <td>0.0 kg - 5.0 kg</td> 
+                    <td>Rs. 10.00</td>
+                  </tr>
+                </table>
                 </div>
               </div>
             </div>
@@ -198,145 +211,18 @@
             <div class="col s12 m3 l3">
               <div class="card">
                 <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-comment-text-outline"></i> Field settings</span>
-                  <p>Choose if you want to prompt your customer to fill in certain optional fields. We recommend disabling the fields you don’t need.</p>
+                <span class="card-title lime-text"><i class="mdi mdi-truck"></i> Carrier calculated shipping</span>
+                  <p>Enable FedEx, UPS, USPS or other carriers to get real-time shipping rates for your customers.</p>
                 </div>
               </div>
             </div>
             <div class="col s12 m9 l9">
               <div class="card ">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">Full Name</span>
-                <p>
-                    <input class="with-gap" name="group2" type="radio" id="first_last_name" checked />
-                    <label for="first_last_name"><strong>Require First and Last Name</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group2" type="radio" id="first_name_only"  />
-                    <label for="first_name_only"><strong>Require First Name only</strong></label><br >
-                  </p>
+                <div class="card-content orange lighten-3 grey-text">
+                 <p>Your current plan doesn't support carrier-calculated shipping. If you want to enable real time shipping you need to upgrade your plan.</p>
                 </div>
-                <hr class="divider">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">Company Name</span>
-                <p>
-                    <input class="with-gap" name="group3" type="radio" id="hidden" checked />
-                    <label for="hidden"><strong>Hidden</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group3" type="radio" id="required"  />
-                    <label for="required"><strong>Required</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group3" type="radio" id="optional"  />
-                    <label for="optional"><strong>Optional</strong></label><br >
-                  </p>
-                </div>
-                <hr class="divider">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">Phone Number</span>
-                <p>
-                    <input class="with-gap" name="group5" type="radio" id="hidden_phone" checked />
-                    <label for="hidden_phone"><strong>Hidden</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group5" type="radio" id="required_phone"  />
-                    <label for="required_phone"><strong>Required</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group5" type="radio" id="optional_phone"  />
-                    <label for="optional_phone"><strong>Optional</strong></label><br >
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <hr class="divider">
-          <div class="row">
-            <div class="col s12 m3 l3">
-              <div class="card">
-                <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-book"></i> Order Processing</span>
-                  <p>Change how your store responds to checkout and order events. Learn about order processing.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m9 l9">
-              <div class="card ">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">While the customer is checking out</span>
-                <p>Use the billing address as the shipping address by default.</p>
-                <p>Reduces the number of fields required to check out. The shipping address can still be edited.</p>
-                <div class="switch">
-                    <label>
-                      No
-                      <input type="checkbox" checked>
-                      <span class="lever"></span>
-                      Yes
-                    </label>
-                  </div>
-                </div>
-                <hr class="divider">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">Collecting consent to send promotional emails to customers </span>
-                <p>
-                    <input class="with-gap" name="group6" type="radio" id="email_hidden" checked />
-                    <label for="email_hidden"><strong>Hidden</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group6" type="radio" id="email_required"  />
-                    <label for="email_required"><strong>Required</strong></label><br >
-                  </p>
-                  <p>
-                    <input class="with-gap" name="group6" type="radio" id="email_optional"  />
-                    <label for="email_optional"><strong>Optional</strong></label><br >
-                  </p>
-                </div>
-                <hr class="divider">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">After an order has been paid</span>
-                <p>Automatically fulfill the order's line items.</p>
-                <div class="switch">
-                    <label>
-                      No
-                      <input type="checkbox" checked>
-                      <span class="lever"></span>
-                      Yes
-                    </label>
-                  </div>
-                </div>
-                <hr class="divider">
-                <div class="card-content grey-text">
-                <span class="card-title lime-text">After an order has been fulfilled and paid</span>
-                <p> Automatically archive the order.</p>
-                <div class="switch">
-                    <label>
-                      No
-                      <input type="checkbox" checked>
-                      <span class="lever"></span>
-                      Yes
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="divider">
-          <div class="row">
-          <div class="col s12 m3 l3">
-              <div class="card">
-                <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-keyboard"></i> Language</span>
-                  <p>The language used on your store's checkout page.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m9 l9">
-              <div class="card ">
                 <div class="card-action">
-              <a class="lime-text">Your Store uses English(EN)</a>
-              <a class="btn-flat lime white-text waves-effect waves-light right bottom_margin" href="#">Change</a>
+              <a class="lime-text" href="#">Get more Carrier features from App Store</a>
             </div>
               </div>
             </div>
@@ -346,46 +232,25 @@
           <div class="col s12 m3 l3">
               <div class="card">
                 <div class="card-content grey-text"> 
-               <span class="card-title lime-text"><i class="mdi mdi-security"></i> Refund, privacy, and TOS statements</span>
-                  <p>These statements appear in the footer of your checkout page.
-You can generate these policies using a sample template. These sample templates are not legal advice and by using them you agree to this disclaimer.</p>
+                <span class="card-title lime-text"><i class="mdi mdi-pocket"></i>Fulfillment and dropshipping</span>
+                  <p>These services will fulfill or dropship your items for you — so you can avoid printing shipping labels yourself.</p>
                 </div>
               </div>
             </div>
-            <div class="col s12 m9 l9">
-              <div class="card">
-                <div class="card-content grey-text">
-              <span class="card-title lime-text">Refund policy</span>
-              <a class="lime right waves-effect waves-light btn-flat white-text">Generate Sample</a>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="check" class="materialize-textarea"></textarea>
-                  <label for="refund_policy">Refund Policy here</label>
+          <div class="col s12 m9 l9">
+              <div class="card white">
+              <div class="card-content">
+                <div class="row valign-wrapper">
+                  <div class="col s4 m2"> 
+                  <img src="img/pay.jpg" alt="" class="circle responsive-img valign"> </div>
+                  <div class="col s8 m10"> 
+                  <span class="lime-text card-title">Credit Cards</span><br>
+                  <span class="grey-text">Accept credit card payments during checkout by choosing a payment gateway. This can be used in conjunction with other payment solutions such as PayPal Express Checkout.</span> </div>
                 </div>
               </div>
-            </div>
-            <hr class="divider">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text">Privacy policy</span>
-              <a class="lime right waves-effect waves-light btn-flat white-text">Generate Sample</a>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="check" class="materialize-textarea"></textarea>
-                  <label for="privacy_policy">Privacy Policy here</label>
-                </div>
-              </div>
-            </div>
-            <hr class="divider">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text">Terms of service</span>
-              <a class="lime right waves-effect waves-light btn-flat white-text">Generate Sample</a>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="check" class="materialize-textarea"></textarea>
-                  <label for="terms_service">Terms of service here</label>
-                </div>
-              </div>
-            </div>
+              <div class="card-action">
+              
+            	</div>
               </div>
             </div>
           </div>
