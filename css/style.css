@@ -1912,4 +1912,24 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 [type="radio"]:disabled:not(:checked) + label:hover:before {
   border-color: rgba(0, 0, 0, 0.26); }
-  /*****************************************/
+/*********************************text area #checkout********************************/
+#check.materialize-textarea:focus + label {
+	   color: #cddc39;
+   }
+   #check.materialize-textarea:focus {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
+  #check.materialize-textarea:focus.valid {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
+  #check.materialize-textarea:valid {
+	border-bottom: 1px solid #cddc39;
+     /*box-shadow: 0 1px 0 0 #cddc39;*/
+   }
+   #check.materialize-textarea:focus.invalid {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
+/*/*****************************************************/   
