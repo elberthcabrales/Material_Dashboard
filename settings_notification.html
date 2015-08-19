@@ -161,10 +161,10 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi mdi-currency-usd"></i> Taxes</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-information"></i> Notifications</h5>
               <ol class="breadcrumb">
                 <li><a class="grey-text" href="#">Settings</a></li>
-                <li><a class="lime-text" href="settings_tax.html">Taxes</a></li>
+                <li><a class="lime-text" href="settings_notification.html">Notifications</a></li>
               </ol>
             </div>
           </div>
@@ -178,47 +178,8 @@
             <div class="col s12 m3 l3">
               <div class="card">
                 <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-currency-usd"></i> Tax settings</span>
-                  <p>Change the way Shopify calculates taxes on your store.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m9 l9">
-              <div class="card ">
-                <div class="card-content grey-text">
-               	 <div class="switch">
-                 <p><strong>All taxes are included in my prices </strong></p>
-                 <p>If the checkbox above is selected all taxes will be calculated using this formula: 
-					<p><strong>Tax = (Tax Rate * Price) / (1 + Tax Rate)</strong>. Example £1.00 at 20% VAT will be £0.17 (rounded).</p></p>
-                <label>
-                  No
-                  <input type="checkbox" checked>
-                  <span class="lever"></span>
-                  Yes
-                </label>
-              </div>
-              <hr class="divider">
-              <p><strong> Charge taxes on shipping rates (US shipping taxes automatically calculated.)</strong></p>
-              <div class="switch">
-                    <label>
-                      No
-                      <input type="checkbox">
-                      <span class="lever"></span>
-                      Yes
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="divider">
-          <div class="row">
-            <div class="col s12 m3 l3">
-              <div class="card">
-                <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-currency-usd"></i> Tax rates</span>
-                  <p>A list of all the tax rates for the countries you ship to. To add a country to this list, go to Shipping settings and click on Add a country.</p>
+                <span class="card-title lime-text"><i class="mdi mdi-file"></i> Email templates</span>
+                  <p>These emails are automatically sent out to either you or the customer. Click on the templates below to edit the template. See also the templates variables documentation.</p>
                 </div>
               </div>
             </div>
@@ -227,19 +188,33 @@
                 <div class="card-content grey-text">
                    <table class="responsive-table bordered striped hoverable">
                    <tr>
-                    <th>Destination</th>
-                    <th>Country Tax Rate</th> 
-                    <th>Sub-region</th>
+                    <th>Template</th>
+                    <th>Description</th> 
                   </tr>
                   <tr>
-                    <td>INDIA (IN)</td>
-                    <td>12%</td> 
-                    <td>36 States</td>
+                    <td><a>Contact Buyer</a></td>
+                    <td>Used as a default template for 'Email Buyer' emails</td> 
                   </tr>
                   <tr>
-                    <td> Rest</td>
-                    <td>0</td> 
-                    <td>0</td>
+                    <td><a>Customer Account Activation</a></td>
+                    <td>Sent to customer with information on how to activate their account</td> 
+                  </tr>
+                  <tr>
+                    <td><a>Customer Account Welcome</a></td>
+                    <td>Sent to customer when they activate their account</td> 
+                  </tr>
+                  <tr>
+                    <td><a>Customer Password Reset</a></td>
+                    <td>Sent to customer when they wish to reset their password</td> 
+                  </tr>
+                  <tr>
+                    <td><a>Draft Order Invoice</a></td>
+                    <td>Used as a default template for draft order invoices</td> 
+                  </tr>
+                  <tr>
+                    <td><a>Fulfillment Request</a></td>
+                    <td>Sent to custom fulfillment provider when storeowner fulfills order items
+</td> 
                   </tr>
                 </table>
                 </div>
@@ -247,7 +222,42 @@
               </div>
             </div>
           </div>
-          
+          <hr class="divider">
+          <div class="row">
+            <div class="col s12 m3 l3">
+              <div class="card">
+                <div class="card-content grey-text"> 
+                <span class="card-title lime-text"><i class="mdi mdi-book"></i> Order notifications</span>
+                  <p>Get notified by email whenever a new order comes in. You can also subscribe to the RSS feed for this store's orders.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m9 l9">
+              <div class="card ">
+                <div class="card-content grey-text">
+                  <span class="card-title lime-text">Notifications</span>
+				<p>Send email to "Sandeep Vattapparambil" - sandeepv68@gmail.com</p>
+                   </div>
+                   <div class="card-action">
+                <a class="btn-flat lime right white-text">Send</a>&nbsp;
+                <a class="btn-flat lime right white-text">Delete</a>
+                </div>
+                </div>
+              </div>
+              <div class="col s12 m9 l9">
+              <div class="card ">
+                <div class="card-content grey-text">
+                  <span class="card-title lime-text"><i class="mdi mdi-bell"></i> Desktop Notifications</span>
+				<p>Get desktop notifications when you receive a new order. This setting only applies to your current browser — you must have the Shopify admin open in this browser to receive desktop notifications.</p>
+                   </div>
+                   <div class="card-action">
+                <a class="btn-flat lime right white-text">Test</a>&nbsp;
+                <a class="btn-flat lime right white-text">Disable</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col s12 m12 l12>">
               <div class="card grey lighten-3">
