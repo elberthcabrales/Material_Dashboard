@@ -126,7 +126,24 @@
               </div>
             </li>
             <hr>
-            <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
+            <i class="mdi-action-settings"></i> Settings</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#">General</a> </li>
+                  <li><a href="#">Payments</a> </li>
+                  <li><a href="#">Checkouts</a> </li>
+                  <li><a href="#">Shipping</a> </li>
+                  <li><a href="#">Taxes</a> </li>
+                  <li><a href="#">Notification</a> </li>
+                  <li><a href="#">Files</a> </li>
+                  <li><a href="#">Accounts</a> </li>
+                  <li><a href="#">Sales Channels</a> </li>
+                  <li><a href="#">Online Store</a> </li>
+                  <li><a href="#">POS</a> </li>
+                </ul>
+              </div>
+            </li>
             <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
             <i class="mdi-action-shop"></i> Apps & Extensions</a>
               <div class="collapsible-body">
@@ -146,17 +163,106 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi-action-settings"></i> Settings</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-domain"></i> General</h5>
               <ol class="breadcrumb">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a class="lime-text" href="settings.html">Settings</a></li>
+                <li><a class="grey-text" href="#">Settings</a></li>
+                <li><a class="lime-text" href="settings.html">General</a></li>
               </ol>
             </div>
           </div>
         </div>
       </div>
       <!--breadcrumbs end-->
-      
+      <div class="container">
+        <div id="dashboard">
+          <div class="row">
+          <div class="col s12 m3 l3">
+          <div class="card">
+            <div class="card-content grey-text">
+              <span class="card-title lime-text"><i class="mdi mdi-account-box"></i> Contact Info</span>
+              <p>Add your Contact Information here.</p>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="col s12 m9 l9">
+          <div class="card ">
+            <div class="card-content white-text">
+              <div class="input-field col s12">
+          <input id="store_name" type="text" class="validate">
+          <label for="store_name">Store Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="account_email" type="text" class="validate">
+          <label for="account_email">Account Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="customer_email" type="text" class="validate">
+          <label for="customer_email">Customer Email</label>
+        </div>
+            </div>
+            
+          </div>
+        </div>
+          </div>
+          <hr class="divider" />
+          <div class="row">
+          <div class="col s12 m3 l3">
+          <div class="card">
+            <div class="card-content grey-text">
+              <span class="card-title lime-text"><i class="mdi mdi-store"></i> Store Address</span>
+              <p>Add your store address Information here.</p>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="col s12 m9 l9">
+          <div class="card ">
+            <div class="card-content white-text">
+              <div class="input-field col s12">
+          <input id="legal_name" type="text" class="validate">
+          <label for="legal_name">Legal Name of Business</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="phone" type="text" class="validate">
+          <label for="phone">Phone</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="street_address" type="text" class="validate">
+          <label for="street_address">Street Address</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="account_email" type="text" class="validate">
+          <label for="account_email">Account Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="customer_email" type="text" class="validate">
+          <label for="customer_email">Customer Email</label>
+        </div>
+            </div>
+            
+          </div>
+        </div>
+          </div>
+          
+        </div>
+        <!-- Floating Action Button -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
+        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
+        <i class="large mdi-editor-mode-edit"></i></a>
+        <ul>
+        <li><a href="css-helpers.html" class="btn-floating red"> 
+        <i class="large mdi-communication-live-help"></i></a></li>
+        <li><a href="app-widget.html" class="btn-floating yellow darken-1"> 
+        <i class="large mdi-device-now-widgets"></i></a></li>
+        <li><a href="app-calendar.html" class="btn-floating green"> 
+        <i class="large mdi-editor-insert-invitation"></i></a></li>
+        <li><a href="app-email.html" class="btn-floating blue"> 
+        <i class="large mdi-communication-email"></i></a></li>
+        </ul>
+        </div>
+        <!-- Floating Action Button ends-->
+      </div>
     </section>
   </div>
 </div>
