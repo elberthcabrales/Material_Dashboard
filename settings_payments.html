@@ -31,18 +31,15 @@
 
 <header>
   <div class="navbar-fixed">
-    <nav class="lime"> 
-    <a href="#" data-activates="slide-out" class="button-collapse"> 
+    <nav class="lime"> <a href="#" data-activates="slide-out" class="button-collapse"> 
     <i class="material-icons">menu</i></a>
       <div class="nav-wrapper"> <a href="#" class="brand-logo">CodeLarva</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="search-out">
             <input type="text" class="search-out-text">
           </li>
-          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> 
-          <i class="mdi-action-search"></i></a> </li>
-          <li> <a href="#" class="waves-effect waves-light"> 
-          <i class="mdi-action-store"></i></a> </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> <i class="mdi-action-search"></i></a> </li>
+          <li> <a href="#" class="waves-effect waves-light"> <i class="mdi-action-store"></i></a> </li>
         </ul>
       </div>
     </nav>
@@ -54,8 +51,7 @@
       <ul id="slide-out" class="side-nav fixed">
         <li class="user-details lime darken-2">
           <div class="row">
-            <div class="col col s4 m4 l4"> 
-            <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
+            <div class="col col s4 m4 l4"> <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
             <div class="col s8 m8 l8" style="top:57">
               <ul id="profile-dropdown" class="dropdown-content">
                 <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
@@ -65,18 +61,16 @@
                 <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
                 <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
               </ul>
-              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep
-              <i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep <i class="mdi-navigation-arrow-drop-down right"></i></a>
               <p class="user-roal">Administrator</p>
             </div>
           </div>
         </li>
-        <li class="active lime lighten-2"> 
-        <a class="waves-effect waves-light" href="dashboard.html"> 
-        <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+        <li class="active lime lighten-2"> <a class="waves-effect waves-light" href="dashboard.html">
+         <i class="mdi-action-dashboard"></i> Dashboard</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li><a class="waves-effect waves-cyan" href="#!">
+            <li><a class="waves-effect waves-cyan" href="#!"> 
             <i class="mdi-action-store"></i> StoreFront</a></li>
             <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"> 
             <i class="mdi-action-bookmark"></i> Orders <span class="new badge"></span></a> </li>
@@ -144,7 +138,8 @@
                 </ul>
               </div>
             </li>
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
+            <li class="bold">
+            <a class="collapsible-header waves-effect waves-cyan"> 
             <i class="mdi-action-shop"></i> Apps & Extensions</a>
               <div class="collapsible-body">
                 <ul>
@@ -173,189 +168,96 @@
         </div>
       </div>
       <!--breadcrumbs end-->
+      <p class="grey-text center">Your Store accepts payments with : {{payment_option.selected}}</p>
+      <hr class="divider">
       <div class="container">
         <div id="dashboard">
           <div class="row">
-          <p class="grey-text center">Your Store accepts payments with : {{payment_option.selected}}</p>
-          <hr class="divider">
-          <div class="col s12 m3 l3">
-          <div class="card">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-account-box"></i> Contact Info</span>
-              <p>Add your Contact Information here.</p>
+            <div class="col s12 m3 l3">
+              <div class="card">
+                <div class="card-content grey-text"> 
+                <span class="card-title lime-text"><i class="mdi mdi-cash"></i> Payment Access</span>
+                  <p>Set-up your payment gateway and options here.</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div> 
-        
-        <div class="col s12 m9 l9">
-          <div class="card ">
-            <div class="card-content white-text">
-              <div class="input-field col s12">
-          <input id="store_name" type="text" class="validate">
-          <label for="store_name">Store Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="account_email" type="text" class="validate">
-          <label for="account_email">Account Email</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="customer_email" type="text" class="validate">
-          <label for="customer_email">Customer Email</label>
-        </div>
+            <div class="col s12 m9 l9">
+              <div class="card white">
+              <div class="card-content">
+                <div class="row valign-wrapper">
+                  <div class="col s4 m2"> 
+                  <img src="img/avatar.jpg" alt="" class="circle responsive-img valign"> </div>
+                  <div class="col s8 m10"> 
+                  <span class="black-text">This is a square image. it appear circular.</span> </div>
+                </div>
+              </div>
             </div>
-            
-          </div>
-        </div>
           </div>
           <hr class="divider" />
           <div class="row">
-          <div class="col s12 m3 l3">
-          <div class="card">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-store"></i> Store Address</span>
-              <p>Add your store address Information here.</p>
-            </div>
-          </div>
-        </div> 
-        
-        <div class="col s12 m9 l9">
-          <div class="card ">
-            <div class="card-content white-text">
-              <div class="input-field col s12">
-          <input id="legal_name" type="text" class="validate">
-          <label for="legal_name">Legal Name of Business</label>
-        </div>
-        <div class="input-field col s12">
-          <input id="phone" type="text" class="validate">
-          <label for="phone">Phone</label>
-        </div>
-        <div class="input-field col s12">
-          <input id="street_address" type="text" class="validate">
-          <label for="street_address">Street Address</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="city" type="text" class="validate">
-          <label for="city">City</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="zip" type="text" class="validate">
-          <label for="zip">Zip Code / Pin</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="country" type="text" class="validate">
-          <label for="country">Country</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="state" type="text" class="validate">
-          <label for="state">State</label>
-        </div>
-            </div>
-            
-          </div>
-        </div>
-          </div>
-          <hr class="divider">
-          <div class="row">
-          <div class="col s12 m3 l3">
-          <div class="card">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-bank"></i> Standards </span>
-              <p>Set-up units and metric information</p>
-            </div>
-          </div>
-        </div> 
-        
-        <div class="col s12 m9 l9">
-          <div class="card ">
-            <div class="card-content white-text">
-            <div class="row">
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Time-Zone</label>
-              </div>
-                    <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Unit System</label>
-              </div>
-                    <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Weight Units</label>
-              </div>
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Currency</label>
+            <div class="col s12 m3 l3">
+              <div class="card">
+                <div class="card-content grey-text"> <span class="card-title lime-text"><i class="mdi mdi-store"></i> Store Address</span>
+                  <p>Add your store address Information here.</p>
+                </div>
               </div>
             </div>
+            <div class="col s12 m9 l9">
+              <div class="card ">
+                <div class="card-content white-text">
+                  <div class="input-field col s12">
+                    <input id="legal_name" type="text" class="validate">
+                    <label for="legal_name">Legal Name of Business</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="phone" type="text" class="validate">
+                    <label for="phone">Phone</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="street_address" type="text" class="validate">
+                    <label for="street_address">Street Address</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="city" type="text" class="validate">
+                    <label for="city">City</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="zip" type="text" class="validate">
+                    <label for="zip">Zip Code / Pin</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="country" type="text" class="validate">
+                    <label for="country">Country</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="state" type="text" class="validate">
+                    <label for="state">State</label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr class="divider">
-             <div class="card-content white-text">
-             <span class="card-title lime-text"> 
-                <i class="mdi mdi-bookmark-check"></i> Order Format</span>
-                <p class="grey-text">Set your order format and preferences here.</p>
-             <div class="row">
-            <div class="input-field col s6">
-          <input type="text" class="validate" id="prefix" placeholder="#">
-          <label for="prefix">Prefix</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" class="validate" id="suffix" placeholder="-code_larva_order_{{timestamp}}">
-          <label for="suffix">Suffix</label>
-        </div>
-            </div>
-            </div>
-          </div>
-        </div>
           </div>
           <div class="row">
-          <div class="col s12 m12 l12>">
-          <div class="card grey lighten-3">
-           <div class="card-action">
-            <button class="waves-effect waves-light btn-flat lime" type="submit">
-            <i class="mdi mdi-content-save"></i> Save</button>
-			<button class="waves-effect waves-light btn-flat grey right" type="reset">
-            <i class="mdi mdi-delete"></i> Delete</button>
+            <div class="col s12 m12 l12>">
+              <div class="card grey lighten-3">
+                <div class="card-action">
+                  <button class="waves-effect waves-light btn-flat lime" type="submit"> <i class="mdi mdi-content-save"></i> Save</button>
+                  <button class="waves-effect waves-light btn-flat grey right" type="reset"> <i class="mdi mdi-delete"></i> Delete</button>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
-          </div>
-          
         </div>
         <!-- Floating Action Button -->
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
-        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
-        <i class="large mdi-editor-mode-edit"></i></a>
-        <ul>
-        <li><a href="css-helpers.html" class="btn-floating red"> 
-        <i class="large mdi-communication-live-help"></i></a></li>
-        <li><a href="app-widget.html" class="btn-floating yellow darken-1"> 
-        <i class="large mdi-device-now-widgets"></i></a></li>
-        <li><a href="app-calendar.html" class="btn-floating green"> 
-        <i class="large mdi-editor-insert-invitation"></i></a></li>
-        <li><a href="app-email.html" class="btn-floating blue"> 
-        <i class="large mdi-communication-email"></i></a></li>
-        </ul>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a class="btn-floating btn-large blue-grey waves-effect waves-light"> <i class="large mdi-editor-mode-edit"></i></a>
+          <ul>
+            <li><a href="css-helpers.html" class="btn-floating red"> <i class="large mdi-communication-live-help"></i></a></li>
+            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> <i class="large mdi-device-now-widgets"></i></a></li>
+            <li><a href="app-calendar.html" class="btn-floating green"> <i class="large mdi-editor-insert-invitation"></i></a></li>
+            <li><a href="app-email.html" class="btn-floating blue"> <i class="large mdi-communication-email"></i></a></li>
+          </ul>
         </div>
-        <!-- Floating Action Button ends-->
+        <!-- Floating Action Button ends--> 
       </div>
     </section>
   </div>
