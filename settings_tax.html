@@ -161,47 +161,53 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi mdi-truck"></i> Shipping</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-currency-usd"></i> Taxes</h5>
               <ol class="breadcrumb">
                 <li><a class="grey-text" href="#">Settings</a></li>
-                <li><a class="lime-text" href="settings_shipping.html">Shipping</a></li>
+                <li><a class="lime-text" href="settings_tax.html">Taxes</a></li>
               </ol>
             </div>
           </div>
         </div>
       </div>
       <!--breadcrumbs end-->
-      <p class="grey-text center">Your current shipping address is : {{current_address}} <a href="#">(edit)</a></p>
-      <hr class="divider">
+      
       <div class="container">
         <div id="dashboard">
           <div class="row">
             <div class="col s12 m3 l3">
               <div class="card">
                 <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-truck"></i> Shipping Rates</span>
-                  <p>Add the countries you will be shipping to and configure their shipping rates.</p>
-                  <a class="waves-effect waves-light btn-flat lime white-text">Add Region</a>
+                <span class="card-title lime-text"><i class="mdi mdi-currency-usd"></i> Tax settings</span>
+                  <p>Change the way Shopify calculates taxes on your store.</p>
+                  
                 </div>
               </div>
             </div>
             <div class="col s12 m9 l9">
               <div class="card ">
                 <div class="card-content grey-text">
-                 <span class="card-title lime-text"> India</span>&nbsp;- <a>remove</a>
-                 <a class="waves-effect waves-light btn-flat lime white-text right">Add Rates</a>
-                   <table class="responsive-table bordered striped hoverable">
-                  <tr>
-                    <td>Heavy Goods Shipping</td>
-                    <td>5.0 kg - 20.0 kg</td> 
-                    <td>Rs. 50.00</td>
-                  </tr>
-                  <tr>
-                    <td>Standard Shipping</td>
-                    <td>0.0 kg - 5.0 kg</td> 
-                    <td>Rs. 10.00</td>
-                  </tr>
-                </table>
+               	 <div class="switch">
+                 <p><strong>All taxes are included in my prices </strong></p>
+                 <p>If the checkbox above is selected all taxes will be calculated using this formula: 
+					<p><strong>Tax = (Tax Rate * Price) / (1 + Tax Rate)</strong>. Example £1.00 at 20% VAT will be £0.17 (rounded).</p></p>
+                <label>
+                  No
+                  <input type="checkbox" checked>
+                  <span class="lever"></span>
+                  Yes
+                </label>
+              </div>
+              <hr class="divider">
+              <p><strong> Charge taxes on shipping rates (US shipping taxes automatically calculated.)</strong></p>
+              <div class="switch">
+                    <label>
+                      No
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Yes
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -211,84 +217,37 @@
             <div class="col s12 m3 l3">
               <div class="card">
                 <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-truck"></i> Carrier calculated shipping</span>
-                  <p>Enable FedEx, UPS, USPS or other carriers to get real-time shipping rates for your customers.</p>
+                <span class="card-title lime-text"><i class="mdi mdi-currency-usd"></i> Tax rates</span>
+                  <p>A list of all the tax rates for the countries you ship to. To add a country to this list, go to Shipping settings and click on Add a country.</p>
                 </div>
               </div>
             </div>
             <div class="col s12 m9 l9">
               <div class="card ">
-                <div class="card-content yellow lighten-3 grey-text">
-                 <p>Your current plan doesn't support carrier-calculated shipping. If you want to enable real time shipping you need to upgrade your plan.</p>
+                <div class="card-content grey-text">
+                   <table class="responsive-table bordered striped hoverable">
+                   <tr>
+                    <th>Destination</th>
+                    <th>Country Tax Rate</th> 
+                    <th>Sub-region</th>
+                  </tr>
+                  <tr>
+                    <td>INDIA (IN)</td>
+                    <td>12%</td> 
+                    <td>36 States</td>
+                  </tr>
+                  <tr>
+                    <td> Rest</td>
+                    <td>0</td> 
+                    <td>0</td>
+                  </tr>
+                </table>
                 </div>
-                <div class="card-action">
-              <a class="lime-text" href="#">Get more Carrier features from App Store</a>
-            </div>
+                
               </div>
             </div>
           </div>
-          <hr class="divider">
-          <div class="row">
-          <div class="col s12 m3 l3">
-              <div class="card">
-                <div class="card-content grey-text"> 
-                <span class="card-title lime-text"><i class="mdi mdi-pocket"></i>Fulfillment and dropshipping</span>
-                  <p>These services will fulfill or dropship your items for you — so you can avoid printing shipping labels yourself.</p>
-                </div>
-              </div>
-            </div>
-          <div class="col s12 m9 l9">
-              <div class="card white">
-              <div class="card-content">
-                <div class="row valign-wrapper">
-                  <div class="col s4 m2"> 
-                  <img src="img/pay.jpg" alt="" class="circle responsive-img valign"> </div>
-                  <div class="col s8 m10"> 
-                  <span class="lime-text card-title">Fulfilment Service 1</span><br>
-                  <span class="grey-text">is a popular order fulfillment service that allows you to store and ship your merchandise from warehouses in the US, UK, Canada, China, and Australia.
-Services: Real-time order fulfillment, tracking, inventory, and shipping rates</span> </div>
-                </div>
-              </div>
-              <div class="card-action">
-              <a class="btn-flat lime white-text waves-effect waves-light">Activate</a>
-            	</div>
-              </div>
-            </div>
-            <div class="col s12 m9 l9 offset-l3">
-              <div class="card white">
-              <div class="card-content">
-                <div class="row valign-wrapper">
-                  <div class="col s4 m2"> 
-                  <img src="img/pay.jpg" alt="" class="circle responsive-img valign"> </div>
-                  <div class="col s8 m10"> 
-                  <span class="lime-text card-title">Fulfilment Service 2</span><br>
-                  <span class="grey-text">is a popular order fulfillment service that allows you to store and ship your merchandise from warehouses in the US, UK, Canada, China, and Australia.
-Services: Real-time order fulfillment, tracking, inventory, and shipping rates</span> </div>
-                </div>
-              </div>
-              <div class="card-action">
-              <a class="btn-flat lime white-text waves-effect waves-light">Activate</a>
-            	</div>
-              </div>
-            </div>
-            <div class="col s12 m9 l9 offset-l3">
-              <div class="card white">
-              <div class="card-content">
-                <div class="row valign-wrapper">
-                  <div class="col s4 m2"> 
-                  <img src="img/pay.jpg" alt="" class="circle responsive-img valign"> </div>
-                  <div class="col s8 m10"> 
-                  <span class="lime-text card-title">Fulfilment Service 3</span><br>
-                  <span class="grey-text">is a popular order fulfillment service that allows you to store and ship your merchandise from warehouses in the US, UK, Canada, China, and Australia.
-Services: Real-time order fulfillment, tracking, inventory, and shipping rates</span> </div>
-                </div>
-              </div>
-              <div class="card-action">
-              <a class="btn-flat lime white-text waves-effect waves-light">Activate</a>
-            	</div>
-              </div>
-            </div>
-          </div>
+          
           <div class="row">
             <div class="col s12 m12 l12>">
               <div class="card grey lighten-3">
