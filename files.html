@@ -173,50 +173,86 @@
       <!--breadcrumbs end-->
       
       <div class="container">
-        <div id="dashboard">
-        <table id="myTable">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>		
-    <th>Points</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>		
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>		
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>		
-    <td>80</td>
-  </tr>
-</table>
-        </div>
+          <div id="dashboard">
           <div class="row">
-            <div class="col s12 m12 l12>">
-              <div class="card grey lighten-3">
-                <div class="card-action">
-                  <button class="waves-effect waves-light btn-flat lime" type="submit"> 
-                  <i class="mdi mdi-content-save"></i> Save</button>
-                  <button class="waves-effect waves-light btn-flat grey right" type="reset"> 
-                  <i class="mdi mdi-delete"></i> Delete</button>
+              <div class="col s12">
+              <div class="card">
+              <div class="card-content">
+              <span class="card-title lime-text">All Files</span>
+                  <table id="file_table" class="bordered striped hoverable responsive-table">
+                  <tr>
+                  	  <th><p>
+                          <input type="checkbox" id="check_total" />
+                          <label for="check_total"></label>
+                        </p>
+                        </th>
+                      <th>Preview</th>
+                      <th>File Name</th>
+                      <th>Alt</th>
+                      <th>URL</th>
+                      <th>Size</th>
+                      <th>Options</th>
+                    </tr>
+                  <tr>
+                  	  <td><p>
+                          <input type="checkbox" id="checker" />
+                          <label for="checker"></label>
+                        </p></td>
+                      <td><img src="img/pay.jpg" alt="" width="50" class="responsive-img rounded"></td>
+                      <td><a>product.image</a></td>
+                      <td>alt_text</td>
+                      <td>http://cdn.codelarva.com/api/img/345/23/files</td>
+                      <td>205KB</td>
+                      <td><a class="waves-effect waves-light btn-flat grey white-text">
+                      <i class="mdi mdi-delete"></i></a></td>
+                    </tr>
+                  <tr>
+                  	  <td><p>
+                          <input type="checkbox" id="checker" />
+                          <label for="checker"></label>
+                        </p></td>
+                      <td><img src="img/pay.jpg" alt="" width="50" class="responsive-img rounded"></td>
+                      <td><a>product.image</a></td>
+                      <td>alt_text</td>
+                      <td>http://cdn.codelarva.com/api/img/345/23/files</td>
+                      <td>205KB</td>
+                      <td><a class="waves-effect waves-light btn-flat grey white-text">
+                      <i class="mdi mdi-delete"></i></a></td>
+                    </tr>
+                 <tr>
+                  	  <td><p>
+                          <input type="checkbox" id="checker" />
+                          <label for="checker"></label>
+                        </p></td>
+                      <td><img src="img/pay.jpg" alt="" width="50" class="responsive-img rounded"></td>
+                      <td><a>product.image</a></td>
+                      <td>alt_text</td>
+                      <td>http://cdn.codelarva.com/api/img/345/23/files</td>
+                      <td>205KB</td>
+                      <td><a class="waves-effect waves-light btn-flat grey white-text">
+                      <i class="mdi mdi-delete"></i></a></td>
+                    </tr>
+                </table>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
+        </div>
+          
         </div>
         <!-- Floating Action Button -->
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a class="btn-floating btn-large blue-grey waves-effect waves-light"> <i class="large mdi-editor-mode-edit"></i></a>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
+        <a class="btn-floating btn-large blue-grey waves-effect waves-light"> 
+        <i class="large mdi-editor-mode-edit"></i></a>
           <ul>
-            <li><a href="css-helpers.html" class="btn-floating red"> <i class="large mdi-communication-live-help"></i></a></li>
-            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> <i class="large mdi-device-now-widgets"></i></a></li>
-            <li><a href="app-calendar.html" class="btn-floating green"> <i class="large mdi-editor-insert-invitation"></i></a></li>
-            <li><a href="app-email.html" class="btn-floating blue"> <i class="large mdi-communication-email"></i></a></li>
+            <li><a href="css-helpers.html" class="btn-floating red"> 
+            <i class="large mdi-communication-live-help"></i></a></li>
+            <li><a href="app-widget.html" class="btn-floating yellow darken-1"> 
+            <i class="large mdi-device-now-widgets"></i></a></li>
+            <li><a href="app-calendar.html" class="btn-floating green"> 
+            <i class="large mdi-editor-insert-invitation"></i></a></li>
+            <li><a href="app-email.html" class="btn-floating blue"> 
+            <i class="large mdi-communication-email"></i></a></li>
           </ul>
         </div>
         <!-- Floating Action Button ends--> 

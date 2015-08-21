@@ -1669,7 +1669,7 @@ footer.page-footer {
 }
 /**********Table hover color********************/
 table.hoverable tbody tr:hover {
-    background-color: #E6EE9D;
+    background-color: #FFFF99;
 }
 /*****************Modal**************************/
 #modal_btn > button.modal-action {
@@ -1932,4 +1932,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 	border-bottom: 1px solid #cddc39;
      box-shadow: 0 1px 0 0 #cddc39;
    }
-/*/*****************************************************/   
+/***************Rounded images***************************************/   
+.rounded{
+	border-radius:8px;
+}
+/**************************************/
