@@ -1936,4 +1936,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .rounded{
 	border-radius:8px;
 }
+.padded_border{
+	padding:4px;
+   border:2px solid #cddc39;
+}
 /**************************************/
