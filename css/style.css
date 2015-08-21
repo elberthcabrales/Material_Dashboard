@@ -1940,4 +1940,23 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 	padding:4px;
    border:2px solid #cddc39;
 }
-/**************************************/
+/***************text area tracking code***********************/
+#g_analytics.materialize-textarea:focus + label {
+	   color: #cddc39;
+   }
+   #g_analytics.materialize-textarea:focus {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
+  #g_analytics.materialize-textarea:focus.valid {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
+  #g_analytics.materialize-textarea:valid {
+	border-bottom: 1px solid #cddc39;
+     /*box-shadow: 0 1px 0 0 #cddc39;*/
+   }
+   #g_analytics.materialize-textarea:focus.invalid {
+	border-bottom: 1px solid #cddc39;
+     box-shadow: 0 1px 0 0 #cddc39;
+   }
