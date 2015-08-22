@@ -36,8 +36,8 @@
         },
         {
             label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
+            fillColor: "rgba(179,205,152,0.39)",
+            strokeColor: "rgba(168,230,10,0.86)",
             highlightFill: "rgba(151,187,205,0.75)",
             highlightStroke: "rgba(151,187,205,1)",
             data: [28, 48, 40, 19, 86, 27, 90]
@@ -62,9 +62,9 @@ var RadarChartSampleData = {
         },
         {
             label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
+            fillColor: "rgba(179,205,152,0.39)",
+            strokeColor: "rgba(168,230,10,0.86)",
+            pointColor: "rgba(168,230,10,0.86)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
