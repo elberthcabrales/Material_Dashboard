@@ -1960,3 +1960,19 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 	border-bottom: 1px solid #cddc39;
      box-shadow: 0 1px 0 0 #cddc39;
    }
+/********************************Tag*****************************/
+.tag{
+	color: #ccc;
+    margin-top: 5px;
+	padding-left:3px;
+    border-top: 3px solid transparent;
+    border-right: 5px solid #cddc39;
+    border-bottom: 3px solid transparent;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+}
+.tag:hover{
+	background-color:#cddc39;
+	border-right: 5px solid #cddc39;
+	color:#666;
+}
