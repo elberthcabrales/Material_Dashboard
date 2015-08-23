@@ -202,7 +202,7 @@
         </div>
         <div class="card-content lime-text">
         <div class="row">
-        <div class="switch col s12 m6 l6">
+        <div class="switch col s12 m6 l6 bottom_margin">
         <p>Customer accepts marketing</p>
             <label>
               Yes
@@ -231,26 +231,38 @@
           <div class="col s12 m3 l3">
           <div class="card">
             <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-store"></i> Store Address</span>
-              <p>Add your store address Information here.</p>
+              <span class="card-title lime-text"><i class="mdi mdi-home"></i> Address</span>
+              <p>The primary address of this customer.</p>
             </div>
           </div>
         </div> 
         
         <div class="col s12 m9 l9">
           <div class="card ">
-            <div class="card-content white-text">
-              <div class="input-field col s12">
-          <input id="legal_name" type="text" class="validate">
-          <label for="legal_name">Legal Name of Business</label>
+            <div class="card-content grey-text">
+              <div class="input-field col s6">
+          <input id="user_first_name" type="text" class="validate">
+          <label for="user_first_name">First Name</label>
         </div>
-        <div class="input-field col s12">
+        <div class="input-field col s6">
+          <input id="user_last_name" type="text" class="validate">
+          <label for="user_last_name">Last Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="company" type="text" class="validate">
+          <label for="company">Company</label>
+        </div>
+        <div class="input-field col s6">
           <input id="phone" type="text" class="validate">
           <label for="phone">Phone</label>
         </div>
         <div class="input-field col s12">
-          <input id="street_address" type="text" class="validate">
-          <label for="street_address">Street Address</label>
+          <input id="address_line_1" type="text" class="validate">
+          <label for="address_line_1">Address Line 1</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="address_line_2" type="text" class="validate">
+          <label for="address_line_2">Address Line 2</label>
         </div>
         <div class="input-field col s6">
           <input id="city" type="text" class="validate">
@@ -261,12 +273,20 @@
           <label for="zip">Zip Code / Pin</label>
         </div>
         <div class="input-field col s6">
-          <input id="country" type="text" class="validate">
-          <label for="country">Country</label>
+          <select class="browser-default">
+              <option value="" disabled selected>Choose your Country</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
         </div>
         <div class="input-field col s6">
-          <input id="state" type="text" class="validate">
-          <label for="state">State</label>
+        <select class="browser-default bottom_margin">
+              <option value="" disabled selected>Choose your State</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>          
         </div>
             </div>
             
