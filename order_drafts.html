@@ -153,10 +153,10 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Products</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-file-delimited"></i> Drafts</h5>
               <ol class="breadcrumb">
-                <li><a class="active" href="#">Products Store</a></li>
-                <li><a class="lime-text" href="products.html"> Products</a></li>
+                <li><a class="active" href="#">Orders</a></li>
+                <li><a class="lime-text" href="order_drafts.html"> Drafts</a></li>
               </ol>
             </div>
           </div>
@@ -179,88 +179,36 @@
       </div>
       <div id="test1" class="container">
         <div id="dashboard">
-        
-        <div class="row">
-       <div class="col s12 m12 l12">
-        <div class="card grey lighten-1">
-            <div class="card-content">
-              <span class="card-title lime-text">
-               <i class="mdi mdi-cart"></i>Add Products</span>
-              <a class="btn lime tooltipped btn-flat waves-effect waves-light modal-trigger right" data-position="bottom" data-delay="50" data-tooltip="Add New Products" href="#add_modal">
-        <i class="mdi mdi-cart"></i> Add</a>
-        <p>Add your products, attach photos and update product info from here.</p>
-            </div>
-          </div>
-        </div>
-        </div>
-        
        <div class="row">
        <div class="col s12 m12 l12">
        <div class="card">
        <div class="card-content">
-              <span class="card-title lime-text">Products Table</span>
-                <table id="product_table" class="responsive-table striped hoverable">
-                <thead>
-                  <tr>
-                      <th data-field="id">No</th>
-                      <th data-field="img">Picture</th>
-                      <th data-field="name">Name</th>
-                      <th data-field="item_name">Item Name</th>
-                      <th data-field="price">Item Price</th>
-                      <th data-field="total">Item Qty</th>
-                      <th data-field="status">Options</th>
-                  </tr>
-                </thead>
-                  <tbody><tr>
-                    <td>1</td>
-                    <td><img src="img/app1.jpg" width="80" height="30" class="responsive-img"></td>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                    <td>$1.87</td>
-                    <td>
-                    <a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit" href="product_edit.html">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a>
-        </td>
-                  </tr>
-                  <tr>
-                  <td>2</td>
-                    <td><img src="img/app2.png" width="80" height="30" class="responsive-img"></td>
-                    <td>Alan</td>
-                    <td>Jellybean</td>
-                    <td>$3.76</td>
-                    <td>$10.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit" href="product_edit.html">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>3</td>
-                    <td><img src="img/app3.png" width="80" height="30" class="responsive-img"></td>
-                    <td>Jonathan</td>
-                    <td>Lollipop</td>
-                    <td>$7.00</td>
-                    <td>$12.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit" href="product_edit.html">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
-                  <tr>
-                  <td>4</td>
-                    <td><img src="img/app4.jpg" width="80" height="30" class="responsive-img"></td>
-                    <td>Shannon</td>
-                    <td>KitKat</td>
-                    <td>$9.99</td>
-                    <td>$14.87</td>
-                    <td><a class="btn grey tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Edit" href="product_edit.html">
-        <i class="mdi mdi-rename-box"></i></a>
-        <a class="btn red tooltipped btn-flat waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Delete">
-        <i class="mdi mdi-delete"></i></a></td>
-                  </tr>
+                <table id="product_table" class="striped hoverable">
+                    <thead>
+                      <tr>
+                            <th data-field="select"> <p>
+                              <input type="checkbox" id="check_all" />
+                              <label for="check_all"></label>
+                            </p></th>
+                          <th data-field="draft_id">Draft</th>
+                          <th data-field="date">Date</th>
+                          <th data-field="customer">Customer</th>
+                          <th data-field="status">Status</th>
+                          <th data-field="total">Total</th>
+                      </tr>
+                    </thead>
+                  <tbody>
+                  		<tr>
+                        <td><p>
+                              <input type="checkbox" id="check_box" />
+                              <label for="check_box"></label>
+                            </p></td>
+                        <td>Draft_#1</td>
+                        <td>23-08-2015</td>
+                        <td>John Doe</td>
+                        <td><span class="label lime">Open</span></td>
+                        <td>Rs: 75.00</td>
+                        </tr>
                 </tbody>
               </table>
               </div>
