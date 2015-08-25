@@ -206,17 +206,29 @@
                   </div>
                 </div>
               </div>
-              <hr class="divider">
               <div class="card-content grey lighten-4">
               <div class="row">
-              
               <div id="email-list" class="col s12">
-              <ul class="collection">
-                    <li class="collection-item avatar email-unread">
+              <ul id="collector" class="collection">
+                    <li id="parent_li_1" class="collection-item avatar email-unread">
                       <img class="responsive-img rounded icon" src="img/bag_r.png" width="50">
                       <span class="email-title">Red Bag</span>
                       <p class="truncate grey-text ultra-small">Brand new from American Tourister with AT international warranty. high quality & design.</p>
-                      <a id="collect_elem_del" href="#!" class="secondary-content" style="top:20px">
+             <a id="del_btn" href="#!" class="secondary-content" style="top:20px" onClick="Remove(parent_li_1)">
+                      <span class="label orange"><i class="mdi mdi-delete"></i></span></a>
+                    </li>
+                    <li id="parent_li_2" class="collection-item avatar email-unread">
+                      <img class="responsive-img rounded icon" src="img/bag_o.png" width="50">
+                      <span class="email-title">Orange Bag</span>
+                    <p class="truncate grey-text ultra-small">Brand new from American Tourister with AT international warranty. high quality & design.</p>
+             <a id="del_btn" href="#!" class="secondary-content" style="top:20px" onClick="Remove(parent_li_2)">
+                      <span class="label orange"><i class="mdi mdi-delete"></i></span></a>
+                    </li>
+                    <li id="parent_li_3" class="collection-item avatar email-unread">
+                      <img class="responsive-img rounded icon" src="img/bag_b.png" width="200">
+                      <span class="email-title">Grey Bag</span>
+                    <p class="truncate grey-text ultra-small">Brand new from American Tourister with AT international warranty. high quality & design.</p>
+             <a id="del_btn" href="#!" class="secondary-content" style="top:20px" onClick="Remove(parent_li_3)">
                       <span class="label orange"><i class="mdi mdi-delete"></i></span></a>
                     </li>
                </ul>
@@ -423,6 +435,11 @@ $(document).ready(function() {
 	
 });
 /***********************************************************/
+function Remove(parent_li) {
+    var wrapper = parent_li; 
+	$(wrapper).fadeOut('slow', function(){$(wrapper).remove()});
+}
+/*************************************************************************/
 </script>
 </body>
 </html>
