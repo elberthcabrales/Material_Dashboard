@@ -396,7 +396,7 @@ $(document).ready(function() {
 	    //$(wrapper).append(data);
 			add_button.hide();
 		$('#close_seo').click(function(){
-		$('#rem').remove();
+		$('#rem').slideUp('slow', function(){ $('#rem').remove()});
 		add_button.show();
 		});
     });
