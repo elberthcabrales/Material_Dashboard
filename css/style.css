@@ -2001,4 +2001,19 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
-/****************************************/
+/****************new collection style************************/
+#email-list .collection .collection-item.avatar .icon {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+	top:10px;
+}
+#email-list .collection .collection-item:hover {
+    background: #FFFF99;
+    cursor: pointer;
+/***********************************************************/
