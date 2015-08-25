@@ -216,9 +216,9 @@
                 <i class="mdi mdi-earth"></i> SEO Preview</span>
                 <a class="white-text waves-effect waves-light btn-flat green right" id="add_seo">
                 <i class="mdi mdi-pencil-box"></i> Edit SEO</a>
-                <h5 class="blue-text">{{product.name}}</h5>
-                <h6 class="green-text">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}}?q=xxxxx</h6>
-                <h6 class="grey-text">{{product.description}}</h6>
+                <h5 class="blue-text">{{collection.name}}</h5>
+                <h6 class="green-text">https://www.xxx-xx-xx.codelarva.com/api/collection/{{collection.name}}?q=xxxxx</h6>
+                <h6 class="grey-text">{{collection.description}}</h6>
                 </div>
                 <div id="seo_div" class="card-action grey lighten-3"> 
                 
@@ -253,10 +253,14 @@
               </div>
             </div>
             <div class="card grey lighten-1">
-              <div class="card-content white-text"> <span class="card-title"> 
+              <div class="card-content white-text"> 
+              <span class="card-title"> 
               <i class="mdi mdi-file-image-box"></i> Collection Image</span>
-              
-              </div>
+              <img class="responsive-img z-depth-1" src="img/pay.jpg">
+              <br>
+              <div class="center">
+              <a>Change Image</a>
+              </div></div>
             </div>
             <div class="card grey lighten-1">
               <div class="card-content white-text"> <span class="card-title"> 
@@ -390,7 +394,7 @@ $(document).ready(function() {
     var add_button      = $("#add_seo"); 
     $(add_button).click(function(e){ 
         e.preventDefault();
-		var data='<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>';
+		var data='<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="collection.name" type="text" class="validate" length="40"><label for="page_title" class="active">Collection Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">collection.description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{collection.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/collection/{{collection.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>';
 		$(wrapper).append(data).hide().slideDown('slow');
     	
 	    //$(wrapper).append(data);
