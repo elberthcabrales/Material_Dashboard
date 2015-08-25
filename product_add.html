@@ -552,7 +552,7 @@ $(document).ready(function() {
 	    //$(wrapper).append(data);
 			add_button.hide();
 		$('#close_seo').click(function(){
-		$('#rem').remove();
+		$('#rem').slideUp('slow', function(){$('#rem').remove()});
 		add_button.show();
 		});
     });
@@ -571,7 +571,7 @@ $(document).ready(function() {
 	    //$(wrapper).append(data);
 		//add_button.hide();
 		$('#close_img').click(function(){
-		$('#rem_img').remove();
+			$('#rem_img').slideUp('slow', function(){$('#rem_img').remove()});
 		$('#img_option img').css({"border-bottom":"","border-bottom-left-radius": "","border-bottom-right-radius": ""});
 		
 		add_button.show();
