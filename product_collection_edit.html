@@ -229,65 +229,7 @@
                 </div> 
                 </div>
               </div>
-              <hr class="divider">
-              <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-book"></i> Inventory</span>
-                <br>
-				<div class="row">
-                <div class="input-field col s6">
-                    <input type="text" required class="validate" id="stock_keeping_unit">
-                    <label for="stock_keeping_unit">Stock Keeping Unit</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <input type="text" required class="validate" id="barcode">
-                    <label for="barcode">Barcode</label>
-                  </div>
-                  <div class="switch col s6">
-                  <label>Do not Track  
-                    <input type="checkbox">
-                    <span class="lever"></span> Track</label>
-                </div> 
-                </div>
-              </div>
-              <hr class="divider">
-              <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-truck"></i> Shipping</span>
-                <br>
-				<div class="row">
-                <div class="input-field col s6">
-                    <input type="text" required class="validate" id="weight">
-                    <label for="weight">Weight</label>
-                  </div>
-                <div class="input-field col s6" style="z-index:997">
-                <select class="lime-text">
-                  <option value="1" selected>Kg</option>
-                  <option value="2">Lb</option>
-                  <option value="3">G</option>
-                  <option value="4">Mg</option>                
-                  </select>
-                <label>Unit</label>
-              </div>
-                  <div class="switch col s6">
-                  <label>No Shipping   
-                    <input type="checkbox">
-                    <span class="lever"></span> Requires Shipping</label>
-                </div> 
-                </div>
-              </div>
-              <hr class="divider">
-              <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-library-plus"></i> Variants</span>
-                <a class="white-text waves-effect waves-light btn-flat lime right" id="add_variants">
-                <i class="mdi mdi-plus"></i>Add Variants</a>
-                <p class="grey-text">You can add the different variations of your product like color or size here.</p>
-              </div>
-              <div id="variant_div" class="card-action grey lighten-3"> 
-                
-              </div>
-              </div>
+             </div>
             </div>
             <div class="col s12">
               <div class="card">
@@ -318,7 +260,7 @@
                 <p>Set the visibility of Item as online or offline. <a class="lime-text">(Online Store)</a></p>
                 <div class="switch">
                   <label> Offline
-                    <input type="checkbox">
+                    <input type="checkbox" checked>
                     <span class="lever"></span> Online </label>
                 </div>
               </div>
@@ -473,29 +415,6 @@ var $container = $('div#grid');
 $container.packery({
   itemSelector: '#grid-item',
   gutter: 10
-});
-/************************************/
-$(document).ready(function() {
-    var max_fields      = 4; //maximum input boxes allowed
-    var wrapper         = $("#variant_div"); //Fields wrapper
-    var add_button      = $("#add_variants"); //Add button ID
-    
-    var x = 0; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-			var field_data = '<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>';
-			$(wrapper).append(field_data).slideDown('slow');
-        }
-		
-    });
-	
-    $(wrapper).on("click","#delete", function(e){ //user click on remove text
-        e.preventDefault(); 
-		$(this).parent('div').remove(); x--;
-    })
-	
 });
 /*************************************************/
 $(document).ready(function() {
