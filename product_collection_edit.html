@@ -185,29 +185,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12">
-              <div class="card">
-                <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-image-area"></i> Add Photos</span> 
-                <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#image_upload">
-                <i class="mdi mdi-file-image"></i></a>
-                  <div id="grid" class="row"> 
-                  <a id="img_option"><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
-                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"> </a>
-                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app3.png"> </a>
-                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
-                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"></a>
-                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"></a>
-                  </div>
-                </div>
-                <div id="img_option_div" class="card-action grey lighten-3"> 
-               
-              </div>
-              </div>
-            </div>
-            
-            <div class="col s12">
+              <div class="col s12">
               <div class="card">
                 <div class="card-content"> 
                 <span class="card-title lime-text"> 
@@ -276,8 +254,21 @@
             </div>
             <div class="card grey lighten-1">
               <div class="card-content white-text"> <span class="card-title"> 
-              <i class="mdi mdi-arrange-bring-forward"></i> Collection Image</span>
+              <i class="mdi mdi-file-image-box"></i> Collection Image</span>
               
+              </div>
+            </div>
+            <div class="card grey lighten-1">
+              <div class="card-content white-text"> <span class="card-title"> 
+              <i class="mdi mdi-format-color-fill"></i> Collection Theme</span>
+              <p>The template customers see when viewing this collection in your store.</p>
+              <br>
+               <select class="browser-default grey-text">
+                  <option value="" selected>Choose your Templates</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
               </div>
             </div>
             </div>
@@ -304,30 +295,6 @@
 </div>
 </div>
 <!-- //////////////////////////////////////////////////////////////////////////// -->
-<div id="image_upload" class="modal">
-  <div class="modal-content">
-    <h4>Upoad images here</h4>
-    <form action="" method="POST" enctype="multipart/form-data">
-    <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
-      <input type="submit" class="btn-flat lime">
-    </form>
-  </div>
-  <div class="modal-footer"> 
-  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
-</div>
-<!-- -->
-<div id="video_upload" class="modal">
-  <div class="modal-content">
-    <h4>Upoad Video here</h4>
-    <form action="" method="POST" enctype="multipart/form-data">
-    <input type="file" name="files[]" id="input_file1" data-jfiler-extensions="mp4, mpeg, avi, flv" class="file_input" multiple>
-      <input type="submit" class="btn-flat lime">
-    </form>
-  </div>
-  <div class="modal-footer"> 
-  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
-</div>
-<!-- -->
 <!--///////////////////////////////////////////////////////////////////////////// --> 
 <!-- START FOOTER -->
 <footer class="page-footer lime">
@@ -436,27 +403,6 @@ $(document).ready(function() {
 	
 });
 /***********************************************************/
-$(document).ready(function() {
-    var wrapper         = $("#img_option_div"); 
-    var add_button      = $("#img_option"); 
-    $(add_button).click(function(e){ 
-        e.preventDefault();
-		var data='<div id="rem_img" class="row"><div class="col s12"><div class="col s12 m6 l6"><img id="preview" class="responsive-img" src="img/app1.jpg"></div><div class="col s12 m6 l6"><div class="row"><div class="input-field col s12"><input placeholder="img.title" id="title" type="text" class="validate"><label for="title" class="active">Image Title</label></div><div class="input-field col s12"><input placeholder="img.alt" id="img_alt" type="text" class="validate"><label for="img_alt" class="active">Image Alt</label></div></div></div><a id="del_img" class="btn-flat red left white-text">Delete</a><a id="close_img" class="btn-flat lime right white-text">Update</a></div>';
-		$(wrapper).append(data).hide().slideDown('slow');
-    	$('#img_option img').css({"border-bottom":"7px solid #cddc39","border-bottom-left-radius": "5px","border-bottom-right-radius": "5px"});
-		
-	    //$(wrapper).append(data);
-		//add_button.hide();
-		$('#close_img').click(function(){
-		$('#rem_img').remove();
-		$('#img_option img').css({"border-bottom":"","border-bottom-left-radius": "","border-bottom-right-radius": ""});
-		
-		add_button.show();
-		});
-    });
-	
-});
-/*********************************************************************/
 </script>
 </body>
 </html>
