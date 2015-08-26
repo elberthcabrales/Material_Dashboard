@@ -142,10 +142,10 @@
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title"><i class="mdi-action-dashboard"></i> Dashboard</h5>
+                <h5 class="breadcrumbs-title"><i class="mdi mdi-chart-areaspline"></i> Analytics / {{analytics.type}}</h5>
                 <ol class="breadcrumb">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a class="lime-text" href="welcome.html">Dashboard</a></li>
+                    <li><a class="active" href="#">Analytics</a></li>
+                    <li><a class="lime-text" href="analytics_detail.html">{{analytics.type}}</a></li>
                 </ol>
               </div>
             </div>
@@ -156,105 +156,59 @@
       <div class="container">
         <div id="dashboard">
           <div class="row">
-        <div class="col s12 m12 l12">
+            <div class="col s12 m12 l12">
           <div class="card grey lighten-1">
           <div class="waves-effect waves-block waves-light">
             <div class="card-content white-text">
-              <span class="card-title">Sales Overview</span>
+              <span class="card-title">Total Sales</span>
               <span class="chart-revenue grey white-text right">
               <p class="chart-revenue-total">Rs: 4000</p>
               <p class="chart-revenue-per"><i class="mdi-navigation-arrow-drop-up"> 21.80%</i></p>
               </span>
               <div class="sample-chart-wrapper grey lighten-1">
-                  <canvas id="line-chart-sample" height="80px"></canvas>
+                  <canvas id="bar-chart" height="80px"></canvas>
                   </div>
             </div>
             </div>
             <div class="card-action">
               <a class="lime-text" href="#"><i class="mdi mdi-bookmark small"></i></a>
               <a class="lime-text" href="#"><i class="mdi mdi-delete small"></i></a>
-              <a class="lime-text" href="#"><i class="mdi mdi-database small"></i></a>
+              <a class="lime-text" href="#"><i class="mdi mdi-share-variant small"></i></a>
             </div>
           </div>
           </div>
       </div>
         </div>
-        <div id="card-stats">
-          <div class="row">
-            <div class="col s12 m6 l3">
-              <div class="card">
-              <div class="waves-effect waves-block waves-light">
-              <i id="fade_icon" class="mdi-social-group-add"></i>
-                <div class="card-content grey lighten-1 white-text">
-                  <p class="card-stats-title">
-                  <i class="mdi-social-group-add"></i> New Clients</p>
-                  <h4 class="card-stats-number">566</h4>
-                  <p class="card-stats-compare">
-                  <i class="mdi-hardware-keyboard-arrow-up"></i> 15% 
-                  <span class="lime-text">from yesterday</span> </p>
-                </div>
-                <div class="card-action grey lighten-1">
-                 <a class="lime-text" href="#">View More <i class="mdi mdi-more right"></i></a>
-             	 </div>
-              </div>
+        <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content grey-text">
+              <a class="btn-flat grey white-text waves-effect waves-light left bottom_margin">Filters</a>
+              <a class="btn-flat grey white-text waves-effect waves-light right bottom_margin">Metrics</a>
             </div>
-            </div>
-            <div class="col s12 m6 l3">
-              <div class="card">
-              <div class="waves-effect waves-block waves-light">
-              <i id="fade_icon" class="mdi-editor-attach-money"></i>
-                <div class="card-content grey lighten-1 white-text">
-                  <p class="card-stats-title">
-                  <i class="mdi-editor-attach-money"></i>Total Sales</p>
-                  <h4 class="card-stats-number">$8990.63</h4>
-                  <p class="card-stats-compare">
-                  <i class="mdi-hardware-keyboard-arrow-up"></i> 70% 
-                  <span class="lime-text">last month</span> </p>
-                </div>
-                <div class="card-action grey lighten-1">
-                 <a class="lime-text" href="#">View More <i class="mdi mdi-more right"></i></a>
-             	 </div>
-              </div>
-              </div>
-            </div>
-            <div class="col s12 m6 l3">
-              <div class="card">
-              <div class="waves-effect waves-block waves-light">
-              <i id="fade_icon" class="mdi-action-trending-up"></i>
-                <div class="card-content grey lighten-1 white-text">
-                  <p class="card-stats-title">
-                  <i class="mdi-action-trending-up"></i> Today Profit</p>
-                  <h4 class="card-stats-number">$806.52</h4>
-                  <p class="card-stats-compare">
-                  <i class="mdi-hardware-keyboard-arrow-up"></i> 80% 
-                  <span class="lime-text">from yesterday</span> </p>
-                </div>
-                <div class="card-action grey lighten-1">
-                 <a class="lime-text" href="#">View More <i class="mdi mdi-more right"></i></a>
-             	 </div>
-                 </div>
-              </div>
-            </div>
-            <div class="col s12 m6 l3">
-              <div class="card">
-              <div class="waves-effect waves-block waves-light">
-              <i id="fade_icon" class="mdi-editor-insert-drive-file"></i>
-                <div class="card-content grey lighten-1 white-text">
-                  <p class="card-stats-title">
-                  <i class="mdi-editor-insert-drive-file"></i> New Returns</p>
-                  <h4 class="card-stats-number">18</h4>
-                  <p class="card-stats-compare">
-                  <i class="mdi-hardware-keyboard-arrow-down"></i> 3% 
-                  <span class="lime-text">from last month</span> </p>
-                </div>
-                <div class="card-action grey lighten-1">
-                 <a class="lime-text" href="#">View More <i class="mdi mdi-more right"></i></a>
-             	 </div>
-              </div>
-              </div>
+             <div class="card-content grey-text">
+              <table class="striped hoverable responsive-table">
+              	<tr>
+                	<th>Month</th>
+                    <th>Canceled Sales</th>
+                    <th>Orders</th>
+                    <th>Subtotal</th>
+                    <th>Discounts</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                	<td>January</td>
+                    <td>Rs: 0.00</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Rs: 0.00</td>
+                    <td>Rs: 0.00</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
+      </div>
 
         <!-- Floating Action Button -->
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> 
@@ -311,6 +265,13 @@ $(function () {
 var $document_body = $('body');
 $document_body.scrollator();
 });
+/*********************************************************************************/
+window.onload = function() {
+window.BarChartSample = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(BarChartSampleData,{
+   responsive:true
+  });
+}
+/***************************************************************/
 </script>
 </body>
 </html>

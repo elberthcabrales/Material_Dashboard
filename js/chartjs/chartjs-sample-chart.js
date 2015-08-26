@@ -132,7 +132,7 @@ var PieDoughnutChartSampleData = [
 
  window.onload = function() {
 
-  window.LineChartSample = new Chart(document.getElementById("line-chart-sample").getContext("2d")).Line(LineChartSampleData,{
+ window.LineChartSample = new Chart(document.getElementById("line-chart-sample").getContext("2d")).Line(LineChartSampleData,{
    responsive:true
   });
   
