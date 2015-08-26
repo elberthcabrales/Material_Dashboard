@@ -161,10 +161,10 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi mdi-pen"></i> Create Order</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-account-multiple"></i> Customer / {{customer.name}}</h5>
               <ol class="breadcrumb">
-                <li><a class="grey-text" href="#">Order</a></li>
-                <li><a class="lime-text" href="order_add.html">Create Order</a></li>
+                <li><a class="grey-text" href="#">Customer</a></li>
+                <li><a class="lime-text" href="customer_view.html">{{customer.name}}</a></li>
               </ol>
             </div>
           </div>
@@ -174,62 +174,13 @@
       
       <div class="container">
         <div id="dashboard">
-          <div class="row">
-            <div class="col s12">
-        <div class="card-panel yellow lighten-3">
-          <div class="row valign-wrapper">
-                  <div class="col s4 m2 l2"> 
-                  <i class="mdi mdi-alert orange-text large"></i>
-                   </div>
-                  <div class="col s8 m10"> 
-                  <span class="orange-text"><h5>Some features unavailable</h5></span><br>
-                  <span class="grey-text">To add a credit card payment, activate a credit card gateway on your store — <a>Payment settings</a>.</span> </div>
-                </div>
-        </div>
-      </div>
-          </div>
+          
           <div class="row">
           <div class="col s12 m9 l9">
           <div class="card">
             <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-basket-fill"></i> Order Details</span>
-              <div class="row">
-              <div class="input-field col s12">
-          <i class="material-icons prefix">search</i>
-          <input id="find_create_item" type="text" class="validate">
-          <label for="find_create_item">Find or create an Item</label>
-        </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12 m6 l6">
-          <input id="add_note" type="text" class="validate">
-          <label for="add_note">Add Notes</label>
-        </div>
-        <div class="col s12 m6 l6">
-        <table class="striped hoverable">
-        	<tr>
-            	<th>Sub Total</th>
-                <th>Rs. 00.00</th>
-            </tr>
-            <tr>
-            	<td>Add Discount</td>
-                <td>-</td>
-            </tr>
-             <tr>
-            	<td>Add Shipping</td>
-                <td>-</td>
-            </tr>
-             <tr>
-            	<td>Taxes</td>
-                <td>Rs: 0.00</td>
-            </tr>
-             <tr>
-            	<td><strong>Total</strong></td>
-                <td><strong>Rs: 0.00</strong></td>
-            </tr>
-        </table>
-        </div>
-            </div>
+              <span class="card-title lime-text"><i class="mdi mdi-basket-fill"></i> Orders</span>
+            
             </div>
             <hr class="divider">
             <div class="card-content grey-text">
@@ -249,7 +200,16 @@
           <div class="col s12 m3 l3">
           <div class="card grey lighten-3">
           <div class="card-content">
-          <span class="card-title grey-text"> Find or create a customer</span>
+          <span class="card-title lime-text"> Address</span>
+          <P class="grey-text">John Doe, #3A, Abhijit Annexe, 11th Cross, Malleswaram, Bangalore - 560003</P>
+          </div>
+          </div>
+          </div>
+          
+          <div class="col s12 m3 l3">
+          <div class="card grey lighten-3">
+          <div class="card-content">
+          <span class="card-title grey-text"> Details</span>
           <div class="input-field col s12">
           <input id="customer_search" type="text" class="validate">
           <label for="customer_search">Search here</label>
