@@ -187,7 +187,7 @@
                   <span class="grey-text"><i class="mdi mdi-email"></i> customer@something.com</span><br>
                   <span class="grey-text"><i class="mdi mdi-cellphone"></i> +91-7293289047</span>
                    <br>
-                  <a class="btn-flat orange white-text waves-effect waves-light bottom_margin truncate">Disable Account</a>
+               <a class="btn-flat orange white-text waves-effect waves-light bottom_margin truncate">Disable Account</a>
                   <a class="btn-flat lime white-text waves-effect waves-light bottom_margin truncate">Reset Password</a>
                   <a class="btn-flat grey white-text waves-effect waves-light bottom_margin">
                   <i class="mdi mdi-delete"></i></a>
@@ -200,20 +200,22 @@
           <div class="col s12 m9 l9">
           <div class="card">
             <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-basket-fill"></i> Orders</span>
+              <span class="card-title lime-text"><i class="mdi mdi-history"></i> Order History</span>
             
             </div>
-            <hr class="divider">
-            <div class="card-content grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-email-open"></i> Email invoice</span>
-              	<a class="btn-flat grey white-text waves-effect waves-light right bottom_margin"> Email Invoice</a>
-            </div>
             <div class="card-content grey lighten-3 grey-text">
-              <span class="card-title lime-text"><i class="mdi mdi-credit-card"></i> Accept Payment</span>
+              <span class="card-title lime-text"><i class="mdi mdi-clipboard-text"></i> Add Notes</span>
               <div class="card-action">
-              <a class="btn-flat grey white-text waves-effect waves-light bottom_margin"> Mark as Paid</a>
-              <a class="btn-flat grey white-text waves-effect waves-light bottom_margin"> Mark as Pending</a>
-              <a class="btn-flat grey white-text waves-effect waves-light bottom_margin"> Pay with Credit Card</a>
+              <div class="row">
+                      <div class="input-field col s12">
+                  <input id="notes" type="text" class="validate">
+                  <label for="notes">Add aditional notes about this customer</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="tags" type="text" class="validate">
+                  <label for="tags">Add aditional tags for this customer</label>
+                </div>
+                </div>
               </div>
             </div>
           </div>
