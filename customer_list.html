@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="description" content="CodeLarva">
+<title>CodeLarva</title>
+<!-- Favicons-->
+<link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-152x152.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png">
+<link rel="icon" href="img/icons/favicon.ico" sizes="32x32">
+<!--  Android 5 Chrome Color-->
+<meta name="theme-color" content="#ffa726">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/scroller.css"/>
+<link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
+<!-- Mdi Icons CDN-->
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body">
+<!--Fixed Navbar -->
+<header>
+  <div class="navbar-fixed">
+    <nav class="lime"> <a href="#" data-activates="slide-out" class="button-collapse">
+    <i class="mdi-navigation-menu"></i></a>
+      <div class="nav-wrapper"> <a href="#" class="brand-logo">CodeLarva</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="search-out">
+            <input type="text" class="search-out-text">
+          </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> 
+          <i class="mdi-action-search"></i></a> </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="main">
+  <div class="wrapper">
+    <aside id="left-sidebar-nav">
+      <ul id="slide-out" class="side-nav fixed">
+        <li class="user-details lime darken-2">
+          <div class="row">
+            <div class="col col s4 m4 l4">
+            <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
+            <div class="col s8 m8 l8" style="top:57">
+              <ul id="profile-dropdown" class="dropdown-content">
+                <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
+                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
+                <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a> </li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
+                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+              </ul>
+              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep<i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <p class="user-roal">Administrator</p>
+            </div>
+          </div>
+        </li>
+        <li class="active lime lighten-2"> <a class="waves-effect waves-light" href="dashboard.html"> 
+        <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+          <li><a class="waves-effect waves-cyan" href="#!"><i class="mdi-action-store"></i> StoreFront</a></li>
+            <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan">
+            <i class="mdi-action-bookmark"></i> Orders <span class="new badge"></span></a> </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan">
+            <i class="mdi-maps-local-mall"></i> Products Store</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="product.html">Products</a> </li>
+                  <li><a href="#">Inventory</a> </li>
+                  <li><a href="#">Shelving</a> </li>
+                  <li><a href="#">Gift Cards & Coupons</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan">
+            <i class="mdi-social-people-outline"></i> Customers</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="form-elements.html">Form Elements</a> </li>
+                  <li><a href="form-layouts.html">Form Layouts</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan">
+            <i class="mdi-notification-mms"></i> Reports</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="index.html">Login</a> </li>
+                  <li><a href="register.html">Register</a> </li>
+                  <li><a href="lock.html">Lock Screen</a> </li>
+                  <li><a href="page-invoice.html">Invoice</a> </li>
+                  <li><a href="page-404.html">404</a> </li>
+                  <li><a href="page-500.html">500</a> </li>
+                  <li><a href="page-blank.html">Blank</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan">
+            <i class="mdi mdi-chart-areaspline"></i> Analytics</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="charts-chartjs.html">Chart JS</a> </li>
+                  <li><a href="charts-chartist.html">Chartist</a> </li>
+                  <li><a href="charts-morris.html">Morris Charts</a> </li>
+                  <li><a href="charts-xcharts.html">xCharts</a> </li>
+                  <li><a href="charts-flotcharts.html">Flot Charts</a> </li>
+                  <li><a href="charts-sparklines.html">Sparkline Charts</a> </li>
+                </ul>
+              </div>
+            </li>
+            <hr>
+            <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+           <li class="bold"><a class="collapsible-header waves-effect waves-cyan">
+            <i class="mdi-action-shop"></i> Apps & Extensions</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="app_store.html">App Store</a> </li>
+                  <li><a href="installed_apps.html">Installed Apps</a> </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <section id="content">
+    <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper" class="grey lighten-3">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title"><i class="mdi mdi-account-circle"></i> Customers</h5>
+                <ol class="breadcrumb">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a class="lime-text" href="customers.html">Customers</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+              <ul class="tabs card">
+                <li class="tab col s3"><a class="active lime-text truncate" href="#test1"> All Customers</a></li>
+                <li class="tab col s3"><a class="lime-text truncate" href="#test2">Accepts Marketing</a></li>
+                <li class="tab col s3"><a class="lime-text truncate" href="#test3">Repeat Customers</a></li>
+              </ul>
+                <div class="card">
+              <div class="card-content grey-text">
+                <div id="test1" class="col s12">
+                <table class="striped hoverable responsive-table">
+                	<tr>
+                    	<th><p>
+                          <input type="checkbox" id="check_all" />
+                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
+                        	</p>
+                        </th>
+                        <th>&nbsp;</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Orders</th>
+                        <th>Last Order</th>
+                        <th>Total Spent</th>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/avatar.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/user.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/yuna.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/user.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/avatar.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                </table>
+                </div>
+                <div id="test2" class="col s12">
+                <table class="striped hoverable responsive-table">
+                	<tr>
+                    	<th><p>
+                          <input type="checkbox" id="check_all" />
+                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
+                        	</p>
+                        </th>
+                        <th>&nbsp;</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Orders</th>
+                        <th>Last Order</th>
+                        <th>Total Spent</th>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/avatar.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/user.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/yuna.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    </table>
+                </div>
+                <div id="test3" class="col s12">
+                <table class="striped hoverable responsive-table">
+                	<tr>
+                    	<th><p>
+                          <input type="checkbox" id="check_all" />
+                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
+                        	</p>
+                        </th>
+                        <th>&nbsp;</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Orders</th>
+                        <th>Last Order</th>
+                        <th>Total Spent</th>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/yuna.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/avatar.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    <tr>
+                    	<td><p>
+                          <input type="checkbox" id="check" />
+                          <label for="check"></label>
+                        	</p>
+                        </td>
+                        <td><img class="circle responsive-img" src="img/user.jpg" width="50"></td>
+                        <td><a>John</a></td>
+                        <td>Bangalore, KA</td>
+                        <td>24</td>
+                        <td><a>#CL_ds6756</a></td>
+                        <td>Rs: 7,452</td>
+                    </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+      
+    </section>
+  </div>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START FOOTER -->
+<footer class="page-footer lime">
+  <div class="container">
+    <!-- ////////////////////////// -->
+  </div>
+  <div class="footer-copyright">
+    <div class="container"><a class="grey-text text-lighten-4" href="#" target="_blank">StoreFront</a><span class="right">Copyright © 2015 <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved.</span> </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+<!--Import jQuery before materialize.js--> 
+<!-- jQuery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/materialize.js"></script> 
+<script type="text/javascript" src="js/init.js"></script> 
+<!-- Preloader-->
+<script type="text/javascript" src="js/nprogress.js"></script> 
+<script type="text/javascript" src="js/preloader.js"></script> 
+<!-- NiceScroll-->
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script> 
+<script type="text/javascript" src="js/nicescroll.js"></script> 
+<!-- CustomSscroll-->
+<script type="text/javascript" src="js/scroller.js"></script>  
+<!-- ChartJS-->
+<script type="text/javascript">
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize Scroller plugin
+$(function () {
+var $document_body = $('body');
+$document_body.scrollator();
+});
+</script>
+</body>
+</html>
