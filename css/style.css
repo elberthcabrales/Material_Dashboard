@@ -2037,8 +2037,11 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 #email-list.no-upspace{
 	margin-top:-25px;
 }
-#email-list > ul {
+#email-list.no-upspace > ul {
 	border:none;
+}
+#email-list.no-upspace > ul > li{
+	border-bottom-color:rgba(160, 160, 160, 0.2);
 }
 /****************************fadeicon_stats********************************/
 #fade_icon_stats{
