@@ -289,10 +289,12 @@
                     </label>
                   </div>
                     <div class="input-field col s12 m6 6" style="margin-bottom:20px;">
-                         <input type="date" class="datepicker">
+                    <label for="pick_date">Date</label>
+                         <input id="pick_date" type="date" class="datepicker">
                   </div>
                   <div class="input-field col s12 m6 6" style="margin-bottom:20px;">
-                         <input type="date" class="timepicker">
+                  <label for="pick_time">Time</label>
+                         <input id="pick_time" type="date" class="timepicker">
                   </div>
                 </div></div></div>
             </div>
@@ -402,7 +404,7 @@ $('#trumbowyg').trumbowyg({
        'horizontalRule']
 });  
 /*********************************************************************/
-$('.timepicker').pickatime();
+$('.timepicker').pickatime({closeOnSelect: true, closeOnClear: true, clear:'',container:'body'});
 </script>
 </body>
 </html>
