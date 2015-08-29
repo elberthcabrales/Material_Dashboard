@@ -2018,7 +2018,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     cursor: pointer;
 }
 /************************Indicator***********************************/
-.indicator{
+.user_indicator{
 	border-radius:50%;
 	height:28px;
 	width:28px;
