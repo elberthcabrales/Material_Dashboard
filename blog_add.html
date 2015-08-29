@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="description" content="CodeLarva">
+<title>CodeLarva</title>
+<!-- Favicons-->
+<link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-152x152.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png">
+<link rel="icon" href="img/icons/favicon.ico" sizes="32x32">
+<!--  Android 5 Chrome Color-->
+<meta name="theme-color" content="#ffa726">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/scroller.css"/>
+<link type="text/css" rel="stylesheet" href="css/nprogress.css"/>
+<!-- WYSIWYG Editor-->
+<link type="text/css" rel="stylesheet" href="css/trumbowyg.css"/>
+<!-- Filer Editor-->
+<link type="text/css" rel="stylesheet" href="css/jquery.filer.css"/>
+<link type="text/css" rel="stylesheet" href="css/jquery.filer-theme.css"/>
+<!-- mdi icons cdn-->
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body">
+<!--Fixed Navbar -->
+
+<header>
+  <div class="navbar-fixed">
+    <nav id="navbar" class="lime"> 
+    <a href="#" data-activates="slide-out" class="button-collapse"> 
+    <i class="material-icons">menu</i> </a>
+      <div class="nav-wrapper"> <a href="#" class="brand-logo">CodeLarva</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="search-out">
+            <input type="text" class="search-out-text">
+          </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> 
+          <i class="mdi-action-search"></i> </a> </li>
+          <li> <a href="#" class="waves-effect waves-light"> 
+          <i class="mdi-action-store"></i> </a> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="main">
+<div class="wrapper">
+  <aside id="left-sidebar-nav">
+    <ul id="slide-out" class="side-nav fixed">
+      <li class="user-details lime darken-2">
+        <div class="row">
+          <div class="col col s4 m4 l4"> 
+          <img src="img/avatar.jpg" alt="" class="circle responsive-img valign profile-image"> </div>
+          <div class="col s8 m8 l8" style="top:57">
+            <ul id="profile-dropdown" class="dropdown-content">
+              <li><a href="#"><i class="mdi-action-account-circle"></i> Profile</a> </li>
+              <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
+              <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a> </li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
+              <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+            </ul>
+            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sandeep 
+            <i class="mdi-navigation-arrow-drop-down right"></i></a>
+            <p class="user-roal">Administrator</p>
+          </div>
+        </div>
+      </li>
+      <li class="active lime lighten-2"> 
+      <a class="waves-effect waves-light" href="dashboard.html"> 
+      <i class="mdi-action-dashboard"></i> Dashboard</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="waves-effect waves-cyan" href="#!"> 
+          <i class="mdi-action-store"></i> StoreFront</a></li>
+          <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan">
+           <i class="mdi-action-bookmark"></i> Orders <span class="new badge"></span></a> </li>
+          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"> 
+          <i class="mdi-maps-local-mall"></i> Products Store</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="product.html">Products</a> </li>
+                <li><a href="#">Inventory</a> </li>
+                <li><a href="#">Shelving</a> </li>
+                <li><a href="#">Gift Cards & Coupons</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"> 
+          <i class="mdi-social-people-outline"></i> Customers</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="form-elements.html">Form Elements</a> </li>
+                <li><a href="form-layouts.html">Form Layouts</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
+          <i class="mdi-notification-mms"></i> Reports</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="index.html">Login</a> </li>
+                <li><a href="register.html">Register</a> </li>
+                <li><a href="lock.html">Lock Screen</a> </li>
+                <li><a href="page-invoice.html">Invoice</a> </li>
+                <li><a href="page-404.html">404</a> </li>
+                <li><a href="page-500.html">500</a> </li>
+                <li><a href="page-blank.html">Blank</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
+          <i class="mdi mdi-chart-areaspline"></i> Analytics</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="charts-chartjs.html">Chart JS</a> </li>
+                <li><a href="charts-chartist.html">Chartist</a> </li>
+                <li><a href="charts-morris.html">Morris Charts</a> </li>
+                <li><a href="charts-xcharts.html">xCharts</a> </li>
+                <li><a href="charts-flotcharts.html">Flot Charts</a> </li>
+                <li><a href="charts-sparklines.html">Sparkline Charts</a> </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+          <li class="bold"><a class="collapsible-header waves-effect waves-cyan"> 
+          <i class="mdi-action-shop"></i>Apps & Extentions</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="app_store.html">App Store</a> </li>
+                <li><a href="installed_apps.html">Installed Apps</a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <section id="content">
+  <!--breadcrumbs start-->
+  <div id="breadcrumbs-wrapper" class="grey lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="breadcrumbs-title"><i class="mdi-maps-local-mall"></i> Add a Blog</h5>
+          <ol class="breadcrumb">
+            <li><a class="active" href="#">Products Store</a></li>
+            <li><a class="lime-text" href="blog_add.html">Add a Blog</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--breadcrumbs end-->
+  
+  <div id="test1" class="container">
+    <div id="dashboard">
+      <div class="row">
+        <form id="product_edit">
+          <div class="col s12 m6 l8">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-information"></i> Basic Info</span>
+                  <div class="input-field col s12">
+                    <input type="text" required class="validate" id="product_name">
+                    <label for="product_name">Product Name</label>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <label class="card-title lime-text"> <i class="mdi mdi-pencil-box"></i> Item Ddescription</label>
+                  <textarea class="input-field col s12" id="trumbowyg"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-image-area"></i> Add Photos</span> 
+                <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#image_upload">
+                <i class="mdi mdi-file-image"></i></a>
+                  <div id="grid" class="row"> 
+                  <a id="img_option"><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app3.png"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"> </a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="200" src="img/app1.jpg"></a>
+                  <a><img id="grid-item" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click for options" width="100" src="img/app2.png"></a>
+                  </div>
+                </div>
+                <div id="img_option_div" class="card-action grey lighten-3"> 
+               
+              </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-video"></i> Add Video</span> 
+                <a class="white-text waves-effect waves-light btn-flat lime right modal-trigger" href="#video_upload">
+               <i class="mdi mdi-video"></i></a>
+               <div class="row">
+                 <video class="responsive-video col s12 m12 l6" controls>
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+                  </video>
+                  <div class="input-field col s12 m12 l6">
+                    <input type="text" required class="validate" id="video_name">
+                    <label for="video_name">Video Name</label>
+                  </div>
+                  <div class="input-field col s12 m12 l6">
+                    <input type="text" required class="validate" id="video_alt_text">
+                    <label for="video_alt_text">Video Alt Text</label>
+                  </div>
+                  </div>
+                </div>
+                <div id="video_option_div" class="card-action grey lighten-3"> 
+              </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-cash-usd"></i> Pricing</span>
+                <br>
+				<div class="row">
+                <div class="input-field col s6">
+                    <input type="text" required class="validate" id="product_price">
+                    <label for="product_price">Price</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input type="text" required class="validate" id="compare_price">
+                    <label for="compare_price">Compare Price</label>
+                  </div>
+                  <div class="switch col s6">
+                  <label> Do not add Taxes
+                    <input type="checkbox">
+                    <span class="lever"></span> Add Taxes</label>
+                </div> 
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-book"></i> Inventory</span>
+                <br>
+				<div class="row">
+                <div class="input-field col s6">
+                    <input type="text" required class="validate" id="stock_keeping_unit">
+                    <label for="stock_keeping_unit">Stock Keeping Unit</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input type="text" required class="validate" id="barcode">
+                    <label for="barcode">Barcode</label>
+                  </div>
+                  <div class="switch col s6">
+                  <label>Do not Track  
+                    <input type="checkbox">
+                    <span class="lever"></span> Track</label>
+                </div> 
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-truck"></i> Shipping</span>
+                <br>
+				<div class="row">
+                <div class="input-field col s6">
+                    <input type="text" required class="validate" id="weight">
+                    <label for="weight">Weight</label>
+                  </div>
+                <div class="input-field col s6" style="z-index:997">
+                <select class="lime-text">
+                  <option value="1" selected>Kg</option>
+                  <option value="2">Lb</option>
+                  <option value="3">G</option>
+                  <option value="4">Mg</option>                
+                  </select>
+                <label>Unit</label>
+              </div>
+                  <div class="switch col s6">
+                  <label>No Shipping   
+                    <input type="checkbox">
+                    <span class="lever"></span> Requires Shipping</label>
+                </div> 
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-library-plus"></i> Variants</span>
+                <a class="white-text waves-effect waves-light btn-flat lime right" id="add_variants">
+                <i class="mdi mdi-plus"></i>Add Variants</a>
+                <p class="grey-text">You can add the different variations of your product like color or size here.</p>
+              </div>
+              <div id="variant_div" class="card-action grey lighten-3"> 
+                
+              </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-earth"></i> SEO Preview</span>
+                <a class="white-text waves-effect waves-light btn-flat green right" id="add_seo">
+                <i class="mdi mdi-pencil-box"></i> Edit SEO</a>
+                <h5 class="blue-text">{{product.name}}</h5>
+                <h6 class="green-text">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}}?q=xxxxx</h6>
+                <h6 class="grey-text">{{product.description}}</h6>
+                </div>
+                <div id="seo_div" class="card-action grey lighten-3"> 
+                
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side Grid-->
+          <div class="col s12 m6 l4">
+          <div class="col s12">
+          <div class="card grey lighten-1">
+              <div class="card-content white-text"> <span class="card-title"> 
+              <i class="mdi mdi-eye"></i> Visibility</span>
+                <p>Set the visibility of Item as online or offline.</p>
+              </div>
+              <div class="card-action"> 
+                <!-- Switch -->
+                <div class="switch">
+                  <label> Offline
+                    <input type="checkbox">
+                    <span class="lever"></span> Online </label>
+                </div>
+              </div>
+            </div>
+            <div class="card grey lighten-1">
+              <div class="card-content white-text"> <span class="card-title"> 
+              <i class="mdi mdi-arrange-bring-forward"></i> Organize</span>
+              <div class="input-field col s12">
+                <select class="lime-text" style="999">
+                  <option value="1" selected>Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+                <label class="grey-text">Product Type</label>
+              </div>
+              <div class="input-field col s12">
+                <select class="lime-text" style="999">
+                  <option value="1" selected>Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+                <label class="grey-text">Vendor</label>
+              </div>
+              </div>
+              <div class="card-content white-text"> <span class="card-title"> </span>
+              <div class="input-field col s12">
+                    <input type="text" required class="validate" id="weight">
+                    <label for="weight">Collection</label>
+                  </div>
+              <div class="input-field col s12">
+                    <input type="text" required class="validate" id="weight">
+                    <label for="weight">Tags</label>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+      </div>
+      <hr class="divider">
+          <div class="col s12 m12 l12>">
+            <button class="waves-effect waves-light btn-flat lime" type="submit">
+            <i class="mdi mdi-content-save"></i> Save</button>
+			<button class="waves-effect waves-light btn-flat grey right" type="reset">
+            <i class="mdi mdi-delete"></i> Delete</button>
+          </div>
+        </form>
+      <!-- --> 
+      <!-- --> 
+      <!-- Floating Action Button -->
+      
+      <!-- Floating Action Button ends--> 
+    </div>
+      </div>
+      </section>
+
+</div>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<div id="image_upload" class="modal">
+  <div class="modal-content">
+    <h4>Upoad images here</h4>
+    <form action="" method="POST" enctype="multipart/form-data">
+    <input type="file" name="files[]" id="input_file" data-jfiler-extensions="jpg, jpeg, png, gif" class="file_input" multiple>
+      <input type="submit" class="btn-flat lime">
+    </form>
+  </div>
+  <div class="modal-footer"> 
+  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
+</div>
+<!-- -->
+<div id="video_upload" class="modal">
+  <div class="modal-content">
+    <h4>Upoad Video here</h4>
+    <form action="" method="POST" enctype="multipart/form-data">
+    <input type="file" name="files[]" id="input_file1" data-jfiler-extensions="mp4, mpeg, avi, flv" class="file_input" multiple>
+      <input type="submit" class="btn-flat lime">
+    </form>
+  </div>
+  <div class="modal-footer"> 
+  <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat lime">Finish</a> </div>
+</div>
+<!-- -->
+<!--///////////////////////////////////////////////////////////////////////////// --> 
+<!-- START FOOTER -->
+<footer class="page-footer lime">
+  <div class="container"> 
+    <!-- ////////////////////////// --> 
+  </div>
+  <div class="footer-copyright">
+    <div class="container"> 
+    <a class="grey-text text-lighten-4" href="#" target="_blank">StoreFront</a> 
+    <span class="right">Copyright © 2015 
+    <a class="grey-text text-lighten-4" href="#" target="_blank">CodeLarva Technologies</a> All rights reserved.</span> 
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER --> 
+<!--Import jQuery before materialize.js--> 
+<!-- jQuery--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/materialize.js"></script> 
+<script type="text/javascript" src="js/init.js"></script> 
+<!-- Preloader--> 
+<script type="text/javascript" src="js/nprogress.js"></script> 
+<script type="text/javascript" src="js/preloader.js"></script> 
+<!-- NiceScroll--> 
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script> 
+<script type="text/javascript" src="js/nicescroll.js"></script> 
+<!-- CustomSscroll--> 
+<script type="text/javascript" src="js/scroller.js"></script> 
+<!-- Sticky Scroll plugin --> 
+<script type="text/javascript" src="js/jquery.sticky.js"></script> 
+<!-- WYSIWYG Editor--> 
+<script src="js/trumbowyg.js"></script> 
+<!-- Packery--> 
+<script src="js/packery.js"></script> 
+<!-- Filer--> 
+<script src="js/jquery.filer.js"></script> 
+<script src="js/filer.js"></script> 
+
+<!-- Plugin init--> 
+<script type="text/javascript" src="js/plugins.js"></script> 
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".button-collapse").sideNav();
+    $('select').material_select();
+	$('.materialboxed').materialbox();
+	$('ul.tabs').tabs();
+  });
+// Initialize Scroller plugin
+$(function () {
+var $document_body = $('body');
+$document_body.scrollator();
+});
+//Sticky tabs
+$(document).ready(function(){
+	if($('nav').css("height")==64)
+	{
+		$(".sticker").sticky({topSpacing:64});
+		}
+	else
+	{
+		$(".sticker").sticky({topSpacing:56});
+		$(".sticker").css("z-index",997);
+	}
+});
+/************WYSIWYG**************/
+$('#trumbowyg').trumbowyg({
+    fullscreenable: true,
+	mobile: true,
+	semantic: true,
+	autogrow: true,
+    tablet: true,
+    closable: false,
+    btns: ['viewHTML',
+      '|', 'formatting',
+      '|', 'btnGrp-design',
+      '|', 'link',
+       'insertImage',
+       'btnGrp-justify',
+      'btnGrp-lists',
+       'horizontalRule']
+});  
+/**************************************/
+var $container = $('div#grid');
+$container.packery({
+  itemSelector: '#grid-item',
+  gutter: 10
+});
+/************************************/
+$(document).ready(function() {
+    var max_fields      = 4; //maximum input boxes allowed
+    var wrapper         = $("#variant_div"); //Fields wrapper
+    var add_button      = $("#add_variants"); //Add button ID
+    
+    var x = 0; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+			var field_data = '<div id="parent" class="row"><div class="input-field col s5"><input id="option" type="text" class="validate"><label for="option">Option</label></div><div class="input-field col s5"><input id="value" type="text" class="validate"><label for="value">Value</label></div><div id="delete" class="input-field col s1 valign-wrapper"><a class="btn-flat valign"><i class="mdi mdi-delete"></i></a></div></div>';
+			$(wrapper).append(field_data).slideDown('slow');
+        }
+		
+    });
+	
+    $(wrapper).on("click","#delete", function(e){ //user click on remove text
+        e.preventDefault(); 
+		$(this).parent('div').remove(); x--;
+    })
+	
+});
+/*************************************************/
+$(document).ready(function() {
+	$('input#page_title, input#url, textarea#meta').characterCounter();
+    var wrapper         = $("#seo_div"); 
+    var add_button      = $("#add_seo"); 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+		var data='<div id="rem" class="row"><div class="input-field col s12"><input id="page_title" value="product.name" type="text" class="validate" length="40"><label for="page_title" class="active">Page Title</label></div><div class="input-field col s12"><textarea id="meta" type="text" length="120" class="materialize-textarea validate">product.item-description</textarea><label class="active" for="meta">Meta Info</label></div><div class="input-field col s12"><input id="url" value="{{product.name}" type="text" class="validate" length="40"><label for="url" class="active">https://www.xxx-xx-xx.codelarva.com/api/products/{{product.name}</label></div><a id="close_seo" class="btn-flat lime right white-text">Close</a></div>';
+		$(wrapper).append(data).hide().slideDown('slow');
+    	
+	    //$(wrapper).append(data);
+			add_button.hide();
+		$('#close_seo').click(function(){
+		$('#rem').slideUp('slow', function(){$('#rem').remove();});
+		add_button.show();
+		});
+    });
+	
+});
+/***********************************************************/
+$(document).ready(function() {
+    var wrapper         = $("#img_option_div"); 
+    var add_button      = $("#img_option"); 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+		var data='<div id="rem_img" class="row"><div class="col s12"><div class="col s12 m6 l6"><img id="preview" class="responsive-img" src="img/app1.jpg"></div><div class="col s12 m6 l6"><div class="row"><div class="input-field col s12"><input placeholder="img.title" id="title" type="text" class="validate"><label for="title" class="active">Image Title</label></div><div class="input-field col s12"><input placeholder="img.alt" id="img_alt" type="text" class="validate"><label for="img_alt" class="active">Image Alt</label></div></div></div><a id="del_img" class="btn-flat red left white-text">Delete</a><a id="close_img" class="btn-flat lime right white-text">Update</a></div>';
+		$(wrapper).append(data).hide().slideDown('slow');
+    	$('#img_option img').css({"border-bottom":"7px solid #cddc39","border-bottom-left-radius": "5px","border-bottom-right-radius": "5px"});
+		
+	    //$(wrapper).append(data);
+		//add_button.hide();
+		$('#close_img').click(function(){
+		$('#rem_img').slideUp('slow', function(){$('#rem_img').remove()});
+		$('#img_option img').css({"border-bottom":"","border-bottom-left-radius": "","border-bottom-right-radius": ""});
+		
+		add_button.show();
+		});
+    });
+	
+});
+/*********************************************************************/
+</script>
+</body>
+</html>
