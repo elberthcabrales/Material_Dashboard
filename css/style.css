@@ -2031,4 +2031,25 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .table-stats{
 	font-size: 38px;
 }
-/************************************************************/
+#stats-conversion td{
+	padding: 2px;
+}
+/****************************fadeicon_stats********************************/
+#fade_icon_stats{
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    padding-top: 100px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 35px;
+	
+	color: #FFFFFF;
+    opacity: 0.1;
+	
+	margin-left: -35px;
+    font-size: 310px;
+    line-height: 110px;
+}
