@@ -2027,3 +2027,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 	position:relative;
 	top:-15px;
 }
+/************************table-stats************************/
+.table-stats{
+	font-size: 38px;
+}
+/************************************************************/
