@@ -2034,6 +2034,12 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 #stats-conversion td{
 	padding: 2px;
 }
+#email-list.no-upspace{
+	margin-top:-25px;
+}
+#email-list > ul {
+	border:none;
+}
 /****************************fadeicon_stats********************************/
 #fade_icon_stats{
     width: 80px;
