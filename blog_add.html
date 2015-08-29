@@ -24,6 +24,9 @@
 <link type="text/css" rel="stylesheet" href="css/trumbowyg.css"/>
 <!-- Filer Editor-->
 <link type="text/css" rel="stylesheet" href="css/jquery.filer.css"/>
+<!-- Time Picker-->
+<link type="text/css" rel="stylesheet" href="css/default.time.css"/>
+
 <link type="text/css" rel="stylesheet" href="css/jquery.filer-theme.css"/>
 <!-- mdi icons cdn-->
 <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
@@ -259,6 +262,40 @@
                   </div>
                 </div></div></div>
             </div>
+            <hr class="divider">
+            <div class="row">
+            <div class="col s12 m4 l3">
+            <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                <i class="mdi mdi-eye"></i> Visibility</span>
+                  <p class="grey-text">Control if this blog post can be viewed on your storefront.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m8 l9">
+              <div class="card">
+                <div class="card-content"> 
+                <span class="card-title lime-text"> 
+                 </span>
+                  <p class="grey-text">This blog is visible in website.</p>
+                  <br>
+                  <div class="switch col s12">
+                    <label>
+                      No
+                      <input type="checkbox" checked>
+                      <span class="lever"></span>
+                      Yes
+                    </label>
+                  </div>
+                    <div class="input-field col s12 m6 6" style="margin-bottom:20px;">
+                         <input type="date" class="datepicker">
+                  </div>
+                  <div class="input-field col s12 m6 6" style="margin-bottom:20px;">
+                         <input type="date" class="timepicker">
+                  </div>
+                </div></div></div>
+            </div>
       </div>
       <hr class="divider">
           <div class="col s12 m12 l12>">
@@ -317,6 +354,8 @@
 <!-- Filer--> 
 <script src="js/jquery.filer.js"></script> 
 <script src="js/filer.js"></script> 
+<!-- Timepicker init--> 
+<script type="text/javascript" src="js/picker.time.js"></script>
 
 <!-- Plugin init--> 
 <script type="text/javascript" src="js/plugins.js"></script> 
@@ -363,6 +402,7 @@ $('#trumbowyg').trumbowyg({
        'horizontalRule']
 });  
 /*********************************************************************/
+$('.timepicker').pickatime();
 </script>
 </body>
 </html>

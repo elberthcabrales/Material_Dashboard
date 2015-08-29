@@ -1989,6 +1989,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .picker__day.picker__day--today {
 	color:#cddc39;
 }
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected{
+	background-color: #cddc39;
+}
 /****************************custom bagde************************/
 .label{
 	padding-left:5px;
