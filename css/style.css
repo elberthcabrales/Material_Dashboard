@@ -2062,3 +2062,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     font-size: 310px;
     line-height: 110px;
 }
+/*****************Alpha***********************/
+.alpha{
+	background-color:rgba(0, 0, 0, 0.5);
+}
