@@ -234,7 +234,7 @@
                 </div>
                 <div class="card-content">
                   <div class="input-field col s12"> 
-                  <a id="add_date" class="lime-text" href="#">Add specific date & time</a> </div>
+                  <a id="add_date" class="lime-text">Add specific date & time</a> </div>
                 </div>
                 <div class="card-content">
                   <div class="input-field col s12 m6 l6" style="margin-bottom:20px;">
@@ -254,8 +254,8 @@
             <div class="col s12 m4 l3">
               <div class="card">
                 <div class="card-content"> <span class="card-title lime-text"> 
-                <i class="mdi mdi-comment"></i> Comments</span>
-                  <p class="grey-text">Comments for this blog are allowed, and are automatically published. <br> To change how comments are handled, edit the {{post.blog}} blog.</p>
+                <i class="mdi mdi-tablet"></i> Template</span>
+                  <p class="grey-text">Select the template this page will use on your storefront.</p>
                 </div>
               </div>
             </div>
@@ -263,35 +263,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="row">
-                  <table class="bordered striped hoverable responsive-table">
-                  	<thead>
-                    	<th><p>
-                          <input type="checkbox" id="check_all" />
-                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
-                        </p></th>
-                        <th>Date</th>
-                        <th>User</th>
-                        <th>Comment</th>
-                        <th>Status</th>
-                    </thead>
-                    <tbody>
-                    	<tr>
-                            <td><p>
-                              <input type="checkbox" id="check_1" />
-                              <label for="check_1"></label>
-                            </p></td>
-                            <td>Today at 1:16pm</td>
-                            <td>John Doe <a>(johndoe@mail.com)</a></td>
-                            <td>waiting for the product</td>
-                            <td><span class="label lime">approved</span></td>
-                            <td>
-                            <a class="tooltipped" data-direction="bottom" data-tooltip="Mark as Spam">
-                            <i class="mdi mdi-alert-circle orange-text"></i></a></td>                            
-                            <td><a class="tooltipped" data-direction="bottom" data-tooltip="Delete">
-                            <i class="mdi mdi-close-circle red-text"></i></a></td>
-                        </tr>
-                    </tbody>
-                  </table>
+                  <select class="browser-default grey-text">
+                      <option value="" disabled selected>Choose a Template</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
                   </div>
                 </div>
               </div>
