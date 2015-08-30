@@ -153,10 +153,11 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l12">
-              <h5 class="breadcrumbs-title"><i class="mdi mdi-book-multiple-variant"></i> Blog</h5>
+              <h5 class="breadcrumbs-title"><i class="mdi mdi-comment"></i> Comments</h5>
               <ol class="breadcrumb">
                 <li><a class="active" href="#">Online Store</a></li>
-                <li><a class="lime-text" href="blog_all_blogs.html"> Blog</a></li>
+                <li><a class="active" href="#">Blog</a></li>
+                <li><a class="lime-text" href="blog_comments.html"> Comments</a></li>
               </ol>
             </div>
           </div>
@@ -168,15 +169,12 @@
        <div class="row">
        <div class="col s12">
        <ul class="tabs">
-        <li class="tab"><a href="#test1" class="waves-effect lime-text shadow_bottom">All Blogs</a></li>
+        <li class="tab"><a href="#test1" class="waves-effect lime-text shadow_bottom">All Comments</a></li>
       </ul>
       </div>
        <div class="col s12">
        <div class="card">
        <div class="card-content">
-       <a class="btn-flat lime white-text waves-effect waves-light">Manage Blogs</a>
-       <a class="btn-flat lime white-text waves-effect waves-light">Manage Comments</a>
-       <a class="btn-flat grey white-text waves-effect waves-light right modal-trigger" href="#add_modal">Add blog post</a>
        </div>
        <div id="test1" class="card-content">
                 <table id="product_table" class="striped hoverable responsive-table">
@@ -186,10 +184,11 @@
                             <input type="checkbox" id="check_all" />
                             <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
                           </p></th>
-                        <th data-field="title">Title</th>
-                        <th data-field="blog">Blog</th>
-                        <th data-field="author">Author</th>
                         <th data-field="date">Date</th>
+                        <th data-field="user">User</th>
+                        <th data-field="comment">Comment</th>
+                        <th data-field="blog">Blog</th>
+                        <th data-field="status">Status</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -198,10 +197,15 @@
                             <input type="checkbox" id="check_box" />
                             <label for="check_box"></label>
                           </p></td>
-                        <td><a>First Blog Post</a></td>
-                        <td>News</td>
-                        <td>CodeLarva</td>
-                        <td>Thursday at 7:12pm</td>
+                        <td>Today at 1:16pm></td>
+                        <td>John Doe <a>(johndoe@mail.com)</a></td>
+                        <td>waiting for the product	</td>
+                        <td><a>News</a></td>
+                        <td><span class="label lime">approved</span></td>
+                        <td><a class="tooltipped" data-direction="bottom" data-tooltip="Mark as Spam">
+                        <i class="mdi mdi-alert-circle orange-text"></i></a></td>
+                        <td><a class="tooltipped" data-direction="bottom" data-tooltip="Delete">
+                        <i class="mdi mdi-close-circle red-text"></i></a></td>
                       </tr>
                     </tbody>
                   </table>
