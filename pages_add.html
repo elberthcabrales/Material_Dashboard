@@ -44,7 +44,8 @@
           <li class="search-out">
             <input type="text" class="search-out-text">
           </li>
-          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> <i class="mdi-action-search"></i> </a> </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-light show-search"> 
+          <i class="mdi-action-search"></i> </a> </li>
           <li> <a href="#" class="waves-effect waves-light"> <i class="mdi-action-store"></i> </a> </li>
         </ul>
       </div>
@@ -140,11 +141,11 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m12 l12">
-            <h5 class="breadcrumbs-title"><i class="mdi mdi-pen"></i> Edit Blog</h5>
+            <h5 class="breadcrumbs-title"><i class="mdi mdi-plus-box"></i> Add Page</h5>
             <ol class="breadcrumb">
               <li><a class="active" href="#">Online Store</a></li>
-              <li><a class="active" href="#">Blog</a></li>
-              <li><a class="lime-text" href="blog_edit.html">Edit Blog</a></li>
+              <li><a class="active" href="#">Pages</a></li>
+              <li><a class="lime-text" href="blog_add.html"> Add Page</a></li>
             </ol>
           </div>
         </div>
@@ -159,65 +160,23 @@
             <div class="col s12 m4 l3">
               <div class="card">
                 <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-pen"></i> Blog details</span>
-                  <p class="grey-text">Edit title for this blog.</p>
+                <span class="card-title lime-text"> <i class="mdi mdi-pencil"></i> Write your page</span>
+                  <p class="grey-text">Give your page a title and add your page content.</p>
                 </div>
               </div>
             </div>
             <div class="col s12 m8 l9">
               <div class="card">
-                <div class="card-content"> 
-                <span class="card-title lime-text"> 
-                <i class="mdi mdi-information"></i> Tile</span>
+                <div class="card-content"> <span class="card-title lime-text"> 
+                <i class="mdi mdi-information"></i> Title</span>
                   <div class="input-field col s12">
                     <input type="text" required class="validate" id="title">
-                    <label for="title">blog title</label>
+                    <label for="title">Contact Us, New Product, FAQ..</label>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <hr class="divider">
-          <div class="row">
-            <div class="col s12 m4 l3">
-              <div class="card">
-                <div class="card-content"> 
-                <span class="card-title lime-text"> <i class="mdi mdi-comment"></i> Comments</span>
-                  <p class="grey-text">Manage how comments are handled on this blog.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m8 l9">
-              <div class="card">
-                <div class="card-action grey lighten-3"> 
-                <div class="row">
-                  <p class="grey-text">Comments are disabled</p>
-                  <br>
-                  <div class="switch col s12">
-                    <label> No
-                      <input type="checkbox">
-                      <span class="lever"></span> Yes </label>
-                  </div>
-                  </div>
-                  <div class="row">
-                  <p class="grey-text">Comments are allowed, pending moderation</p>
-                  <br>
-                  <div class="switch col s12">
-                    <label> No
-                      <input type="checkbox" checked>
-                      <span class="lever"></span> Yes </label>
-                  </div>
-                  </div>
-                  <div class="row">
-                  <p class="grey-text">Comments are allowed, and are automatically published</p>
-                  <br>
-                  <div class="switch col s12">
-                    <label> No
-                      <input type="checkbox" checked>
-                      <span class="lever"></span> Yes </label>
-                  </div>
-                  </div>
+                <div class="card-content">
+                  <label class="card-title lime-text"> <i class="mdi mdi-pencil-box"></i> Content</label>
+                  <textarea class="input-field col s12" id="trumbowyg"></textarea>
                 </div>
               </div>
             </div>
@@ -229,7 +188,7 @@
                 <div class="card-content"> 
                 <span class="card-title lime-text"> 
                 <i class="mdi mdi-web"></i> SEO</span>
-                  <p class="grey-text">Set up the page title, meta description and handle. These help define how this blog shows up on search engines.</p>
+                  <p class="grey-text">Set up the page title, meta description and handle. These help define how this blog post shows up on search engines.</p>
                 </div>
               </div>
             </div>
@@ -238,15 +197,101 @@
                 <div class="card-content"> <span class="card-title lime-text"> </span>
                   <div class="input-field col s12">
                     <input type="text" class="validate" id="tags" maxlength="70" length="70">
-                    <label for="tags">Page Tilte</label>
+                    <label for="tags">Page Title</label>
                   </div>
                   <div class="input-field col s12" style="margin-bottom:20px;">
                     <input type="text" class="validate" id="meta" maxlength="160" length="160">
                     <label for="meta">Meta Description</label>
                   </div>
                   <div class="input-field col s12">
-                    <input type="text" class="validate" id="url">
-                    <label for="url">http://store.codelarva.com/blogs/</label>
+                    <input type="text" class="validate grey-text" id="url" value="page.name">
+                    <label for="url">http://store.codelarva.com/pages/</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="row">
+            <div class="col s12 m4 l3">
+              <div class="card">
+                <div class="card-content"> <span class="card-title lime-text"> 
+                <i class="mdi mdi-eye"></i> Visibility</span>
+                  <p class="grey-text">Control if this blog post can be viewed on your storefront.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m8 l9">
+              <div class="card">
+                <div class="card-content"> <span class="card-title lime-text"> </span>
+                  <p class="grey-text">This page is visible in website.</p>
+                  <br>
+                  <div class="switch col s12">
+                    <label> No
+                      <input type="checkbox" checked>
+                      <span class="lever"></span> Yes </label>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="input-field col s12"> 
+                  <a id="add_date" class="lime-text" href="#">Add specific date & time</a> </div>
+                </div>
+                <div class="card-content">
+                  <div class="input-field col s12 m6 l6" style="margin-bottom:20px;">
+                    <label for="pick_date">Date</label>
+                    <input id="pick_date" type="date" class="datepicker">
+                  </div>
+                  <div class="input-field col s12 m6 l6" style="margin-bottom:20px;">
+                    <label for="pick_time">Time</label>
+                    <input id="pick_time" type="date" class="timepicker">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="row">
+            <div class="col s12 m4 l3">
+              <div class="card">
+                <div class="card-content"> <span class="card-title lime-text"> 
+                <i class="mdi mdi-comment"></i> Comments</span>
+                  <p class="grey-text">Comments for this blog are allowed, and are automatically published. <br> To change how comments are handled, edit the {{post.blog}} blog.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m8 l9">
+              <div class="card">
+                <div class="card-content">
+                  <div class="row">
+                  <table class="bordered striped hoverable responsive-table">
+                  	<thead>
+                    	<th><p>
+                          <input type="checkbox" id="check_all" />
+                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
+                        </p></th>
+                        <th>Date</th>
+                        <th>User</th>
+                        <th>Comment</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                    	<tr>
+                            <td><p>
+                              <input type="checkbox" id="check_1" />
+                              <label for="check_1"></label>
+                            </p></td>
+                            <td>Today at 1:16pm</td>
+                            <td>John Doe <a>(johndoe@mail.com)</a></td>
+                            <td>waiting for the product</td>
+                            <td><span class="label lime">approved</span></td>
+                            <td>
+                            <a class="tooltipped" data-direction="bottom" data-tooltip="Mark as Spam">
+                            <i class="mdi mdi-alert-circle orange-text"></i></a></td>                            
+                            <td><a class="tooltipped" data-direction="bottom" data-tooltip="Delete">
+                            <i class="mdi mdi-close-circle red-text"></i></a></td>
+                        </tr>
+                    </tbody>
+                  </table>
                   </div>
                 </div>
               </div>
