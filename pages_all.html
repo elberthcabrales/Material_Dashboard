@@ -189,22 +189,22 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="tabl">
                         <td><p>
                             <input type="checkbox" id="check_box" />
                             <label for="check_box"></label>
                           </p></td>
                         <td><a>About Us</a>
-                        <p id="read-more" class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
+                        <p class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
                         <td>Thursday at 7:12pm</td>
                       </tr>
-                      <tr>
+                      <tr class="tabl">
                         <td><p>
                             <input type="checkbox" id="check_box" />
                             <label for="check_box"></label>
                           </p></td>
                         <td><a>Contact Us</a>
-                        <p id="read-more" class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
+                        <p class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
                         <td>Thursday at 7:12pm</td>
                       </tr>
                     </tbody>
@@ -306,8 +306,10 @@ $(document).ready(function() {
   });
 /************************************/
 $(document).ready(function() {
-var myDiv = $('#read-more');
-myDiv.text(myDiv.text().substring(0,100) + '......');
+	$("tr.tabl").each(function() {
+		var myDiv = $('.grey-text');
+		myDiv.text(myDiv.text().substring(0,100) + '......');
+		});
 });
 </script>
 </body></html>
