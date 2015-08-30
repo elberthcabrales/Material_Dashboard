@@ -174,10 +174,10 @@
        <div class="col s12">
        <div class="card">
        <div class="card-content">
-       <!-- -->
+       <a class="btn-flat lime waves-effect waves-light right white-text">Add Page</a>
        </div>
        <div id="test1" class="card-content">
-                <table id="product_table" class="striped hoverable responsive-table">
+                <table id="product_table" class="striped hoverable">
                     <thead>
                       <tr>
                         <th data-field="select"> <p>
@@ -186,7 +186,7 @@
                           </p></th>
                         <th data-field="title">Title</th>
                         <th data-field="last_modified">Last Modified</th>
-s                      </tr>
+                      </tr>
                     </thead>
                     <tbody>
                       <tr>
@@ -194,9 +194,17 @@ s                      </tr>
                             <input type="checkbox" id="check_box" />
                             <label for="check_box"></label>
                           </p></td>
-                        <td><a>First Blog Post</a></td>
-                        <td>News</td>
-                        <td>CodeLarva</td>
+                        <td><a>About Us</a>
+                        <p id="read-more" class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
+                        <td>Thursday at 7:12pm</td>
+                      </tr>
+                      <tr>
+                        <td><p>
+                            <input type="checkbox" id="check_box" />
+                            <label for="check_box"></label>
+                          </p></td>
+                        <td><a>Contact Us</a>
+                        <p id="read-more" class="grey-text">A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p></td>
                         <td>Thursday at 7:12pm</td>
                       </tr>
                     </tbody>
@@ -228,50 +236,7 @@ s                      </tr>
     </section>
   </div>
 </div>
-<!-- //////////////////////////////////////////////////////////////////////////// --> 
-
-<!-- Modal Structure -->
-  <div id="add_modal" class="modal">
-    <div class="modal-content">
-      <div id="add_modal" class="row">
-      <span class="card-title" style="font-size:24px;">Add Products Wizard</span>
-    <form class="col s12" action="#" method="POST">
-      <div class="row">
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="product_name">
-          <label for="product_name">Product Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="item_name">
-          <label for="item_name">Item Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="price">
-          <label for="price">Item Price</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" required class="validate" id="quantity">
-          <label for="quantity">Quantity</label>
-        </div>
-        <div class="file-field input-field col s12">
-      <input type="text" required class="file-path validate"/>
-      <div class="btn grey">
-        <span>File</span>
-        <input type="file" />
-      </div>
-    </div>
-      </div>
-      <div class="modal-footer">
-    <div id="modal_btn">
-      <button type="submit" class="modal-action waves-effect waves-light btn-flat lime left">Add</button>
-      <button class="modal-action  modal-close waves-effect waves-light btn-flat red right">Close</button>
-       <button type="reset" class="modal-action waves-effect waves-light btn-flat orange">Clear</button>
-    </form>
-    </div></div>
-  </div>
-    </div>
-  </div>
-<!--modal end -->  
+<!-- //////////////////////////////////////////////////////////////////////////// -->   
 <!-- START FOOTER -->
 <footer class="page-footer lime">
   <div class="container"> 
@@ -339,5 +304,10 @@ $document_body.scrollator();
 $(document).ready(function() {
     $('select').material_select();
   });
+/************************************/
+$(document).ready(function() {
+var myDiv = $('#read-more');
+myDiv.text(myDiv.text().substring(0,100) + '......');
+});
 </script>
 </body></html>
