@@ -296,13 +296,31 @@
                   <div class="row">
                   <table class="bordered striped hoverable responsive-table">
                   	<thead>
-                    	<th>&nbsp;</th>
+                    	<th><p>
+                          <input type="checkbox" id="check_all" />
+                          <label for="check_all"><i class="mdi mdi-chevron-down"></i></label>
+                        </p></th>
                         <th>Date</th>
+                        <th>User</th>
                         <th>Comment</th>
                         <th>Status</th>
                     </thead>
                     <tbody>
-                    	<tr></tr>
+                    	<tr>
+                            <td><p>
+                              <input type="checkbox" id="check_1" />
+                              <label for="check_1"></label>
+                            </p></td>
+                            <td>Today at 1:16pm</td>
+                            <td>John Doe <a>(johndoe@mail.com)</a></td>
+                            <td>waiting for the product</td>
+                            <td><span class="label lime">approved</span></td>
+                            <td>
+                            <a class="tooltipped" data-direction="bottom" data-tooltip="Mark as Spam">
+                            <i class="mdi mdi-alert-circle orange-text"></i></a></td>                            
+                            <td><a class="tooltipped" data-direction="bottom" data-tooltip="Delete">
+                            <i class="mdi mdi-close-circle red-text"></i></a></td>
+                        </tr>
                     </tbody>
                   </table>
                   </div>
