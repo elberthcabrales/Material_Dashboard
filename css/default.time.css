@@ -35,21 +35,21 @@
 }
 /* Highlighted and hovered/focused time */
 .picker__list-item--highlighted {
-  border-color: #FBEB20;
+  border-color: #cddc39;
   z-index: 10;
 }
 .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted {
   cursor: pointer;
   color: #000000;
-  background: #FFFF99;
+  background: #EEF786;
 }
 /* Selected and hovered/focused time */
 .picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
-  background: #0089ec;
-  color: #ffffff;
+  background: #EEF786;
+  color: #000;
   z-index: 10;
 }
 /* Disabled time */
